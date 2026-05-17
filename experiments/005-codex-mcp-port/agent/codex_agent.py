@@ -35,7 +35,6 @@ from typing import Any
 from bitgn.vm.ecom.ecom_connect import EcomRuntimeClientSync
 from bitgn.vm.ecom.ecom_pb2 import (
     AnswerRequest,
-    ContextRequest,
     ExecRequest,
     Outcome,
     ReadRequest,
@@ -136,6 +135,12 @@ GROUNDING_REFS = os.environ.get("GROUNDING_REFS", "1") == "1"
 COMPACT_PROMPT = os.environ.get("COMPACT_PROMPT", "1") == "1"
 AUTO_DISCOVERY = os.environ.get("AUTO_DISCOVERY", "1") == "1"
 MCP_SERVER_NAME = os.environ.get("MCP_SERVER_NAME", "bitgn-ecom")
+# Codex 0.130 in `exec` mode cancels every MCP tool call unless approvals are
+# bypassed entirely; the only flag that actually unlocks MCP is
+# --dangerously-bypass-approvals-and-sandbox. Acceptable here because the BitGN
+# VM is virtual and Codex never touches the real FS through us. Set
+# CODEX_BYPASS_APPROVALS=0 to fall back to a sandboxed run that will fail MCP.
+CODEX_BYPASS_APPROVALS = os.environ.get("CODEX_BYPASS_APPROVALS", "1") == "1"
 
 
 # ── Bootstrap ────────────────────────────────────────────────────────────
@@ -150,12 +155,14 @@ def _bootstrap(
     """Pre-fetch tree, AGENTS.MD, date, id, context — return them as one text block."""
     parts: list[str] = []
 
+    # ECOM runtime does not implement Context (UNIMPLEMENTED / "Not Found"). The
+    # call used to be in `steps` and got logged as a soft error on every task;
+    # /bin/date already gives the same wall-clock info, so we skip context here.
     steps = [
         ("tree", lambda: vm.tree(TreeRequest(root="/", level=2)), {"root": "/", "level": 2}),
         ("read", lambda: vm.read(ReadRequest(path="/AGENTS.MD")), {"path": "/AGENTS.MD"}),
         ("exec_date", lambda: vm.exec(ExecRequest(path="/bin/date")), {"path": "/bin/date"}),
         ("exec_id", lambda: vm.exec(ExecRequest(path="/bin/id")), {"path": "/bin/id"}),
-        ("context", lambda: vm.context(ContextRequest()), {}),
     ]
 
     for name, fn, args in steps:
@@ -185,10 +192,6 @@ def _bootstrap(
             formatted = format_exec(result, path="/bin/date")
         elif name == "exec_id":
             formatted = format_exec(result, path="/bin/id")
-        elif name == "context":
-            unix_time = int(getattr(result, "unix_time", 0))
-            time_str = getattr(result, "time", "")
-            formatted = f"context\n{{\"unix_time\": {unix_time}, \"time\": \"{time_str}\"}}"
         else:  # pragma: no cover
             formatted = ""
 
@@ -409,12 +412,15 @@ def _build_codex_cmd(
     # `error: user cancelled MCP tool call`). The only way to make MCP tools
     # actually run is `--dangerously-bypass-approvals-and-sandbox`. We rely on
     # the runtime sandbox being external (BitGN VM is virtual, no real FS),
-    # so this is acceptable for this experiment but not safe in general.
-    cmd = [
-        "codex",
-        "exec",
-        "--json",
-        "--dangerously-bypass-approvals-and-sandbox",
+    # so this is acceptable here. CODEX_BYPASS_APPROVALS=0 opts out (will not
+    # work today, kept as the path forward when Codex regains MCP-aware
+    # approval in exec mode).
+    cmd = ["codex", "exec", "--json"]
+    if CODEX_BYPASS_APPROVALS:
+        cmd.append("--dangerously-bypass-approvals-and-sandbox")
+    else:
+        cmd += ["--sandbox", "read-only"]
+    cmd += [
         "--skip-git-repo-check",
         "-m",
         model,
@@ -539,11 +545,15 @@ def run_codex_agent(
     parse_error: str | None = None
 
     try:
+        # stdin=DEVNULL silences Codex's "Reading additional input from stdin..."
+        # warning (~39 bytes of stderr noise per task). The prompt is the last
+        # positional argv arg; we never feed stdin.
         result = subprocess.run(
             cmd,
             capture_output=True,
             text=True,
             timeout=CODEX_TIMEOUT_SEC,
+            stdin=subprocess.DEVNULL,
         )
     except subprocess.TimeoutExpired:
         msg = f"codex exec timed out after {CODEX_TIMEOUT_SEC}s"
@@ -568,14 +578,27 @@ def run_codex_agent(
 
     output = (result.stdout or "") + ("\n" + result.stderr if result.stderr else "")
 
+    # Strip Codex's benign "Reading additional input from stdin..." notice that
+    # it prints whenever stdin is non-TTY (we use DEVNULL, the notice still
+    # fires unconditionally). Real warnings (`warning: --full-auto is …`),
+    # deprecation notices, and RPC errors stay in stderr.
+    cleaned_stderr = "\n".join(
+        line
+        for line in (result.stderr or "").splitlines()
+        if line.strip() != "Reading additional input from stdin..."
+    )
     if debug_logger:
+        # Keep the first 2000 bytes of stderr — Codex prints deprecation
+        # warnings, RPC errors, and feature-flag notices there. Truncating
+        # bounds the JSONL row size; full stderr would balloon the debug log.
         debug_logger.log(
             "codex_finished",
             task_id=task_id,
             agent_run_id=agent_run_id,
             returncode=result.returncode,
             stdout_chars=len(result.stdout or ""),
-            stderr_chars=len(result.stderr or ""),
+            stderr_chars=len(cleaned_stderr),
+            stderr=cleaned_stderr[:2000],
         )
 
     if result.returncode != 0 and not (result.stdout or "").strip():

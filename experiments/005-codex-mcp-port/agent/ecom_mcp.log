@@ -999,3 +999,41 @@ store_vienna_praterstern,SFE-3A0ZIV8P,2
 [ecom-mcp 13:47:55] FastMCP server listening on stdio
 [ecom-mcp 13:48:08] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
 [ecom-mcp 13:48:09]   -> 4867 chars
+[ecom-mcp 18:57:21] Starting: harness=https://api.bitgn.com
+[ecom-mcp 18:57:22] FastMCP server listening on stdio
+[ecom-mcp 21:52:12] Starting: harness=https://api.bitgn.com/vm/vm2-Lx67GCXpKYjCSPJEW9A9Zpc7dZr
+[ecom-mcp 21:52:13] FastMCP server listening on stdio
+[ecom-mcp 21:52:26] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 21:52:26]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 21:52:32] ecom_exec(path='/bin/sql', args=None, stdin_len=492)
+[ecom-mcp 21:52:32]   -> sku,path,name,brand,series,family_id,family_name,screw_type
+[ecom-mcp 21:52:38] ecom_exec(path='/bin/sql', args=None, stdin_len=431)
+[ecom-mcp 21:52:38]   -> sku,path,name,brand,series,family_name,key,value_text
+[ecom-mcp 21:52:41] ecom_exec(path='/bin/sql', args=None, stdin_len=195)
+[ecom-mcp 21:52:42]   -> sku,path,name,brand,series,family_name
+FST-3SJKL8BF,/proc/catalog/FST-3SJKL8BF.json,Heco Zinc Plated HECO 3DW-64B Nut Bolt and Washer bolt 10mm 20mm 50pc,Heco,Zinc Plated,Heco Zinc Plated HECO 3DW-64B
+[ecom-mcp 21:52:46] ecom_read(path='/proc/catalog/FST-1KPF96UD.json', start=0, end=0, number=False)
+[ecom-mcp 21:52:46]   -> 498 chars
+[ecom-mcp 21:53:21] Starting: harness=https://api.bitgn.com
+[ecom-mcp 21:53:21] FastMCP server listening on stdio
+[ecom-mcp 21:54:14] Starting: harness=https://api.bitgn.com/vm/vm2-Lx67Y58aUA864xyv87KpTKHHr72
+[ecom-mcp 21:54:14] FastMCP server listening on stdio
+[ecom-mcp 21:54:27] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 21:54:27]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 21:54:32] ecom_exec(path='/bin/sql', args=None, stdin_len=257)
+[ecom-mcp 21:54:32]   -> sku,path,brand,series,model,name
+[ecom-mcp 21:54:36] ecom_exec(path='/bin/sql', args=None, stdin_len=286)
+[ecom-mcp 21:54:36]   -> sku,path,brand,series,model,name
+FST-23VT61XO,/proc/catalog/FST-23VT61XO.json,Heco,Zinc Plated,TopFix GTU-YPJ,Heco Zinc Plated TopFix GTU-YPJ Wood and Drywall Screw wood screw 6mm 80mm torx 25pc
+FST-1
+[ecom-mcp 21:54:41] ecom_exec(path='/bin/sql', args=None, stdin_len=348)
+[ecom-mcp 21:54:41]   -> sku,path,fastener_type,diameter_mm
+FST-3SJKL8BF,/proc/catalog/FST-3SJKL8BF.json,bolt,10.0
+[ecom-mcp 21:54:44] ecom_read(path='/proc/catalog/FST-3SJKL8BF.json', start=0, end=0, number=False)
+[ecom-mcp 21:54:45]   -> 437 chars
