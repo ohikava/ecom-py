@@ -1,15 +1,20 @@
-"""Benchmark runner for experiment 005-codex-mcp-port.
+"""Benchmark runner for experiment 007-codex-discount-refs.
 
-Port of experiments/004-gpt5-model/agent/main.py with two changes:
-  - imports run_agent from codex_agent (Codex CLI + ECOM MCP server) instead of agent;
-  - MODEL_ID default is gpt-5.4 (Codex models — uses Codex CLI auth, not OpenRouter).
-
-Everything else (BitGN harness flow, trial loop, score aggregation, JsonlDebugLogger)
-matches 004 byte-for-byte.
+Port of 005/006 main.py with one scaffolding addition: optional parallel trial
+processing through ThreadPoolExecutor (env WORKERS). Defaults to WORKERS=1
+(sequential, byte-identical behaviour to prior runs). With WORKERS>1 trials run
+concurrently; each task has its own BitGN VM (harness_url), its own codex exec
+subprocess, and its own MCP-server child — there is no shared workspace state
+between concurrent trials. The only shared resources are the ECOM MCP log
+file (appended-to, line-buffered) and the JSONL debug log (uses a per-call
+write+flush so interleaving stays line-atomic).
 """
 
 import os
+import sys
 import textwrap
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from env_loader import load_dotenv
@@ -41,6 +46,101 @@ CLI_CLR = "\x1B[0m"
 CLI_BLUE = "\x1B[34m"
 
 
+# Lock for terminal output ordering only — does NOT serialize trial work.
+_print_lock = threading.Lock()
+
+
+def _tprint(tid: str, msg: str) -> None:
+    """Thread-safe print with [task_id] prefix; used in parallel mode."""
+    with _print_lock:
+        for line in msg.splitlines() or [""]:
+            print(f"[{tid}] {line}")
+
+
+def _process_trial(
+    client: HarnessServiceClientSync,
+    trial_id: str,
+    model_id: str,
+    debug_logger: JsonlDebugLogger,
+    task_filter: list[str],
+    parallel: bool,
+) -> tuple[str, float | None, list[str]]:
+    """Start trial → run agent → end trial. Returns (task_id, score, detail).
+
+    score is None when no score is available or trial was filtered out.
+    detail is the harness's score_detail list (empty when score unavailable).
+    """
+    trial = client.start_trial(StartTrialRequest(trial_id=trial_id))
+
+    if task_filter and trial.task_id not in task_filter:
+        # Skip filtered trial without ending it — matches prior single-thread
+        # behaviour where filtered trials are left dangling and `submit_run
+        # force=True` finalises them.
+        return (trial.task_id, None, [])
+
+    header = (
+        f"{'=' * 30} Starting task: {trial.task_id} {'=' * 30}\n"
+        f"{CLI_BLUE}{trial.instruction}{CLI_CLR}\n{'-' * 80}"
+    )
+    if parallel:
+        _tprint(trial.task_id, header)
+    else:
+        print(header)
+
+    debug_logger.log(
+        "trial_started",
+        task_id=trial.task_id,
+        trial_id=trial.trial_id,
+        harness_url=trial.harness_url,
+        instruction=trial.instruction,
+    )
+
+    try:
+        run_agent(
+            model_id,
+            trial.harness_url,
+            trial.instruction,
+            task_id=trial.task_id,
+            debug_logger=debug_logger,
+        )
+    except Exception as exc:
+        if parallel:
+            _tprint(trial.task_id, f"crashed: {exc}")
+        else:
+            print(exc)
+        debug_logger.log(
+            "trial_failed",
+            task_id=trial.task_id,
+            trial_id=trial.trial_id,
+            error=str(exc),
+        )
+
+    result = client.end_trial(EndTrialRequest(trial_id=trial.trial_id))
+    score = result.score if result.score_available else None
+    detail = list(result.score_detail)
+
+    debug_logger.log(
+        "trial_finished",
+        task_id=trial.task_id,
+        trial_id=trial.trial_id,
+        score_available=result.score_available,
+        score=score,
+        score_detail=detail,
+    )
+
+    if score is not None:
+        style = CLI_GREEN if score == 1 else CLI_RED
+        body = f"\n{style}Score: {score:0.2f}\n{textwrap.indent(chr(10).join(detail), '  ')}\n{CLI_CLR}"
+    else:
+        body = f"\n{CLI_BLUE}Score: not available{CLI_CLR}\n"
+    if parallel:
+        _tprint(trial.task_id, body)
+    else:
+        print(body)
+
+    return (trial.task_id, score, detail)
+
+
 def main() -> None:
     bitgn_url = (
         os.getenv("BITGN_HOST")
@@ -50,17 +150,21 @@ def main() -> None:
     bitgn_api_key = os.getenv("BITGN_API_KEY") or ""
     bench_id = os.getenv("BENCH_ID") or os.getenv("BENCHMARK_ID") or "bitgn/ecom1-dev"
     model_id = os.getenv("MODEL_ID") or "gpt-5.4"
+    workers = max(1, int(os.getenv("WORKERS", "1")))
+    parallel = workers > 1
 
-    task_filter = os.sys.argv[1:]
-    scores = []
+    task_filter = sys.argv[1:]
+    scores: list[tuple[str, float]] = []
+    scores_lock = threading.Lock()
     debug_logger = JsonlDebugLogger()
     debug_logger.log(
         "run_started",
         benchmark_id=bench_id,
         model_id=model_id,
         task_filter=task_filter,
+        workers=workers,
     )
-    print(f"Debug logs: {debug_logger.path.name}")
+    print(f"Debug logs: {debug_logger.path.name}  (workers={workers})")
 
     try:
         client = HarnessServiceClientSync(bitgn_url, http_client=HttpxSyncClient())
@@ -80,57 +184,32 @@ def main() -> None:
         )
 
         try:
-            for trial_id in run.trial_ids:
-                trial = client.start_trial(
-                    StartTrialRequest(trial_id=trial_id),
-                )
-                if task_filter and trial.task_id not in task_filter:
-                    continue
-
-                print(f"{'=' * 30} Starting task: {trial.task_id} {'=' * 30}")
-                print(f"{CLI_BLUE}{trial.instruction}{CLI_CLR}\n{'-' * 80}")
-                debug_logger.log(
-                    "trial_started",
-                    task_id=trial.task_id,
-                    trial_id=trial.trial_id,
-                    harness_url=trial.harness_url,
-                    instruction=trial.instruction,
-                )
-                try:
-                    run_agent(
-                        model_id,
-                        trial.harness_url,
-                        trial.instruction,
-                        task_id=trial.task_id,
-                        debug_logger=debug_logger,
+            if parallel:
+                with ThreadPoolExecutor(max_workers=workers) as pool:
+                    futures = [
+                        pool.submit(
+                            _process_trial,
+                            client,
+                            tid,
+                            model_id,
+                            debug_logger,
+                            task_filter,
+                            True,
+                        )
+                        for tid in run.trial_ids
+                    ]
+                    for fut in as_completed(futures):
+                        task_id, score, _ = fut.result()
+                        if score is not None:
+                            with scores_lock:
+                                scores.append((task_id, score))
+            else:
+                for trial_id in run.trial_ids:
+                    task_id, score, _ = _process_trial(
+                        client, trial_id, model_id, debug_logger, task_filter, False
                     )
-                except Exception as exc:
-                    print(exc)
-                    debug_logger.log(
-                        "trial_failed",
-                        task_id=trial.task_id,
-                        trial_id=trial.trial_id,
-                        error=str(exc),
-                    )
-
-                result = client.end_trial(EndTrialRequest(trial_id=trial.trial_id))
-                debug_logger.log(
-                    "trial_finished",
-                    task_id=trial.task_id,
-                    trial_id=trial.trial_id,
-                    score_available=result.score_available,
-                    score=result.score if result.score_available else None,
-                    score_detail=list(result.score_detail),
-                )
-                if result.score_available:
-                    scores.append((trial.task_id, result.score))
-                    style = CLI_GREEN if result.score == 1 else CLI_RED
-                    explain = textwrap.indent("\n".join(result.score_detail), "  ")
-                    print(
-                        f"\n{style}Score: {result.score:0.2f}\n{explain}\n{CLI_CLR}"
-                    )
-                else:
-                    print(f"\n{CLI_BLUE}Score: not available{CLI_CLR}\n")
+                    if score is not None:
+                        scores.append((task_id, score))
         finally:
             client.submit_run(SubmitRunRequest(run_id=run.run_id, force=True))
 
@@ -142,6 +221,8 @@ def main() -> None:
         debug_logger.log("run_interrupted")
 
     if scores:
+        # Sort by task_id for stable output regardless of completion order.
+        scores.sort(key=lambda x: x[0])
         for task_id, score in scores:
             style = CLI_GREEN if score == 1 else CLI_RED
             print(f"{task_id}: {style}{score:0.2f}{CLI_CLR}")

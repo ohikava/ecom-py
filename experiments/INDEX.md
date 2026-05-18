@@ -10,6 +10,7 @@
 | 005 | codex-mcp-port      | Убрать свой OpenAI-loop; Codex CLI + ECOM MCP server; `gpt-5.4` через Codex auth   | **+29.04 pp** → 64.52% (20/31)   | 149k in (**129k cached**) / 1.68k out / 47.6s | завершён |
 | 006 | codex-refs-fix      | `ecom_read_silent` + post-process DENIED refs + prompt SQL-step-5                  | **+12.90 pp на overlap** → 77.42% (24/31), 74.24% на расширенном 40-task бенчмарке | 210k in (**180k cached**) / 1.72k out / 52.1s | завершён |
 | 007 | codex-discount-refs | topic→policy doc map (`/docs/discounts.md`, `/docs/payments/3ds.md`) для DENIED   | **+2.77 pp** → 77.01% (30/40); 2/3 target wins (t25, t37); шум съел сигнал на overlap | 211k in (177k cached) / 1.88k out / 52.2s | завершён |
+| 008 | multi-run-eval      | 3× прогон 007 baseline для оценки σ; **+ WORKERS=3 parallelization patch**         | **n=2 (run3 hit quota)**: mean **64.83%**, σ **3.22 pp**, 95% CI ±4.46 pp. Bench вырос 40→42 задач. 007 single-run 77.01% — outlier ~3.8σ выше 008 mean → likely bench-shift между датами | 1.7M tok / run, ~11 мин wall time @ WORKERS=3 | частично |
 
 Базовая модель: `openai/gpt-4.1` через OpenRouter (если не указано иное).
 Бенчмарк: `bitgn/ecom1-dev` (31 task).
