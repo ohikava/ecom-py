@@ -1,0 +1,1447 @@
+[ecom-mcp 11:50:26] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81JNJngy8ALrdqgnKE3B5sgAk
+[ecom-mcp 11:50:26] FastMCP server listening on stdio
+[ecom-mcp 11:50:40] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:50:40]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:50:47] ecom_exec(path='/bin/sql', args=None, stdin_len=599)
+[ecom-mcp 11:50:47]   -> sku,path,brand,series,model,name
+[ecom-mcp 11:50:51] ecom_exec(path='/bin/sql', args=None, stdin_len=219)
+[ecom-mcp 11:50:51]   -> id,name,brand,series,model
+fam_fasteners_wood_drywall_screws_0001_tjhwqk77,Heco Zinc Plated TopFix GTU-YPJ Wood and Drywall Screw,Heco,Zinc Plated,TopFix GTU-YPJ
+[ecom-mcp 11:51:00] ecom_exec(path='/bin/sql', args=None, stdin_len=448)
+[ecom-mcp 11:51:00]   -> sku,path,name,properties
+[ecom-mcp 11:51:03] ecom_exec(path='/bin/sql', args=None, stdin_len=165)
+[ecom-mcp 11:51:03]   -> key
+diameter_mm
+drive_type
+length_mm
+material
+pack_count
+screw_type
+[ecom-mcp 11:51:08] ecom_exec(path='/bin/sql', args=None, stdin_len=539)
+[ecom-mcp 11:51:08]   -> sku,path,name,screw_type,diameter
+FST-23VT61XO,/proc/catalog/FST-23VT61XO.json,Heco Zinc Plated TopFix GTU-YPJ Wood and Drywall Screw wood screw 6mm 80mm torx 25pc,wood screw,6.0
+[ecom-mcp 11:51:12] ecom_read(path='/proc/catalog/FST-23VT61XO.json', start=0, end=0, number=False)
+[ecom-mcp 11:51:12]   -> 480 chars
+[ecom-mcp 11:51:52] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbRz
+[ecom-mcp 11:51:52] FastMCP server listening on stdio
+[ecom-mcp 11:52:12] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:52:13]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:52:18] ecom_exec(path='/bin/sql', args=None, stdin_len=391)
+[ecom-mcp 11:52:18]   -> sku,path,brand,series,model,name,cleaner_type
+[ecom-mcp 11:52:22] ecom_exec(path='/bin/sql', args=None, stdin_len=203)
+[ecom-mcp 11:52:22]   -> sku,path,brand,series,model,name
+CLN-NOLQX7ED,/proc/catalog/CLN-NOLQX7ED.json,Ajax,Eco,Classic 25C-DXE,Ajax Eco Classic 25C-DXE Cleaning Liquid floor cleaner 250ml citrus
+CLN-GEF2EYP9,/proc/catalog/CL
+[ecom-mcp 11:52:24] ecom_read(path='/proc/catalog/CLN-GEF2EYP9.json', start=0, end=0, number=False)
+[ecom-mcp 11:52:24]   -> 421 chars
+[ecom-mcp 11:52:34] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS1
+[ecom-mcp 11:52:34] FastMCP server listening on stdio
+[ecom-mcp 11:52:47] ecom_find(name='Makita', root='/proc/catalog', kind='dirs', limit=20)
+[ecom-mcp 11:52:48]   -> {
+  "paths": [
+    "/proc/catalog/Makita"
+  ]
+}
+[ecom-mcp 11:52:51] ecom_find(name='DDF OIE-YYP', root='/proc/catalog/Makita', kind='files', limit=20)
+[ecom-mcp 11:52:51]   -> {}
+[ecom-mcp 11:52:57] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:52:57]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:53:04] ecom_exec(path='/bin/sql', args=None, stdin_len=578)
+[ecom-mcp 11:53:04]   -> sku,path,brand,series,model,name,machine_type,voltage_v
+[ecom-mcp 11:53:09] ecom_exec(path='/bin/sql', args=None, stdin_len=321)
+[ecom-mcp 11:53:09]   -> sku,path,brand,series,model,name
+MAC-1F7EUVFL,/proc/catalog/Makita/MAC-1F7EUVFL.json,Makita,Workshop,DDF OIE-YYP,Makita Workshop DDF OIE-YYP Workshop Drill Grinder and Sander drill press 500W portable
+[ecom-mcp 11:53:13] ecom_exec(path='/bin/sql', args=None, stdin_len=248)
+[ecom-mcp 11:53:13]   -> sku,path,name,key,value
+MAC-1F7EUVFL,/proc/catalog/Makita/MAC-1F7EUVFL.json,Makita Workshop DDF OIE-YYP Workshop Drill Grinder and Sander drill press 500W portable,machine_type,drill press
+MAC-1F7EUVF
+[ecom-mcp 11:53:20] ecom_read(path='/proc/catalog/Makita/MAC-2JV5BGPP.json', start=0, end=0, number=False)
+[ecom-mcp 11:53:20]   -> 484 chars
+[ecom-mcp 11:53:26] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS2
+[ecom-mcp 11:53:27] FastMCP server listening on stdio
+[ecom-mcp 11:53:40] ecom_read(path='/proc/README.md', start=0, end=0, number=False)
+[ecom-mcp 11:53:40]   -> 507 chars
+[ecom-mcp 11:53:40] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:53:40]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:53:46] ecom_exec(path='/bin/sql', args=None, stdin_len=228)
+[ecom-mcp 11:53:46]   -> sku,path,brand,series,model,name
+STO-V7RYFUWV,/proc/catalog/storage/tool_boxes_bags/STO-V7RYFUWV.json,Stanley,Classic,STA CEQ-WUX,Stanley Classic STA CEQ-WUX Tool Box and Bag parts case 40l Black
+STO-
+[ecom-mcp 11:53:46] ecom_exec(path='/bin/sql', args=None, stdin_len=259)
+[ecom-mcp 11:53:46]   -> key,value_text
+color_family,black
+color_family,blue
+color_family,clear
+color_family,gray
+color_family,orange
+color_family,red
+color_family,yellow
+storage_type,parts case
+storage_type,sortainer
+storage
+[ecom-mcp 11:53:51] ecom_find(name='STO-2F42QXUN', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 11:53:51]   -> {}
+[ecom-mcp 11:53:51] ecom_search(pattern='STO-2F42QXUN', root='/proc/catalog', limit=20)
+[ecom-mcp 11:53:51]   -> /proc/catalog/storage/tool_boxes_bags/STO-2F42QXUN.json:1:{"sku":"STO-2F42QXUN","category_id":"storage","kind_id":"tool_boxes_bags","family_id":"fam_storage_tool_boxes_bags_0002_1mvvh7q9","brand":"Sta
+[ecom-mcp 11:53:56] ecom_read(path='/proc/catalog/storage/tool_boxes_bags/STO-2F42QXUN.json', start=0, end=0, number=False)
+[ecom-mcp 11:53:56]   -> 424 chars
+[ecom-mcp 11:54:02] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS3
+[ecom-mcp 11:54:02] FastMCP server listening on stdio
+[ecom-mcp 11:54:10] Starting: harness=https://api.bitgn.com
+[ecom-mcp 11:54:11] FastMCP server listening on stdio
+[ecom-mcp 11:54:15] ecom_find(name='RO 24Q-A9E', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 11:54:15]   -> {}
+[ecom-mcp 11:54:17] ecom_search(pattern='RO 24Q-A9E', root='/proc/catalog', limit=20)
+[ecom-mcp 11:54:17]   -> /proc/catalog/paints_finishes/metal_concrete_paint/fam_paints_finishes_metal_concrete_paint_0003_16t6yox3/PNT-2M5C1EA5.json:1:{"sku":"PNT-2M5C1EA5","category_id":"paints_finishes","kind_id":"metal_con
+[ecom-mcp 11:54:20] ecom_find(name='PNT-3O585VWI.json', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 11:54:20]   -> {
+  "paths": [
+    "/proc/catalog/paints_finishes/metal_concrete_paint/fam_paints_finishes_metal_concrete_paint_0003_16t6yox3/PNT-3O585VWI.json"
+  ]
+}
+[ecom-mcp 11:54:23] ecom_read(path='/proc/catalog/paints_finishes/metal_concrete_paint/fam_paints_finishes_metal_concrete_paint_0003_16t6yox3/PNT-3O585VWI.json', start=0, end=0, number=False)
+[ecom-mcp 11:54:23]   -> 509 chars
+[ecom-mcp 11:54:30] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS4
+[ecom-mcp 11:54:31] FastMCP server listening on stdio
+[ecom-mcp 11:54:42] ecom_search(pattern='Heco|GTU-YPJ|Wood and Drywall Screw|drywall screw|40 mm', root='/proc/catalog', limit=50)
+[ecom-mcp 11:54:42]   -> /proc/catalog/FST-1HE3ZSQ6.json:1:{"sku":"FST-1HE3ZSQ6","category_id":"fasteners","kind_id":"wood_drywall_screws","family_id":"fam_fasteners_wood_drywall_screws_0001_tjhwqk77","brand":"Heco","series":
+[ecom-mcp 11:54:46] ecom_read(path='/proc/catalog/FST-1HE3ZSQ6.json', start=0, end=0, number=False)
+[ecom-mcp 11:54:46]   -> 488 chars
+[ecom-mcp 11:54:57] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS5
+[ecom-mcp 11:54:57] FastMCP server listening on stdio
+[ecom-mcp 11:55:11] ecom_find(name='Dresselhaus', root='/proc/catalog', kind='all', limit=20)
+[ecom-mcp 11:55:11]   -> {
+  "paths": [
+    "/proc/catalog/Dresselhaus"
+  ]
+}
+[ecom-mcp 11:55:11] ecom_search(pattern='Outdoor Pro 1VG-P5G|Wood and Drywall Screw|drywall screw|drive type|slot', root='/proc/catalog', limit=20)
+[ecom-mcp 11:55:11]   -> /proc/catalog/Dresselhaus/FST-2BS86XJD.json:1:{"sku":"FST-2BS86XJD","category_id":"fasteners","kind_id":"wood_drywall_screws","family_id":"fam_fasteners_wood_drywall_screws_0001_11we7qus","brand":"Dre
+[ecom-mcp 11:55:22] ecom_read(path='/proc/catalog/Dresselhaus/FST-2BS86XJD.json', start=0, end=0, number=False)
+[ecom-mcp 11:55:22]   -> 481 chars
+[ecom-mcp 11:55:28] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS6
+[ecom-mcp 11:55:29] FastMCP server listening on stdio
+[ecom-mcp 11:55:43] ecom_search(pattern='Stanley Classic STA CEQ-WUX Tool Box and Bag|Tool Box and Bag|STA CEQ-WUX|storage type|color family|material', root='/proc/catalog', limit=20)
+[ecom-mcp 11:55:43]   -> /proc/catalog/fasteners/anchors_plugs/FST-11IFR4W5.json:1:{"sku":"FST-11IFR4W5","category_id":"fasteners","kind_id":"anchors_plugs","family_id":"fam_fasteners_anchors_plugs_0002_3ny2oz9g","brand":"Wur
+[ecom-mcp 11:55:43] ecom_find(name='Stanley', root='/proc/catalog', kind='all', limit=20)
+[ecom-mcp 11:55:43]   -> {}
+[ecom-mcp 11:55:49] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:55:50]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:55:50] ecom_search(pattern='Stanley|STA CEQ-WUX|Tool Box and Bag', root='/proc/catalog', limit=50)
+[ecom-mcp 11:55:50]   -> /proc/catalog/storage/tool_boxes_bags/STO-11VKPJWP.json:1:{"sku":"STO-11VKPJWP","category_id":"storage","kind_id":"tool_boxes_bags","family_id":"fam_storage_tool_boxes_bags_0002_1mvvh7q9","brand":"Sta
+[ecom-mcp 11:55:54] ecom_read(path='/proc/catalog/storage/tool_boxes_bags/STO-11VKPJWP.json', start=0, end=0, number=False)
+[ecom-mcp 11:55:54]   -> 428 chars
+[ecom-mcp 11:56:03] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS7
+[ecom-mcp 11:56:04] FastMCP server listening on stdio
+[ecom-mcp 11:56:14] ecom_find(name='Vileda', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 11:56:14]   -> {}
+[ecom-mcp 11:56:14] ecom_search(pattern='Concentrate Turbo 212-TYB|Cleaning Liquid|glass cleaner|citrus', root='/proc/catalog', limit=20)
+[ecom-mcp 11:56:14]   -> /proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0001_9nxwqnv3/CLN-13B4SPWP.json:1:{"sku":"CLN-13B4SPWP","category_id":"cleaning","kind_id":"cleaning_liquids","family_id":"fam_cle
+[ecom-mcp 11:56:17] ecom_search(pattern='212-TYB', root='/proc/catalog', limit=20)
+[ecom-mcp 11:56:18]   -> /proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0012_15w9i2gj/CLN-15I81IAY.json:1:{"sku":"CLN-15I81IAY","category_id":"cleaning","kind_id":"cleaning_liquids","family_id":"fam_cle
+[ecom-mcp 11:56:18] ecom_search(pattern='Vileda.*212-TYB', root='/proc/catalog', limit=20)
+[ecom-mcp 11:56:18]   -> /proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0012_15w9i2gj/CLN-15I81IAY.json:1:{"sku":"CLN-15I81IAY","category_id":"cleaning","kind_id":"cleaning_liquids","family_id":"fam_cle
+[ecom-mcp 11:56:25] ecom_find(name='CLN-2H56Y2JS.json', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 11:56:25]   -> {
+  "paths": [
+    "/proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0012_15w9i2gj/CLN-2H56Y2JS.json"
+  ]
+}
+[ecom-mcp 11:56:25] ecom_search(pattern='"sku":"CLN-2H56Y2JS"', root='/proc/catalog', limit=20)
+[ecom-mcp 11:56:25]   -> /proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0012_15w9i2gj/CLN-2H56Y2JS.json:1:{"sku":"CLN-2H56Y2JS","category_id":"cleaning","kind_id":"cleaning_liquids","family_id":"fam_cle
+[ecom-mcp 11:56:29] ecom_read(path='/proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0012_15w9i2gj/CLN-2H56Y2JS.json', start=0, end=0, number=False)
+[ecom-mcp 11:56:30]   -> 441 chars
+[ecom-mcp 11:56:38] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS8
+[ecom-mcp 11:56:39] FastMCP server listening on stdio
+[ecom-mcp 11:56:49] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:56:50]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:56:53] ecom_exec(path='/bin/sql', args=None, stdin_len=126)
+[ecom-mcp 11:56:53]   -> cnt
+2
+[ecom-mcp 11:56:57] ecom_exec(path='/bin/sql', args=None, stdin_len=133)
+[ecom-mcp 11:56:57]   -> path
+/proc/catalog/STO-12JLHT7D.json
+/proc/catalog/STO-2R84BSHQ.json
+[ecom-mcp 11:57:00] ecom_read(path='/proc/catalog/STO-12JLHT7D.json', start=0, end=0, number=False)
+[ecom-mcp 11:57:00]   -> 432 chars
+[ecom-mcp 11:57:00] ecom_read(path='/proc/catalog/STO-2R84BSHQ.json', start=0, end=0, number=False)
+[ecom-mcp 11:57:00]   -> 432 chars
+[ecom-mcp 11:57:05] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbS9
+[ecom-mcp 11:57:06] FastMCP server listening on stdio
+[ecom-mcp 11:57:18] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:57:19]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:57:21] ecom_exec(path='/bin/sql', args=None, stdin_len=125)
+[ecom-mcp 11:57:21]   -> count
+3
+[ecom-mcp 11:57:24] ecom_exec(path='/bin/sql', args=None, stdin_len=130)
+[ecom-mcp 11:57:24]   -> path
+/proc/catalog/Portwest/SFE-1WT01OHC.json
+/proc/catalog/Portwest/SFE-2WR7B6IJ.json
+/proc/catalog/Portwest/SFE-38VNB3KX.json
+[ecom-mcp 11:57:28] ecom_read(path='/proc/catalog/Portwest/SFE-1WT01OHC.json', start=0, end=0, number=False)
+[ecom-mcp 11:57:28]   -> 390 chars
+[ecom-mcp 11:57:28] ecom_read(path='/proc/catalog/Portwest/SFE-2WR7B6IJ.json', start=0, end=0, number=False)
+[ecom-mcp 11:57:28]   -> 382 chars
+[ecom-mcp 11:57:28] ecom_read(path='/proc/catalog/Portwest/SFE-38VNB3KX.json', start=0, end=0, number=False)
+[ecom-mcp 11:57:28]   -> 382 chars
+[ecom-mcp 11:57:34] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSA
+[ecom-mcp 11:57:34] FastMCP server listening on stdio
+[ecom-mcp 11:57:47] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:57:47]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:57:50] ecom_exec(path='/bin/sql', args=None, stdin_len=75)
+[ecom-mcp 11:57:51]   -> count
+16
+[ecom-mcp 11:57:53] ecom_exec(path='/bin/sql', args=None, stdin_len=76)
+[ecom-mcp 11:57:53]   -> path
+/proc/catalog/garden_tools/chainsaws/GRD-1E3XD487.json
+/proc/catalog/garden_tools/chainsaws/GRD-1IBYH68P.json
+/proc/catalog/garden_tools/chainsaws/GRD-1VYIMWG3.json
+/proc/catalog/garden_tools/cha
+[ecom-mcp 11:58:07] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-1E3XD487.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:07]   -> 409 chars
+[ecom-mcp 11:58:07] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-1IBYH68P.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:07]   -> 415 chars
+[ecom-mcp 11:58:07] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-1VYIMWG3.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:07]   -> 397 chars
+[ecom-mcp 11:58:07] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-1WJO6MO7.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:07]   -> 415 chars
+[ecom-mcp 11:58:07] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-2NKJNTC3.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:07]   -> 414 chars
+[ecom-mcp 11:58:07] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-2S76G3S7.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 402 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-2VWFHHE2.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 409 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-2YZPF1WK.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 409 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-32A30E2Y.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 415 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-368Q1C33.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 403 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-39PQ0AS9.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 415 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-3O9WK8QR.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 403 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-KBDWD8SC.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 415 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-YG5PY0RE.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 409 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-Z5V2KJUI.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 403 chars
+[ecom-mcp 11:58:08] ecom_read(path='/proc/catalog/garden_tools/chainsaws/GRD-ZLOMJDHO.json', start=0, end=0, number=False)
+[ecom-mcp 11:58:08]   -> 396 chars
+[ecom-mcp 11:58:19] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSB
+[ecom-mcp 11:58:19] FastMCP server listening on stdio
+[ecom-mcp 11:58:34] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 11:58:35]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 11:58:39] ecom_exec(path='/bin/sql', args=None, stdin_len=145)
+[ecom-mcp 11:58:39]   -> cnt
+308
+[ecom-mcp 11:58:42] ecom_exec(path='/bin/sql', args=None, stdin_len=162)
+[ecom-mcp 11:58:42]   -> path
+/proc/catalog/power_tools/cordless_drill_driver/fam_power_tools_cordless_drill_driver_0001_1c8bdo92/PWR-1QK65BR8.json
+/proc/catalog/power_tools/cordless_drill_driver/fam_power_tools_cordless_dril
+[ecom-mcp 11:58:46] ecom_find(name='PWR-1QK65BR8.json', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 11:58:46]   -> {
+  "paths": [
+    "/proc/catalog/power_tools/cordless_drill_driver/fam_power_tools_cordless_drill_driver_0001_1c8bdo92/PWR-1QK65BR8.json"
+  ]
+}
+[ecom-mcp 11:58:49] ecom_exec(path='/bin/sql', args=None, stdin_len=111)
+[ecom-mcp 11:58:49]   -> id,category_id,name
+cordless_drill_driver,power_tools,Cordless Drill Driver
+[ecom-mcp 11:58:53] ecom_search(pattern='"kind_id"\\s*:\\s*"cordless_drill_driver"', root='/proc/catalog', limit=400)
+[ecom-mcp 11:58:53]   -> /proc/catalog/power_tools/cordless_drill_driver/fam_power_tools_cordless_drill_driver_0001_1c8bdo92/PWR-1QK65BR8.json:1:{"sku":"PWR-1QK65BR8","category_id":"power_tools","kind_id":"cordless_drill_driv
+[ecom-mcp 12:02:40] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSC
+[ecom-mcp 12:02:41] FastMCP server listening on stdio
+[ecom-mcp 12:02:56] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:02:56]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:02:56] ecom_search(pattern='Vienna Meidling', root='/proc/stores', limit=20)
+[ecom-mcp 12:02:56]   -> /proc/stores/README.md:9:We started with the Vienna Praterstern branch in 2017, serving trade customers who needed a central Vienna pickup point near the rail hub. The Vienna Meidling branch followed 
+[ecom-mcp 12:02:56] ecom_search(pattern='Ajax Eco Classic 25C-DXE|Festool Stackable SYS 3JJ-9LM|Heco Zinc Plated TopFix GTU-YPJ|Heco Zinc Plated HECO 3DW-64B', root='/proc/catalog', limit=50)
+[ecom-mcp 12:02:56]   -> /proc/catalog/CLN-GEF2EYP9.json:1:{"sku":"CLN-GEF2EYP9","category_id":"cleaning","kind_id":"cleaning_liquids","family_id":"fam_cleaning_cleaning_liquids_0001_1v4wtxye","brand":"Ajax","series":"Eco","m
+[ecom-mcp 12:03:04] ecom_read(path='/proc/stores/store_vienna_meidling.json', start=0, end=0, number=False)
+[ecom-mcp 12:03:04]   -> 122 chars
+[ecom-mcp 12:03:04] ecom_read(path='/proc/catalog/CLN-NOLQX7ED.json', start=0, end=0, number=False)
+[ecom-mcp 12:03:04]   -> 432 chars
+[ecom-mcp 12:03:04] ecom_read(path='/proc/catalog/STO-12JLHT7D.json', start=0, end=0, number=False)
+[ecom-mcp 12:03:05]   -> 432 chars
+[ecom-mcp 12:03:05] ecom_read(path='/proc/catalog/FST-1KPF96UD.json', start=0, end=0, number=False)
+[ecom-mcp 12:03:05]   -> 498 chars
+[ecom-mcp 12:03:05] ecom_read(path='/proc/catalog/FST-23VT61XO.json', start=0, end=0, number=False)
+[ecom-mcp 12:03:05]   -> 480 chars
+[ecom-mcp 12:03:05] ecom_read(path='/proc/catalog/FST-APSRIZJW.json', start=0, end=0, number=False)
+[ecom-mcp 12:03:05]   -> 435 chars
+[ecom-mcp 12:03:05] ecom_read(path='/proc/catalog/FST-3SJKL8BF.json', start=0, end=0, number=False)
+[ecom-mcp 12:03:05]   -> 437 chars
+[ecom-mcp 12:03:05] ecom_exec(path='/bin/sql', args=None, stdin_len=200)
+[ecom-mcp 12:03:05]   -> sku,available_today
+FST-1KPF96UD,0
+FST-23VT61XO,1
+FST-3SJKL8BF,9
+FST-APSRIZJW,2
+[ecom-mcp 12:03:11] ecom_exec(path='/bin/sql', args=None, stdin_len=292)
+[ecom-mcp 12:03:11]   -> cnt
+2
+[ecom-mcp 12:03:23] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSD
+[ecom-mcp 12:03:24] FastMCP server listening on stdio
+[ecom-mcp 12:03:43] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:03:43]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:03:43] ecom_find(name='Graz', root='/proc/stores', kind='files', limit=20)
+[ecom-mcp 12:03:43]   -> {}
+[ecom-mcp 12:03:49] ecom_exec(path='/bin/sql', args=None, stdin_len=115)
+[ecom-mcp 12:03:49]   -> id,path,name,city,is_open
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,PowerTool Graz Jakomini,Graz,1
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,Graz,1
+[ecom-mcp 12:03:49] ecom_exec(path='/bin/sql', args=None, stdin_len=327)
+[ecom-mcp 12:03:50]   -> sku,path,brand,name,series,model,family_id
+[ecom-mcp 12:03:58] ecom_exec(path='/bin/sql', args=None, stdin_len=217)
+[ecom-mcp 12:03:58]   -> id,brand,series,model,name,properties
+fam_electrical_extension_cables_0001_3dos0v7r,Schneider Electric,Heavy Duty,Merten 214-ZHY,Schneider Electric Heavy Duty Merten 214-ZHY Extension Cable,"{""cable_
+[ecom-mcp 12:03:58] ecom_exec(path='/bin/sql', args=None, stdin_len=210)
+[ecom-mcp 12:03:58]   -> id,brand,series,model,name,properties
+fam_power_tools_cordless_drill_driver_0001_1qb02bo8,Metabo,Brushless,BS 1OW-IK5,Metabo Brushless BS 1OW-IK5 Cordless Drill Driver,"{""max_torque_nm"":120,""power_
+[ecom-mcp 12:03:58] ecom_exec(path='/bin/sql', args=None, stdin_len=199)
+[ecom-mcp 12:03:58]   -> id,brand,series,model,name,properties
+fam_safety_gear_work_gloves_0001_k1vcpqqm,Portwest,PW3,DX 3TU-ST2,Portwest PW3 DX 3TU-ST2 Work Gloves,{}
+[ecom-mcp 12:03:58] ecom_exec(path='/bin/sql', args=None, stdin_len=218)
+[ecom-mcp 12:03:58]   -> id,brand,series,model,name,properties
+fam_fasteners_wood_drywall_screws_0001_11we7qus,Dresselhaus,Outdoor,Pro 1VG-P5G,Dresselhaus Outdoor Pro 1VG-P5G Wood and Drywall Screw,"{""material"":""steel""}"
+[ecom-mcp 12:04:03] ecom_exec(path='/bin/sql', args=None, stdin_len=211)
+[ecom-mcp 12:04:03]   -> id,brand,series,model,name,properties
+fam_workshop_machines_saws_cutters_0001_mw9bcr3b,Bosch,Bench,IXO 3JP-JOU,Bosch Bench IXO 3JP-JOU Workshop Saw and Cutter,"{""mount_type"":""cabinet""}"
+[ecom-mcp 12:04:03] ecom_exec(path='/bin/sql', args=None, stdin_len=205)
+[ecom-mcp 12:04:03]   -> id,brand,series,model,name,properties
+fam_electrical_led_bulbs_0001_1fb5n7mn,Philips,Professional,Hue 3JS-MSN,Philips Professional Hue 3JS-MSN LED Bulb,"{""energy_class"":""E""}"
+[ecom-mcp 12:04:14] ecom_exec(path='/bin/sql', args=None, stdin_len=284)
+[ecom-mcp 12:04:14]   -> sku,path,brand,name,props
+ELC-1ECVU00O,/proc/catalog/Schneider Electric/ELC-1ECVU00O.json,Schneider Electric,Schneider Electric Heavy Duty Merten 214-ZHY Extension Cable 3m IP44 White,cable_section_mm
+[ecom-mcp 12:04:14] ecom_exec(path='/bin/sql', args=None, stdin_len=290)
+[ecom-mcp 12:04:14]   -> sku,path,brand,name,props
+PWR-1CLZZQ34,/proc/catalog/Metabo/PWR-1CLZZQ34.json,Metabo,Metabo Brushless BS 1OW-IK5 Cordless Drill Driver 12V starter kit,battery_platform=12v-system; kit_contents=starter
+[ecom-mcp 12:04:14] ecom_exec(path='/bin/sql', args=None, stdin_len=280)
+[ecom-mcp 12:04:14]   -> sku,path,brand,name,props
+SFE-1WT01OHC,/proc/catalog/Portwest/SFE-1WT01OHC.json,Portwest,Portwest PW3 DX 3TU-ST2 Work Gloves chemical M Yellow,color_family=yellow; protection_class=chemical; size=M; s
+[ecom-mcp 12:04:14] ecom_exec(path='/bin/sql', args=None, stdin_len=286)
+[ecom-mcp 12:04:14]   -> sku,path,brand,name,props
+FST-2BS86XJD,/proc/catalog/Dresselhaus/FST-2BS86XJD.json,Dresselhaus,Dresselhaus Outdoor Pro 1VG-P5G Wood and Drywall Screw drywall screw 8mm 60mm pozidriv 25pc,diameter_mm=8
+[ecom-mcp 12:04:21] ecom_exec(path='/bin/sql', args=None, stdin_len=287)
+[ecom-mcp 12:04:22]   -> sku,path,brand,name,props
+MAC-12UYEJXW,/proc/catalog/Bosch/MAC-12UYEJXW.json,Bosch,Bosch Bench IXO 3JP-JOU Workshop Saw and Cutter scroll saw 1100W 250mm,machine_type=scroll saw; mount_type=cabinet; p
+[ecom-mcp 12:04:22] ecom_exec(path='/bin/sql', args=None, stdin_len=277)
+[ecom-mcp 12:04:22]   -> sku,path,brand,name,props
+ELC-32HZWSG4,/proc/catalog/Philips/ELC-32HZWSG4.json,Philips,Philips Professional Hue 3JS-MSN LED Bulb E14 10W 4000K non-dimmable,color_temperature_k=4000; dimmable=no; energ
+[ecom-mcp 12:04:32] ecom_exec(path='/bin/sql', args=None, stdin_len=192)
+[ecom-mcp 12:04:32]   -> sku,available_today
+ELC-B54HCJ4L,5
+FST-VBCWS2XQ,1
+MAC-12UYEJXW,6
+[ecom-mcp 12:04:32] ecom_read(path='/proc/stores/store_graz_lend.json', start=0, end=0, number=False)
+[ecom-mcp 12:04:32]   -> 108 chars
+[ecom-mcp 12:04:32] ecom_read(path='/proc/catalog/Schneider Electric/ELC-2UKGDA7Y.json', start=0, end=0, number=False)
+[ecom-mcp 12:04:32]   -> 448 chars
+[ecom-mcp 12:04:32] ecom_read(path='/proc/catalog/Metabo/PWR-21134N3Q.json', start=0, end=0, number=False)
+[ecom-mcp 12:04:32]   -> 449 chars
+[ecom-mcp 12:04:32] ecom_read(path='/proc/catalog/Portwest/SFE-1WT01OHC.json', start=0, end=0, number=False)
+[ecom-mcp 12:04:32]   -> 390 chars
+[ecom-mcp 12:04:32] ecom_read(path='/proc/catalog/Dresselhaus/FST-VBCWS2XQ.json', start=0, end=0, number=False)
+[ecom-mcp 12:04:32]   -> 469 chars
+[ecom-mcp 12:04:32] ecom_read(path='/proc/catalog/Bosch/MAC-12UYEJXW.json', start=0, end=0, number=False)
+[ecom-mcp 12:04:32]   -> 443 chars
+[ecom-mcp 12:04:32] ecom_read(path='/proc/catalog/Philips/ELC-B54HCJ4L.json', start=0, end=0, number=False)
+[ecom-mcp 12:04:32]   -> 430 chars
+[ecom-mcp 12:04:41] ecom_exec(path='/bin/sql', args=None, stdin_len=294)
+[ecom-mcp 12:04:41]   -> sku,available_today
+ELC-2UKGDA7Y,0
+ELC-B54HCJ4L,5
+FST-VBCWS2XQ,1
+MAC-12UYEJXW,6
+PWR-21134N3Q,0
+SFE-1WT01OHC,0
+[ecom-mcp 12:04:41] ecom_exec(path='/bin/sql', args=None, stdin_len=279)
+[ecom-mcp 12:04:41]   -> qty
+2
+[ecom-mcp 12:04:48] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSE
+[ecom-mcp 12:04:49] FastMCP server listening on stdio
+[ecom-mcp 12:05:06] ecom_find(name='Linz', root='/proc/stores', kind='files', limit=20)
+[ecom-mcp 12:05:06]   -> {}
+[ecom-mcp 12:05:06] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:05:06]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:05:12] ecom_exec(path='/bin/sql', args=None, stdin_len=122)
+[ecom-mcp 12:05:12]   -> id,path,name,city,is_open
+store_linz_hauptplatz,/proc/stores/store_linz_hauptplatz.json,PowerTool Linz Hauptplatz,Linz,1
+[ecom-mcp 12:05:12] ecom_exec(path='/bin/sql', args=None, stdin_len=346)
+[ecom-mcp 12:05:12]   -> sku,path,brand,series,model,name
+MAC-13QQL55G,/proc/catalog/workshop_machines/drill_grinders_sanders/MAC-13QQL55G.json,Bosch,Universal,BBS LS3-D02,Bosch Universal BBS LS3-D02 Workshop Drill Grinder an
+[ecom-mcp 12:05:20] ecom_read(path='/proc/stores/store_linz_hauptplatz.json', start=0, end=0, number=False)
+[ecom-mcp 12:05:20]   -> 121 chars
+[ecom-mcp 12:05:20] ecom_read(path='/proc/catalog/plumbing/valves_connectors/PLB-2JM56EQT.json', start=0, end=0, number=False)
+[ecom-mcp 12:05:21]   -> 460 chars
+[ecom-mcp 12:05:21] ecom_read(path='/proc/catalog/electrical/wiring_devices/ELC-1N9IHU6S.json', start=0, end=0, number=False)
+[ecom-mcp 12:05:21]   -> 403 chars
+[ecom-mcp 12:05:21] ecom_read(path='/proc/catalog/hand_tools/pliers_wrenches/HND-1OX1Q3X9.json', start=0, end=0, number=False)
+[ecom-mcp 12:05:21]   -> 457 chars
+[ecom-mcp 12:05:21] ecom_read(path='/proc/catalog/storage/bins_organizers/STO-2F8ABEKT.json', start=0, end=0, number=False)
+[ecom-mcp 12:05:21]   -> 454 chars
+[ecom-mcp 12:05:21] ecom_read(path='/proc/catalog/paints_finishes/wood_stain_oil/PNT-MWV7SQ0L.json', start=0, end=0, number=False)
+[ecom-mcp 12:05:21]   -> 488 chars
+[ecom-mcp 12:05:21] ecom_read(path='/proc/catalog/workshop_machines/drill_grinders_sanders/MAC-1KPRCFDN.json', start=0, end=0, number=False)
+[ecom-mcp 12:05:21]   -> 485 chars
+[ecom-mcp 12:05:25] ecom_exec(path='/bin/sql', args=None, stdin_len=198)
+[ecom-mcp 12:05:25]   -> sku,available_today
+MAC-1KPRCFDN,8
+PNT-MWV7SQ0L,4
+STO-2F8ABEKT,1
+[ecom-mcp 12:05:25] ecom_exec(path='/bin/date', args=None, stdin_len=0)
+[ecom-mcp 12:05:25]   -> 2024-07-17T20:49:48Z
+[ecom-mcp 12:05:32] ecom_exec(path='/bin/sql', args=None, stdin_len=301)
+[ecom-mcp 12:05:33]   -> sku,available_today
+ELC-1N9IHU6S,0
+HND-1OX1Q3X9,0
+MAC-1KPRCFDN,8
+PLB-2JM56EQT,0
+PNT-MWV7SQ0L,4
+STO-2F8ABEKT,1
+[ecom-mcp 12:05:33] ecom_exec(path='/bin/sql', args=None, stdin_len=287)
+[ecom-mcp 12:05:33]   -> qty
+2
+[ecom-mcp 12:05:41] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSF
+[ecom-mcp 12:05:41] FastMCP server listening on stdio
+[ecom-mcp 12:05:53] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:05:53]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:05:55] ecom_exec(path='/bin/sql', args=None, stdin_len=94)
+[ecom-mcp 12:05:55]   -> id,path,name,city
+[ecom-mcp 12:05:59] ecom_exec(path='/bin/sql', args=None, stdin_len=111)
+[ecom-mcp 12:05:59]   -> id,path,name,city
+store_ljubljana_center,/proc/stores/store_ljubljana_center.json,PowerTool Ljubljana Center,Ljubljana
+[ecom-mcp 12:06:01] ecom_read(path='/proc/stores/store_ljubljana_center.json', start=0, end=0, number=False)
+[ecom-mcp 12:06:01]   -> 128 chars
+[ecom-mcp 12:06:09] ecom_exec(path='/bin/sql', args=None, stdin_len=367)
+[ecom-mcp 12:06:09]   -> sku,path,brand,series,model,name,kind_id
+PWR-4UJU1NE1,/proc/catalog/power_tools/cordless_saw_sander/fam_power_tools_cordless_saw_sander_0012_1djyrg2i/PWR-4UJU1NE1.json,Ryobi,Max Power,RCS 3FX-QDI,Ryob
+[ecom-mcp 12:06:16] ecom_exec(path='/bin/sql', args=None, stdin_len=439)
+[ecom-mcp 12:06:16]   -> sku,brand,model,name,key,value_text
+HND-1PA2DPAI,Bahco,S 2BG-048,Bahco Classic S 2BG-048 Pliers and Wrenches side cutter 150mm ergonomic,grip_type,ergonomic
+HND-1PA2DPAI,Bahco,S 2BG-048,Bahco Classic 
+[ecom-mcp 12:06:21] ecom_exec(path='/bin/sql', args=None, stdin_len=371)
+[ecom-mcp 12:06:21]   -> sku,path,name
+ADH-3SGZTJXU,/proc/catalog/adhesives_sealants/adhesives_glues/fam_adhesives_sealants_adhesives_glues_0014_28m2svjy/ADH-3SGZTJXU.json,UHU Universal Max 36Q-4QO Adhesive and Glue contact a
+[ecom-mcp 12:06:25] ecom_exec(path='/bin/sql', args=None, stdin_len=363)
+[ecom-mcp 12:06:25]   -> sku,path,name
+ELC-3KVDWTGN,/proc/catalog/electrical/wiring_devices/fam_electrical_wiring_devices_0013_15e41y2b/ELC-3KVDWTGN.json,Legrand Plexo Plexo 2XT-4EJ Wiring Device junction box Black IP20
+[ecom-mcp 12:06:28] ecom_exec(path='/bin/sql', args=None, stdin_len=352)
+[ecom-mcp 12:06:29]   -> sku,path,name
+PWR-4UJU1NE1,/proc/catalog/power_tools/cordless_saw_sander/fam_power_tools_cordless_saw_sander_0012_1djyrg2i/PWR-4UJU1NE1.json,Ryobi Max Power RCS 3FX-QDI Cordless Saw and Sander router 
+[ecom-mcp 12:06:32] ecom_exec(path='/bin/sql', args=None, stdin_len=273)
+[ecom-mcp 12:06:32]   -> sku,path,name
+HND-1H475IEQ,/proc/catalog/hand_tools/hammers_measuring_cutting/fam_hand_tools_hammers_measuring_cutting_0005_mk927nk5/HND-1H475IEQ.json,Wiha Compact VDE AWS-PAD Hammer Measuring and Cut
+[ecom-mcp 12:06:37] ecom_exec(path='/bin/sql', args=None, stdin_len=451)
+[ecom-mcp 12:06:37]   -> sku,path,name
+HND-3SZWOJUB,/proc/catalog/hand_tools/pliers_wrenches/fam_hand_tools_pliers_wrenches_0006_10q63i7e/HND-3SZWOJUB.json,Bahco Classic S 2BG-048 Pliers and Wrenches side cutter 250mm rubberi
+[ecom-mcp 12:06:41] ecom_exec(path='/bin/sql', args=None, stdin_len=448)
+[ecom-mcp 12:06:41]   -> sku,path,name
+AUT-ZJYSJO7J,/proc/catalog/automotive/wiper_blades/fam_automotive_wiper_blades_0017_2983iunt/AUT-ZJYSJO7J.json,Bosch Premium BBS 3IH-RIY Wiper Blade 600mm multi adapter all season
+[ecom-mcp 12:06:46] ecom_find(name='HND-3SZWOJUB.json', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 12:06:46]   -> {
+  "paths": [
+    "/proc/catalog/hand_tools/pliers_wrenches/fam_hand_tools_pliers_wrenches_0006_10q63i7e/HND-3SZWOJUB.json"
+  ]
+}
+[ecom-mcp 12:06:49] ecom_tree(root='/proc/catalog', level=2)
+[ecom-mcp 12:06:49]   -> catalog
+|-- adhesives_sealants
+|   |-- adhesives_glues
+|   |-- sealants
+|   `-- tapes_foams
+|-- automotive
+|   |-- automotive_cleaners
+|   |-- chargers_bulbs
+|   |-- engine_oil
+|   `-- wiper_blades
+|-
+[ecom-mcp 12:06:53] ecom_exec(path='/bin/sql', args=None, stdin_len=199)
+[ecom-mcp 12:06:53]   -> sku,available_today
+ELC-3KVDWTGN,8
+HND-1H475IEQ,11
+PWR-4UJU1NE1,2
+[ecom-mcp 12:07:00] ecom_exec(path='/bin/sql', args=None, stdin_len=305)
+[ecom-mcp 12:07:00]   -> sku,available_today
+ADH-3SGZTJXU,0
+AUT-ZJYSJO7J,0
+ELC-3KVDWTGN,8
+HND-1H475IEQ,11
+HND-3SZWOJUB,0
+PWR-4UJU1NE1,2
+[ecom-mcp 12:07:04] ecom_read(path='/proc/catalog/hand_tools/pliers_wrenches/fam_hand_tools_pliers_wrenches_0006_10q63i7e/HND-3SZWOJUB.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:04]   -> 432 chars
+[ecom-mcp 12:07:07] ecom_read(path='/proc/catalog/adhesives_sealants/adhesives_glues/fam_adhesives_sealants_adhesives_glues_0014_28m2svjy/ADH-3SGZTJXU.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:07]   -> 463 chars
+[ecom-mcp 12:07:10] ecom_read(path='/proc/catalog/automotive/wiper_blades/fam_automotive_wiper_blades_0017_2983iunt/AUT-ZJYSJO7J.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:10]   -> 414 chars
+[ecom-mcp 12:07:12] ecom_read(path='/proc/catalog/electrical/wiring_devices/fam_electrical_wiring_devices_0013_15e41y2b/ELC-3KVDWTGN.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:12]   -> 411 chars
+[ecom-mcp 12:07:15] ecom_read(path='/proc/catalog/power_tools/cordless_saw_sander/fam_power_tools_cordless_saw_sander_0012_1djyrg2i/PWR-4UJU1NE1.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:15]   -> 454 chars
+[ecom-mcp 12:07:17] ecom_read(path='/proc/catalog/hand_tools/hammers_measuring_cutting/fam_hand_tools_hammers_measuring_cutting_0005_mk927nk5/HND-1H475IEQ.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:17]   -> 436 chars
+[ecom-mcp 12:07:28] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSG
+[ecom-mcp 12:07:29] FastMCP server listening on stdio
+[ecom-mcp 12:07:46] ecom_search(pattern='Graz', root='/proc/stores', limit=20)
+[ecom-mcp 12:07:46]   -> /proc/stores/README.md:11:Graz came next. Jakomini opened in 2020 as our central Graz store, close enough to the inner-city job sites to act as the default Graz branch. Lend opened in 2022 to cover th
+[ecom-mcp 12:07:46] ecom_search(pattern='Festool Stackable SYS 3JJ-9LM Tool Box and Bag|tool bag|Tool Box and Bag', root='/proc/catalog', limit=20)
+[ecom-mcp 12:07:47]   -> /proc/catalog/STO-12JLHT7D.json:1:{"sku":"STO-12JLHT7D","category_id":"storage","kind_id":"tool_boxes_bags","family_id":"fam_storage_tool_boxes_bags_0001_47ouogcc","brand":"Festool","series":"Stackabl
+[ecom-mcp 12:07:47] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:07:47]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:07:53] ecom_exec(path='/bin/sql', args=None, stdin_len=173)
+[ecom-mcp 12:07:53]   -> id,path,available_today
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,3
+store_graz_lend,/proc/stores/store_graz_lend.json,
+[ecom-mcp 12:07:53] ecom_read(path='/proc/catalog/STO-12JLHT7D.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:53]   -> 432 chars
+[ecom-mcp 12:07:53] ecom_read(path='/proc/stores/store_graz_jakomini.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:53]   -> 117 chars
+[ecom-mcp 12:07:53] ecom_read(path='/proc/stores/store_graz_lend.json', start=0, end=0, number=False)
+[ecom-mcp 12:07:53]   -> 108 chars
+[ecom-mcp 12:07:58] ecom_exec(path='/bin/sql', args=None, stdin_len=212)
+[ecom-mcp 12:07:58]   -> total_available,graz_store_count
+3,2
+[ecom-mcp 12:08:09] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSH
+[ecom-mcp 12:08:10] FastMCP server listening on stdio
+[ecom-mcp 12:08:24] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:08:24]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:08:24] ecom_find(name='Graz', root='/proc/stores', kind='files', limit=20)
+[ecom-mcp 12:08:24]   -> {}
+[ecom-mcp 12:08:24] ecom_search(pattern='Bosch Bench IXO 3JP-JOU|machine type|voltage|Workshop Saw and Cutter', root='/proc/catalog', limit=20)
+[ecom-mcp 12:08:25]   -> /proc/catalog/Bosch/MAC-12UYEJXW.json:1:{"sku":"MAC-12UYEJXW","category_id":"workshop_machines","kind_id":"saws_cutters","family_id":"fam_workshop_machines_saws_cutters_0001_mw9bcr3b","brand":"Bosch",
+[ecom-mcp 12:08:31] ecom_exec(path='/bin/sql', args=None, stdin_len=443)
+[ecom-mcp 12:08:31]   -> sku,path
+MAC-WEJK247H,/proc/catalog/Bosch/MAC-WEJK247H.json
+[ecom-mcp 12:08:31] ecom_exec(path='/bin/sql', args=None, stdin_len=79)
+[ecom-mcp 12:08:31]   -> id,path,name,city
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,PowerTool Graz Jakomini,Graz
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,Graz
+[ecom-mcp 12:08:37] ecom_exec(path='/bin/sql', args=None, stdin_len=198)
+[ecom-mcp 12:08:37]   -> id,path,available_today
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,0
+store_graz_lend,/proc/stores/store_graz_lend.json,7
+[ecom-mcp 12:08:37] ecom_read(path='/proc/catalog/Bosch/MAC-WEJK247H.json', start=0, end=0, number=False)
+[ecom-mcp 12:08:37]   -> 439 chars
+[ecom-mcp 12:08:37] ecom_read(path='/proc/stores/store_graz_jakomini.json', start=0, end=0, number=False)
+[ecom-mcp 12:08:37]   -> 117 chars
+[ecom-mcp 12:08:37] ecom_read(path='/proc/stores/store_graz_lend.json', start=0, end=0, number=False)
+[ecom-mcp 12:08:37]   -> 108 chars
+[ecom-mcp 12:08:45] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSJ
+[ecom-mcp 12:08:45] FastMCP server listening on stdio
+[ecom-mcp 12:08:55] ecom_read(path='/docs/discounts.md', start=0, end=0, number=False)
+[ecom-mcp 12:08:55]   -> 5249 chars
+[ecom-mcp 12:09:00] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:09:00]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:09:06] ecom_exec(path='/bin/sql', args=None, stdin_len=563)
+[ecom-mcp 12:09:06]   -> sku,path,name,brand,series,model,kind_name,tool_type,length_mm
+HND-18W1I2EF,/proc/catalog/hand_tools/pliers_wrenches/HND-18W1I2EF.json,Bahco Heavy Duty S ETS-3CM Pliers and Wrenches side cutter 150mm 
+[ecom-mcp 12:09:08] ecom_find(name='HND-2S0X2SPQ', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 12:09:08]   -> {}
+[ecom-mcp 12:09:12] ecom_find(name='2S0X2SPQ', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 12:09:12]   -> {}
+[ecom-mcp 12:09:17] ecom_exec(path='/bin/sql', args=None, stdin_len=216)
+[ecom-mcp 12:09:17]   -> id,path,name,city,available_today
+store_vienna_meidling,/proc/stores/store_vienna_meidling.json,PowerTool Vienna Meidling,Vienna,4
+store_vienna_praterstern,/proc/stores/store_vienna_praterstern.json,P
+[ecom-mcp 12:09:20] ecom_read(path='/proc/catalog/hand_tools/pliers_wrenches/HND-2S0X2SPQ.json', start=0, end=0, number=False)
+[ecom-mcp 12:09:20]   -> 437 chars
+[ecom-mcp 12:09:22] ecom_read(path='/proc/stores/store_vienna_meidling.json', start=0, end=0, number=False)
+[ecom-mcp 12:09:22]   -> 122 chars
+[ecom-mcp 12:09:23] ecom_read(path='/proc/stores/store_vienna_praterstern.json', start=0, end=0, number=False)
+[ecom-mcp 12:09:24]   -> 128 chars
+[ecom-mcp 12:09:35] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSK
+[ecom-mcp 12:09:36] FastMCP server listening on stdio
+[ecom-mcp 12:09:52] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:09:52]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:09:52] ecom_search(pattern='Graz', root='/proc/stores', limit=20)
+[ecom-mcp 12:09:52]   -> /proc/stores/README.md:11:Graz came next. Jakomini opened in 2020 as our central Graz store, close enough to the inner-city job sites to act as the default Graz branch. Lend opened in 2022 to cover th
+[ecom-mcp 12:09:52] ecom_search(pattern='Makita|36v-system|cutting width|38 cm|LXT DUC 1JL-9NJ|battery', root='/proc/catalog', limit=20)
+[ecom-mcp 12:09:52]   -> /proc/catalog/automotive/chargers_bulbs/fam_automotive_chargers_bulbs_0001_2p5yvcnp/AUT-1Q29C2JP.json:1:{"sku":"AUT-1Q29C2JP","category_id":"automotive","kind_id":"chargers_bulbs","family_id":"fam_aut
+[ecom-mcp 12:10:00] ecom_exec(path='/bin/sql', args=None, stdin_len=221)
+[ecom-mcp 12:10:00]   -> sku,path,brand,series,model,name
+GRD-1SVCK48N,/proc/catalog/garden_tools/lawn_mowers/fam_garden_tools_lawn_mowers_0020_vf4ovycm/GRD-1SVCK48N.json,Makita,LXT,DUC 1JL-9NJ,Makita LXT DUC 1JL-9NJ Lawn Mow
+[ecom-mcp 12:10:00] ecom_exec(path='/bin/sql', args=None, stdin_len=339)
+[ecom-mcp 12:10:00]   -> sku,key,value_text,value_number
+GRD-10WLCXO0,battery_platform,18v-system,
+GRD-10WLCXO0,collection_bag,no,
+GRD-10WLCXO0,cutting_width_cm,51,51
+GRD-10WLCXO0,power_source,battery,
+GRD-1K6CV2GG,battery_pl
+[ecom-mcp 12:10:00] ecom_exec(path='/bin/sql', args=None, stdin_len=77)
+[ecom-mcp 12:10:00]   -> id,path,name,city
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,PowerTool Graz Jakomini,Graz
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,Graz
+[ecom-mcp 12:10:10] ecom_exec(path='/bin/sql', args=None, stdin_len=206)
+[ecom-mcp 12:10:10]   -> id,path,name,available_today
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,PowerTool Graz Jakomini,9
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,0
+[ecom-mcp 12:10:10] ecom_read(path='/proc/stores/store_graz_jakomini.json', start=0, end=0, number=False)
+[ecom-mcp 12:10:10]   -> 117 chars
+[ecom-mcp 12:10:10] ecom_read(path='/proc/stores/store_graz_lend.json', start=0, end=0, number=False)
+[ecom-mcp 12:10:10]   -> 108 chars
+[ecom-mcp 12:10:10] ecom_read(path='/proc/catalog/garden_tools/lawn_mowers/fam_garden_tools_lawn_mowers_0020_vf4ovycm/GRD-1K6CV2GG.json', start=0, end=0, number=False)
+[ecom-mcp 12:10:10]   -> 400 chars
+[ecom-mcp 12:10:19] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSL
+[ecom-mcp 12:10:19] FastMCP server listening on stdio
+[ecom-mcp 12:10:32] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:10:32]   -> 4867 chars
+[ecom-mcp 12:10:33] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 12:10:33]   -> 1546 chars
+[ecom-mcp 12:10:35] ecom_read_silent(path='/proc/baskets/basket_152.json', start=0, end=0, number=False)
+[ecom-mcp 12:10:35]   -> 182 chars [not tracked]
+[ecom-mcp 12:10:38] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 12:10:38]   -> 3708 chars
+[ecom-mcp 12:10:41] ecom_read(path='/proc/baskets/basket_152.json', start=0, end=0, number=False)
+[ecom-mcp 12:10:41]   -> 182 chars
+[ecom-mcp 12:10:42] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:10:43]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:10:48] ecom_exec(path='/bin/sql', args=None, stdin_len=213)
+[ecom-mcp 12:10:48]   -> sku,quantity,available_today
+ADH-1DMIAKHO,9,6
+[ecom-mcp 12:11:00] ecom_exec(path='/bin/sql', args=None, stdin_len=53)
+[ecom-mcp 12:11:00]   -> path
+/proc/catalog/adhesives_sealants/sealants/fam_adhesives_sealants_sealants_0020_9fil5kay/ADH-1DMIAKHO.json
+[ecom-mcp 12:11:04] ecom_find(name='ADH-1DMIAKHO.json', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 12:11:04]   -> {
+  "paths": [
+    "/proc/catalog/adhesives_sealants/sealants/fam_adhesives_sealants_sealants_0020_9fil5kay/ADH-1DMIAKHO.json"
+  ]
+}
+[ecom-mcp 12:11:07] ecom_read(path='/proc/catalog/adhesives_sealants/sealants/fam_adhesives_sealants_sealants_0020_9fil5kay/ADH-1DMIAKHO.json', start=0, end=0, number=False)
+[ecom-mcp 12:11:07]   -> 452 chars
+[ecom-mcp 12:11:13] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSM
+[ecom-mcp 12:11:13] FastMCP server listening on stdio
+[ecom-mcp 12:11:25] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 12:11:26]   -> 3708 chars
+[ecom-mcp 12:11:26] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:11:26]   -> 4867 chars
+[ecom-mcp 12:11:26] ecom_search(pattern='cust_032', root='/proc/baskets', limit=20)
+[ecom-mcp 12:11:26]   -> /proc/baskets/basket_042.json:1:{"id":"basket_042","customer_id":"cust_032","store_id":"store_vienna_meidling","status":"active","created_at":"2021-07-13T05:47:43Z","lines":[{"sku":"AUT-3CXTVJO8","qua
+[ecom-mcp 12:11:32] ecom_read(path='/proc/baskets/basket_042.json', start=0, end=0, number=False)
+[ecom-mcp 12:11:32]   -> 179 chars
+[ecom-mcp 12:11:32] ecom_read(path='/proc/baskets/basket_045.json', start=0, end=0, number=False)
+[ecom-mcp 12:11:32]   -> 180 chars
+[ecom-mcp 12:11:32] ecom_read(path='/proc/baskets/basket_093.json', start=0, end=0, number=False)
+[ecom-mcp 12:11:32]   -> 180 chars
+[ecom-mcp 12:11:38] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSN
+[ecom-mcp 12:11:39] FastMCP server listening on stdio
+[ecom-mcp 12:11:51] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:11:51]   -> 4867 chars
+[ecom-mcp 12:11:51] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 12:11:51]   -> 3708 chars
+[ecom-mcp 12:11:56] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSP
+[ecom-mcp 12:11:56] FastMCP server listening on stdio
+[ecom-mcp 12:12:06] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:12:06]   -> 4867 chars
+[ecom-mcp 12:12:13] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSQ
+[ecom-mcp 12:12:13] FastMCP server listening on stdio
+[ecom-mcp 12:12:28] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:12:28]   -> 4867 chars
+[ecom-mcp 12:12:28] ecom_read(path='/docs/discounts.md', start=0, end=0, number=False)
+[ecom-mcp 12:12:28]   -> 5249 chars
+[ecom-mcp 12:12:33] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSR
+[ecom-mcp 12:12:34] FastMCP server listening on stdio
+[ecom-mcp 12:12:48] ecom_read(path='/docs/discounts.md', start=0, end=0, number=False)
+[ecom-mcp 12:12:48]   -> 5249 chars
+[ecom-mcp 12:12:48] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 12:12:49]   -> 3708 chars
+[ecom-mcp 12:12:49] ecom_read(path='/proc/README.md', start=0, end=0, number=False)
+[ecom-mcp 12:12:49]   -> 507 chars
+[ecom-mcp 12:12:53] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:12:53]   -> 4867 chars
+[ecom-mcp 12:12:53] ecom_search(pattern='caroline\\.lehmann\\+cust592@yahoo\\.com', root='/proc/customers', limit=20)
+[ecom-mcp 12:12:53]   -> /proc/customers/cust_070.json:1:{"id":"cust_070","display_name":"Caroline Lehmann","email":"caroline.lehmann+cust592@yahoo.com","city":"Salzburg","home_lat":47.682199,"home_lon":12.780065}
+[ecom-mcp 12:12:53] ecom_find(name='cust592', root='/proc/baskets', kind='files', limit=20)
+[ecom-mcp 12:12:53]   -> {}
+[ecom-mcp 12:12:58] ecom_read(path='/proc/customers/cust_070.json', start=0, end=0, number=False)
+[ecom-mcp 12:12:58]   -> 156 chars
+[ecom-mcp 12:12:58] ecom_search(pattern='cust_070', root='/proc/baskets', limit=20)
+[ecom-mcp 12:12:58]   -> /proc/baskets/basket_010.json:1:{"id":"basket_010","customer_id":"cust_070","store_id":"store_salzburg_elisabeth_vorstadt","status":"active","created_at":"2021-07-11T18:04:43Z","lines":[{"sku":"ADH-LW
+[ecom-mcp 12:12:58] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:12:58]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:13:10] ecom_search(pattern='"id":"emp_026"', root='/proc/employees', limit=20)
+[ecom-mcp 12:13:10]   -> /proc/employees/emp_026.json:1:{"id":"emp_026","display_name":"Fabian Lorenz","email":"fabian.lorenz.emp026@powertool.com","roles":["employee","store_manager","discount_manager","inventory_viewer","fu
+[ecom-mcp 12:13:10] ecom_exec(path='/bin/sql', args=None, stdin_len=656)
+[ecom-mcp 12:13:10]   -> id,path,store_id,created_at,discount_percent,subtotal_cents,all_checkoutable
+basket_018,/proc/baskets/basket_018.json,store_salzburg_elisabeth_vorstadt,2021-07-25T14:03:43Z,0,15400,1
+basket_010,/proc/
+[ecom-mcp 12:13:10] ecom_exec(path='/bin/sql', args=None, stdin_len=284)
+[ecom-mcp 12:13:11]   -> sku,path,price_cents,available_today
+ADH-LWSPMNZF,/proc/catalog/adhesives_sealants/adhesives_glues/fam_adhesives_sealants_adhesives_glues_0005_1ha8q2z7/ADH-LWSPMNZF.json,4700,6
+ADH-2H6PTYKU,/proc/cata
+[ecom-mcp 12:13:18] ecom_read(path='/proc/baskets/basket_018.json', start=0, end=0, number=False)
+[ecom-mcp 12:13:18]   -> 191 chars
+[ecom-mcp 12:13:18] ecom_read(path='/proc/employees/emp_026.json', start=0, end=0, number=False)
+[ecom-mcp 12:13:18]   -> 286 chars
+[ecom-mcp 12:13:18] ecom_find(name='ADH-2H6PTYKU', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 12:13:19]   -> {}
+[ecom-mcp 12:13:19] ecom_exec(path='/bin/discount', args=['--help'], stdin_len=0)
+[ecom-mcp 12:13:19]   -> Usage: discount <basket_id> <percent> <reason_code> <issuer_id>
+Applies the requested basket discount without policy checks. Read /docs/discounts.md before use.
+[ecom-mcp 12:13:23] ecom_search(pattern='ADH-2H6PTYKU', root='/proc/catalog', limit=20)
+[ecom-mcp 12:13:23]   -> /proc/catalog/adhesives_sealants/adhesives_glues/fam_adhesives_sealants_adhesives_glues_0022_1566obkw/ADH-2H6PTYKU.json:1:{"sku":"ADH-2H6PTYKU","category_id":"adhesives_sealants","kind_id":"adhesives_
+[ecom-mcp 12:13:23] ecom_search(pattern='ADH-LWSPMNZF', root='/proc/catalog', limit=20)
+[ecom-mcp 12:13:23]   -> /proc/catalog/adhesives_sealants/adhesives_glues/fam_adhesives_sealants_adhesives_glues_0005_1ha8q2z7/ADH-LWSPMNZF.json:1:{"sku":"ADH-LWSPMNZF","category_id":"adhesives_sealants","kind_id":"adhesives_
+[ecom-mcp 12:13:27] ecom_exec(path='/bin/discount', args=['basket_018', '10', 'service_recovery', 'emp_026'], stdin_len=0)
+[ecom-mcp 12:13:27]   -> discount_applied basket_018 10 service_recovery emp_026
+[ecom-mcp 12:13:32] ecom_read(path='/proc/baskets/basket_018.json', start=0, end=0, number=False)
+[ecom-mcp 12:13:32]   -> 272 chars
+[ecom-mcp 12:13:32] ecom_read(path='/proc/catalog/adhesives_sealants/adhesives_glues/fam_adhesives_sealants_adhesives_glues_0022_1566obkw/ADH-2H6PTYKU.json', start=0, end=0, number=False)
+[ecom-mcp 12:13:33]   -> 482 chars
+[ecom-mcp 12:13:55] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSS
+[ecom-mcp 12:13:55] FastMCP server listening on stdio
+[ecom-mcp 12:14:13] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 12:14:14]   -> 3708 chars
+[ecom-mcp 12:14:17] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:14:17]   -> 4867 chars
+[ecom-mcp 12:14:17] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 12:14:17]   -> 1546 chars
+[ecom-mcp 12:14:17] ecom_read_silent(path='/proc/baskets/basket_204.json', start=0, end=0, number=False)
+[ecom-mcp 12:14:17]   -> 178 chars [not tracked]
+[ecom-mcp 12:14:22] ecom_search(pattern='basket_204', root='/proc/payments', limit=20)
+[ecom-mcp 12:14:22]   -> /proc/payments/pay_004.json:1:{"id":"pay_004","basket_id":"basket_204","basket_archived":false,"customer_id":"cust_005","store_id":"store_graz_lend","amount_cents":1300,"currency":"EUR","status":"requ
+[ecom-mcp 12:14:25] ecom_exec(path='/bin/payments', args=['--help'], stdin_len=0)
+[ecom-mcp 12:14:25]   -> Usage: payments <subcommand> [args]
+
+Subcommands:
+  recover-3ds <payment_id>   Start a fresh 3DS challenge for a 3DS payment.
+[ecom-mcp 12:14:29] ecom_read(path='/proc/baskets/basket_204.json', start=0, end=0, number=False)
+[ecom-mcp 12:14:29]   -> 178 chars
+[ecom-mcp 12:14:29] ecom_read(path='/proc/payments/pay_004.json', start=0, end=0, number=False)
+[ecom-mcp 12:14:29]   -> 537 chars
+[ecom-mcp 12:14:31] ecom_exec(path='/bin/payments', args=['recover-3ds', 'pay_004'], stdin_len=0)
+[ecom-mcp 12:14:31]   -> 3ds_recovery_started pay_004
+[ecom-mcp 12:14:33] ecom_read(path='/proc/payments/pay_004.json', start=0, end=0, number=False)
+[ecom-mcp 12:14:33]   -> 500 chars
+[ecom-mcp 12:14:42] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbST
+[ecom-mcp 12:14:42] FastMCP server listening on stdio
+[ecom-mcp 12:14:55] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:14:55]   -> 4867 chars
+[ecom-mcp 12:14:55] ecom_read(path='/docs/discounts.md', start=0, end=0, number=False)
+[ecom-mcp 12:14:55]   -> 5249 chars
+[ecom-mcp 12:15:02] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSU
+[ecom-mcp 12:15:02] FastMCP server listening on stdio
+[ecom-mcp 12:15:16] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:15:17]   -> 4867 chars
+[ecom-mcp 12:15:17] ecom_find(name='Innsbruck', root='/proc/stores', kind='files', limit=10)
+[ecom-mcp 12:15:17]   -> {}
+[ecom-mcp 12:15:22] ecom_search(pattern='Wilten|Innsbruck', root='/proc/stores', limit=20)
+[ecom-mcp 12:15:22]   -> /proc/stores/README.md:15:In 2024 we opened Innsbruck Wilten and Bratislava Stare Mesto. Wilten is our central Innsbruck store for practical dispatch purposes. Stare Mesto is the old-town Bratislava b
+[ecom-mcp 12:15:22] ecom_search(pattern='support|ticket|phone', root='/docs', limit=20)
+[ecom-mcp 12:15:22]   -> /docs/checkout.md:6:- If any line has no matching inventory row, or its `quantity` is greater than `available_today`, checkout is unsupported. Do not mutate files or run checkout; answer with `OUTCOME
+[ecom-mcp 12:15:27] ecom_read(path='/docs/store-associate-exception-handbook.md', start=140, end=150, number=False)
+[ecom-mcp 12:15:27]   -> 481 chars
+[ecom-mcp 12:15:27] ecom_read(path='/proc/stores/store_innsbruck_wilten.json', start=0, end=0, number=False)
+[ecom-mcp 12:15:27]   -> 128 chars
+[ecom-mcp 12:15:27] ecom_read(path='/docs/README.md', start=68, end=72, number=False)
+[ecom-mcp 12:15:27]   -> 448 chars
+[ecom-mcp 12:15:34] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSV
+[ecom-mcp 12:15:34] FastMCP server listening on stdio
+[ecom-mcp 12:15:50] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:15:50]   -> 4867 chars
+[ecom-mcp 12:15:50] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 12:15:50]   -> 1546 chars
+[ecom-mcp 12:15:50] ecom_read_silent(path='/proc/baskets/basket_266.json', start=0, end=0, number=False)
+[ecom-mcp 12:15:50]   -> 182 chars [not tracked]
+[ecom-mcp 12:15:50] ecom_read_silent(path='/proc/payments/pay_066.json', start=0, end=0, number=False)
+[ecom-mcp 12:15:50]   -> 543 chars [not tracked]
+[ecom-mcp 12:15:56] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSW
+[ecom-mcp 12:15:57] FastMCP server listening on stdio
+[ecom-mcp 12:16:11] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:16:12]   -> 4867 chars
+[ecom-mcp 12:16:12] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 12:16:12]   -> 1546 chars
+[ecom-mcp 12:16:17] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSX
+[ecom-mcp 12:16:18] FastMCP server listening on stdio
+[ecom-mcp 12:16:27] ecom_find(name='MEL BO7-35J', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 12:16:27]   -> {}
+[ecom-mcp 12:16:27] ecom_search(pattern='MEL BO7-35J|Mellerud|app-based scheduling', root='/proc/catalog', limit=20)
+[ecom-mcp 12:16:27]   -> /proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0010_doi8xl85/CLN-14DSOP83.json:1:{"sku":"CLN-14DSOP83","category_id":"cleaning","kind_id":"cleaning_liquids","family_id":"fam_cle
+[ecom-mcp 12:16:31] ecom_find(name='CLN-2YHP0MNP.json', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 12:16:31]   -> {
+  "paths": [
+    "/proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0013_1rn3tgz0/CLN-2YHP0MNP.json"
+  ]
+}
+[ecom-mcp 12:16:31] ecom_search(pattern='app-based scheduling|scheduling|app_based', root='/proc/catalog', limit=20)
+[ecom-mcp 12:16:32]   -> (no matches)
+[ecom-mcp 12:16:35] ecom_read(path='/proc/catalog/cleaning/cleaning_liquids/fam_cleaning_cleaning_liquids_0013_1rn3tgz0/CLN-2YHP0MNP.json', start=0, end=0, number=False)
+[ecom-mcp 12:16:35]   -> 441 chars
+[ecom-mcp 12:16:45] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSY
+[ecom-mcp 12:16:46] FastMCP server listening on stdio
+[ecom-mcp 12:16:59] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:16:59]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:16:59] ecom_find(name='Graz', root='/proc/stores', kind='files', limit=20)
+[ecom-mcp 12:16:59]   -> {}
+[ecom-mcp 12:16:59] ecom_find(name='Osram', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 12:17:00]   -> {}
+[ecom-mcp 12:17:06] ecom_exec(path='/bin/sql', args=None, stdin_len=84)
+[ecom-mcp 12:17:07]   -> id,path,name,city
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,PowerTool Graz Jakomini,Graz
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,Graz
+[ecom-mcp 12:17:07] ecom_exec(path='/bin/sql', args=None, stdin_len=238)
+[ecom-mcp 12:17:07]   -> sku,path,brand,series,model,name
+[ecom-mcp 12:17:07] ecom_exec(path='/bin/sql', args=None, stdin_len=337)
+[ecom-mcp 12:17:07]   -> sku,key,value_text,value_number
+[ecom-mcp 12:17:11] ecom_exec(path='/bin/sql', args=None, stdin_len=127)
+[ecom-mcp 12:17:11]   -> sku,path,brand,series,model,name,properties
+AUT-12DU3FSB,/proc/catalog/automotive/chargers_bulbs/fam_automotive_chargers_bulbs_0013_2r6zqzh0/AUT-12DU3FSB.json,Osram,Classic,Night 3QE-SVE,Osram Classic
+[ecom-mcp 12:17:11] ecom_exec(path='/bin/sql', args=None, stdin_len=168)
+[ecom-mcp 12:17:11]   -> sku,key,value_text,value_number
+AUT-12DU3FSB,current_a,6,6
+AUT-12DU3FSB,product_type,jump starter,
+AUT-12DU3FSB,vehicle_type,car,
+AUT-12DU3FSB,voltage_v,12,12
+AUT-14Y7GUOT,current_a,2,2
+AUT-14Y7GUOT,p
+[ecom-mcp 12:17:18] ecom_exec(path='/bin/sql', args=None, stdin_len=294)
+[ecom-mcp 12:17:19]   -> sku,path,brand,series,model,name,properties
+ELC-20SBR4S9,/proc/catalog/electrical/led_bulbs/fam_electrical_led_bulbs_0005_33jp5sd6/ELC-20SBR4S9.json,Osram,Warm,Classic 12E-410,Osram Warm Classic 12E-4
+[ecom-mcp 12:17:19] ecom_exec(path='/bin/sql', args=None, stdin_len=152)
+[ecom-mcp 12:17:19]   -> sku,path,brand,series,model,name,properties
+ELC-1D0RELVL,/proc/catalog/electrical/led_bulbs/fam_electrical_led_bulbs_0005_33jp5sd6/ELC-1D0RELVL.json,Osram,Warm,Classic 12E-410,Osram Warm Classic 12E-4
+[ecom-mcp 12:17:19] ecom_exec(path='/bin/sql', args=None, stdin_len=194)
+[ecom-mcp 12:17:19]   -> sku,path,brand,series,model,name,properties
+ELC-1D0RELVL,/proc/catalog/electrical/led_bulbs/fam_electrical_led_bulbs_0005_33jp5sd6/ELC-1D0RELVL.json,Osram,Warm,Classic 12E-410,Osram Warm Classic 12E-4
+[ecom-mcp 12:17:25] ecom_find(name='ELC-20SBR4S9', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 12:17:25]   -> {}
+[ecom-mcp 12:17:25] ecom_exec(path='/bin/sql', args=None, stdin_len=160)
+[ecom-mcp 12:17:25]   -> store_id,available_today
+store_graz_lend,3
+[ecom-mcp 12:17:25] ecom_exec(path='/bin/sql', args=None, stdin_len=156)
+[ecom-mcp 12:17:25]   -> total_available
+3
+[ecom-mcp 12:17:36] ecom_read(path='/proc/stores/store_graz_jakomini.json', start=0, end=0, number=False)
+[ecom-mcp 12:17:37]   -> 117 chars
+[ecom-mcp 12:17:37] ecom_read(path='/proc/stores/store_graz_lend.json', start=0, end=0, number=False)
+[ecom-mcp 12:17:37]   -> 108 chars
+[ecom-mcp 12:17:37] ecom_read(path='/proc/catalog/Osram/ELC-20SBR4S9.json', start=0, end=0, number=False)
+[ecom-mcp 12:17:42] ecom_search(pattern='ELC-20SBR4S9', root='/proc/catalog', limit=20)
+[ecom-mcp 12:17:42]   -> /proc/catalog/electrical/led_bulbs/fam_electrical_led_bulbs_0005_33jp5sd6/ELC-20SBR4S9.json:1:{"sku":"ELC-20SBR4S9","category_id":"electrical","kind_id":"led_bulbs","family_id":"fam_electrical_led_bul
+[ecom-mcp 12:17:42] ecom_exec(path='/bin/sql', args=None, stdin_len=206)
+[ecom-mcp 12:17:42]   -> id,path,name,available_today
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,PowerTool Graz Jakomini,0
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,3
+[ecom-mcp 12:17:46] ecom_read(path='/proc/catalog/electrical/led_bulbs/fam_electrical_led_bulbs_0005_33jp5sd6/ELC-20SBR4S9.json', start=0, end=0, number=False)
+[ecom-mcp 12:17:46]   -> 414 chars
+[ecom-mcp 12:17:56] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSZ
+[ecom-mcp 12:17:56] FastMCP server listening on stdio
+[ecom-mcp 12:18:11] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:18:11]   -> 4867 chars
+[ecom-mcp 12:18:11] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 12:18:11]   -> 1546 chars
+[ecom-mcp 12:18:11] ecom_read_silent(path='/proc/baskets/basket_001.json', start=0, end=0, number=False)
+[ecom-mcp 12:18:11]   -> 177 chars [not tracked]
+[ecom-mcp 12:18:17] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSa
+[ecom-mcp 12:18:17] FastMCP server listening on stdio
+[ecom-mcp 12:18:34] ecom_tree(root='/docs', level=2)
+[ecom-mcp 12:18:34]   -> docs
+|-- checkout.md
+|-- discounts.md
+|-- merchant-continuity-and-critical-incidents.md
+|-- payments
+|   `-- 3ds.md
+|-- powertools-agentic-os-origin-story.md
+|-- README.md
+|-- security.md
+|-- store-as
+[ecom-mcp 12:18:34] ecom_find(name='basket_229', root='/proc/baskets', kind='files', limit=5)
+[ecom-mcp 12:18:34]   -> {}
+[ecom-mcp 12:18:34] ecom_find(name='pay_029', root='/proc/payments', kind='files', limit=5)
+[ecom-mcp 12:18:34]   -> {}
+[ecom-mcp 12:18:38] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:18:38]   -> 4867 chars
+[ecom-mcp 12:18:38] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 12:18:38]   -> 1546 chars
+[ecom-mcp 12:18:38] ecom_list(path='/proc/baskets')
+[ecom-mcp 12:18:39]   -> basket_001.json
+basket_002.json
+basket_003.json
+basket_004.json
+basket_005.json
+basket_006.json
+basket_007.json
+basket_008.json
+basket_009.json
+basket_010.json
+basket_011.json
+basket_012.json
+basket_0
+[ecom-mcp 12:18:39] ecom_list(path='/proc/payments')
+[ecom-mcp 12:18:39]   -> pay_001.json
+pay_002.json
+pay_003.json
+pay_004.json
+pay_005.json
+pay_006.json
+pay_007.json
+pay_008.json
+pay_009.json
+pay_010.json
+pay_011.json
+pay_012.json
+pay_013.json
+pay_014.json
+pay_015.json
+pay_0
+[ecom-mcp 12:18:43] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 12:18:44]   -> 3708 chars
+[ecom-mcp 12:18:44] ecom_read(path='/proc/baskets/basket_229.json', start=0, end=0, number=False)
+[ecom-mcp 12:18:44]   -> 187 chars
+[ecom-mcp 12:18:44] ecom_read(path='/proc/payments/pay_029.json', start=0, end=0, number=False)
+[ecom-mcp 12:18:44]   -> 429 chars
+[ecom-mcp 12:18:51] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSb
+[ecom-mcp 12:18:52] FastMCP server listening on stdio
+[ecom-mcp 12:19:05] ecom_read(path='/docs/store-associate-exception-handbook.md', start=0, end=0, number=False)
+[ecom-mcp 12:19:05]   -> 10772 chars
+[ecom-mcp 12:19:05] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 12:19:05]   -> 3708 chars
+[ecom-mcp 12:19:05] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:19:05]   -> 4867 chars
+[ecom-mcp 12:19:05] ecom_find(name='basket_140', root='/proc/baskets', kind='files', limit=5)
+[ecom-mcp 12:19:05]   -> {}
+[ecom-mcp 12:19:09] ecom_find(name='140', root='/proc/baskets', kind='files', limit=20)
+[ecom-mcp 12:19:09]   -> {}
+[ecom-mcp 12:19:09] ecom_list(path='/proc/baskets')
+[ecom-mcp 12:19:10]   -> basket_001.json
+basket_002.json
+basket_003.json
+basket_004.json
+basket_005.json
+basket_006.json
+basket_007.json
+basket_008.json
+basket_009.json
+basket_010.json
+basket_011.json
+basket_012.json
+basket_0
+[ecom-mcp 12:19:10] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:19:10]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:19:18] ecom_read(path='/proc/baskets/basket_140.json', start=0, end=0, number=False)
+[ecom-mcp 12:19:18]   -> 191 chars
+[ecom-mcp 12:19:18] ecom_exec(path='/bin/sql', args=None, stdin_len=332)
+[ecom-mcp 12:19:19]   -> id,customer_id,store_id,status,line_no,sku,quantity,available_today,product_path
+basket_140,cust_079,store_salzburg_elisabeth_vorstadt,active,1,ELC-U7G3O4M3,5,4,/proc/catalog/electrical/extension_cabl
+[ecom-mcp 12:19:23] ecom_find(name='ELC-U7G3O4M3.json', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 12:19:23]   -> {
+  "paths": [
+    "/proc/catalog/electrical/extension_cables/fam_electrical_extension_cables_0005_2d7gz4va/ELC-U7G3O4M3.json"
+  ]
+}
+[ecom-mcp 12:19:23] ecom_read(path='/docs/README.md', start=0, end=0, number=False)
+[ecom-mcp 12:19:24]   -> 4595 chars
+[ecom-mcp 12:19:32] ecom_read(path='/proc/catalog/electrical/extension_cables/fam_electrical_extension_cables_0005_2d7gz4va/ELC-U7G3O4M3.json', start=0, end=0, number=False)
+[ecom-mcp 12:19:32]   -> 412 chars
+[ecom-mcp 12:19:32] ecom_read(path='/proc/stores/store_salzburg_elisabeth_vorstadt.json', start=0, end=0, number=False)
+[ecom-mcp 12:19:32]   -> 149 chars
+[ecom-mcp 12:19:49] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSc
+[ecom-mcp 12:19:49] FastMCP server listening on stdio
+[ecom-mcp 12:19:59] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:20:00]   -> 4867 chars
+[ecom-mcp 12:20:00] ecom_read(path='/docs/discounts.md', start=0, end=0, number=False)
+[ecom-mcp 12:20:00]   -> 5249 chars
+[ecom-mcp 12:20:05] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSd
+[ecom-mcp 12:20:05] FastMCP server listening on stdio
+[ecom-mcp 12:20:20] ecom_tree(root='/docs', level=2)
+[ecom-mcp 12:20:20]   -> docs
+|-- checkout.md
+|-- discounts.md
+|-- merchant-continuity-and-critical-incidents.md
+|-- payments
+|   `-- 3ds.md
+|-- powertools-agentic-os-origin-story.md
+|-- README.md
+|-- security.md
+|-- store-as
+[ecom-mcp 12:20:20] ecom_tree(root='/proc/payments', level=2)
+[ecom-mcp 12:20:20]   -> payments
+|-- pay_001.json
+|-- pay_002.json
+|-- pay_003.json
+|-- pay_004.json
+|-- pay_005.json
+|-- pay_006.json
+|-- pay_007.json
+|-- pay_008.json
+|-- pay_009.json
+|-- pay_010.json
+|-- pay_011.json
+|-- 
+[ecom-mcp 12:20:20] ecom_search(pattern='fraud incident|confirmed fraud|archived payment history|fraud', root='/', limit=50)
+[ecom-mcp 12:20:20]   -> (no matches)
+[ecom-mcp 12:20:25] ecom_read(path='/proc/payments/README.md', start=0, end=0, number=False)
+[ecom-mcp 12:20:25]   -> 937 chars
+[ecom-mcp 12:20:25] ecom_read(path='/docs/README.md', start=0, end=0, number=False)
+[ecom-mcp 12:20:25]   -> 4595 chars
+[ecom-mcp 12:20:25] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 12:20:25]   -> 1546 chars
+[ecom-mcp 12:20:25] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:20:25]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:20:35] ecom_search(pattern='fraud|payment incident|archived payment|chargeback|risk', root='/docs', limit=50)
+[ecom-mcp 12:20:35]   -> /docs/merchant-continuity-and-critical-incidents.md:7:This document is not a decision policy for basket checkout, customer identity, discounts, 3DS recovery, refunds, replacements, installment offers,
+[ecom-mcp 12:20:35] ecom_exec(path='/bin/sql', args=None, stdin_len=74)
+[ecom-mcp 12:20:35]   -> archived_count
+1021
+[ecom-mcp 12:20:35] ecom_exec(path='/bin/sql', args=None, stdin_len=101)
+[ecom-mcp 12:20:35]   -> status,n
+paid,1021
+[ecom-mcp 12:20:35] ecom_exec(path='/bin/sql', args=None, stdin_len=332)
+[ecom-mcp 12:20:36]   -> payment_method_fingerprint,n,customers,devices,first_at,last_at
+pm_ABFWvxbrDGX6rH,25,1,2,2025-07-01T14:20:40Z,2025-08-31T13:44:22Z
+pm_7AgL4j1ieeE5VF,15,1,3,2025-07-03T15:08:03Z,2025-09-02T13:53:18Z
+pm
+[ecom-mcp 12:20:43] ecom_exec(path='/bin/sql', args=None, stdin_len=343)
+[ecom-mcp 12:20:44]   -> device_fingerprint,n,customers,methods,first_at,last_at
+[ecom-mcp 12:20:44] ecom_exec(path='/bin/sql', args=None, stdin_len=351)
+[ecom-mcp 12:20:44]   -> payment_method_fingerprint,n,customers,devices,first_at,last_at
+[ecom-mcp 12:20:44] ecom_exec(path='/bin/sql', args=None, stdin_len=275)
+[ecom-mcp 12:20:44]   -> day,n,customers,methods,devices
+2025-07-18,26,16,17,17
+2025-07-08,25,20,20,25
+2025-08-02,19,16,16,16
+2025-08-01,19,16,16,16
+2025-08-03,18,15,15,15
+2025-07-31,18,15,15,15
+2025-09-01,15,15,15,15
+2025-08
+[ecom-mcp 12:20:51] ecom_exec(path='/bin/sql', args=None, stdin_len=238)
+[ecom-mcp 12:20:51]   -> id,created_at,customer_id,store_id,amount_cents,payment_method_fingerprint,device_fingerprint,observed_lat,observed_lon
+pay_20250718T080141Z_6sU76RkYbN,2025-07-18T08:01:41Z,cust_013,store_innsbruck_wi
+[ecom-mcp 12:20:51] ecom_exec(path='/bin/sql', args=None, stdin_len=279)
+[ecom-mcp 12:20:51]   -> observed_lat,observed_lon,n,customers,payment_ids
+[ecom-mcp 12:20:51] ecom_exec(path='/bin/sql', args=None, stdin_len=190)
+[ecom-mcp 12:20:51]   -> store_id,n,customers
+store_innsbruck_wilten,6,6
+store_brno_veveri,3,3
+store_graz_jakomini,3,2
+store_graz_lend,3,3
+store_salzburg_elisabeth_vorstadt,3,3
+store_bratislava_stare_mesto,2,2
+store_linz_haup
+[ecom-mcp 12:20:59] ecom_exec(path='/bin/sql', args=None, stdin_len=187)
+[ecom-mcp 12:20:59]   -> id,created_at,store_id,amount_cents,payment_method_fingerprint,device_fingerprint,observed_lat,observed_lon
+pay_20250703T150803Z_AtvSACuKb5,2025-07-03T15:08:03Z,store_vienna_meidling,9100,pm_7AgL4j1ie
+[ecom-mcp 12:21:00] ecom_find(name='cust_100', root='/proc/customers', kind='files', limit=5)
+[ecom-mcp 12:21:00]   -> {}
+[ecom-mcp 12:21:00] ecom_exec(path='/bin/sql', args=None, stdin_len=120)
+[ecom-mcp 12:21:00]   -> customer_id,n
+cust_071,26
+cust_100,20
+cust_038,12
+cust_039,12
+cust_040,12
+cust_041,12
+cust_042,12
+cust_002,10
+cust_003,10
+cust_004,10
+cust_005,10
+cust_006,10
+cust_007,10
+cust_008,10
+cust_009,10
+cust_0
+[ecom-mcp 12:21:10] ecom_exec(path='/bin/sql', args=None, stdin_len=842)
+[ecom-mcp 12:21:11]   -> customer_id,start_at,end_at,n,stores,methods,devices
+cust_100,2025-07-18T17:50:45Z,2025-07-18T17:54:55Z,11,10,2,2
+cust_042,2025-07-08T14:59:10Z,2025-07-08T15:03:24Z,2,2,1,2
+cust_041,2025-07-08T14:17:1
+[ecom-mcp 12:21:11] ecom_exec(path='/bin/sql', args=None, stdin_len=269)
+[ecom-mcp 12:21:11]   -> id,created_at,customer_id,store_id,amount_cents,payment_method_fingerprint,device_fingerprint
+pay_20250718T175045Z_VJuSU7FszJ,2025-07-18T17:50:45Z,cust_100,store_graz_jakomini,16900,pm_7AgL4j1ieeE5VF,
+[ecom-mcp 12:21:34] ecom_read(path='/proc/payments/pay_20250718T175045Z_VJuSU7FszJ.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:34]   -> 540 chars
+[ecom-mcp 12:21:34] ecom_read(path='/proc/payments/pay_20250718T175109Z_VA4vBD88iZ.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:34]   -> 536 chars
+[ecom-mcp 12:21:34] ecom_read(path='/proc/payments/pay_20250718T175127Z_63i5yvWddE.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:34]   -> 482 chars
+[ecom-mcp 12:21:34] ecom_read(path='/proc/payments/pay_20250718T175142Z_TK4MsfoJHW.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:34]   -> 494 chars
+[ecom-mcp 12:21:34] ecom_read(path='/proc/payments/pay_20250718T175230Z_34ZDgEK8Ja.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:35]   -> 483 chars
+[ecom-mcp 12:21:35] ecom_read(path='/proc/payments/pay_20250718T175237Z_Q8ZA6782KE.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:35]   -> 482 chars
+[ecom-mcp 12:21:35] ecom_read(path='/proc/payments/pay_20250718T175300Z_AkZsxPbkQE.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:35]   -> 483 chars
+[ecom-mcp 12:21:35] ecom_read(path='/proc/payments/pay_20250718T175305Z_DYY34ETv1f.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:35]   -> 489 chars
+[ecom-mcp 12:21:35] ecom_read(path='/proc/payments/pay_20250718T175321Z_R9FNNZJo6q.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:35]   -> 538 chars
+[ecom-mcp 12:21:35] ecom_read(path='/proc/payments/pay_20250718T175341Z_4d6AbQVsGK.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:35]   -> 484 chars
+[ecom-mcp 12:21:35] ecom_read(path='/proc/payments/pay_20250718T175455Z_S9vY74gVVy.json', start=0, end=0, number=False)
+[ecom-mcp 12:21:35]   -> 480 chars
+[ecom-mcp 12:22:01] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSe
+[ecom-mcp 12:22:01] FastMCP server listening on stdio
+[ecom-mcp 12:22:11] ecom_tree(root='/docs', level=2)
+[ecom-mcp 12:22:11]   -> docs
+|-- checkout.md
+|-- discounts.md
+|-- merchant-continuity-and-critical-incidents.md
+|-- payments
+|   `-- 3ds.md
+|-- powertools-agentic-os-origin-story.md
+|-- README.md
+|-- security.md
+|-- store-as
+[ecom-mcp 12:22:15] ecom_search(pattern='fraud|archived|payment history|incident', root='/docs', limit=20)
+[ecom-mcp 12:22:15]   -> /docs/merchant-continuity-and-critical-incidents.md:11:Continuity work should keep the merchant able to answer customers, keep staff safe, and preserve a clear audit trail while a disruption is active
+[ecom-mcp 12:22:15] ecom_search(pattern='fraud|incident|archived', root='/proc/payments', limit=20)
+[ecom-mcp 12:22:15]   -> /proc/payments/pay_001.json:1:{"id":"pay_001","basket_id":"basket_201","basket_archived":false,"customer_id":"cust_046","store_id":"store_linz_hauptplatz","amount_cents":6000,"currency":"EUR","status"
+[ecom-mcp 12:22:15] ecom_list(path='/proc/payments')
+[ecom-mcp 12:22:15]   -> pay_001.json
+pay_002.json
+pay_003.json
+pay_004.json
+pay_005.json
+pay_006.json
+pay_007.json
+pay_008.json
+pay_009.json
+pay_010.json
+pay_011.json
+pay_012.json
+pay_013.json
+pay_014.json
+pay_015.json
+pay_0
+[ecom-mcp 12:22:21] ecom_read(path='/proc/payments/README.md', start=0, end=0, number=False)
+[ecom-mcp 12:22:22]   -> 937 chars
+[ecom-mcp 12:22:22] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:22:22]   -> 4867 chars
+[ecom-mcp 12:22:22] ecom_search(pattern='fraud|chargeback|stolen|comprom|incident|archive|archived', root='/proc/payments', limit=50)
+[ecom-mcp 12:22:22]   -> /proc/payments/pay_001.json:1:{"id":"pay_001","basket_id":"basket_201","basket_archived":false,"customer_id":"cust_046","store_id":"store_linz_hauptplatz","amount_cents":6000,"currency":"EUR","status"
+[ecom-mcp 12:22:22] ecom_search(pattern='fraud|chargeback|payment history|archived payment|archive', root='/docs', limit=50)
+[ecom-mcp 12:22:22]   -> /docs/README.md:42:| `/docs/warehouse-systems-migration-runbook.md` | Warehouse system cutover planning, rehearsal mapping, and migration archive rules | Live package tracing, fulfillment evidence, re
+[ecom-mcp 12:22:25] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:22:25]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:22:33] ecom_exec(path='/bin/sql', args=None, stdin_len=79)
+[ecom-mcp 12:22:33]   -> basket_archived,cnt
+0,80
+1,1018
+[ecom-mcp 12:22:33] ecom_exec(path='/bin/sql', args=None, stdin_len=227)
+[ecom-mcp 12:22:33]   -> payment_method_fingerprint,cnt,ids
+pm_2EXJM1Cut4Xvz8,25,"pay_20240428T183622Z_HjK6Q622CX,pay_20240503T105720Z_TbhfM4hkgh,pay_20240507T161851Z_MA2PQu6zrf,pay_20240512T111157Z_39xwfQXE5e,pay_20240517T12
+[ecom-mcp 12:22:33] ecom_exec(path='/bin/sql', args=None, stdin_len=203)
+[ecom-mcp 12:22:33]   -> device_fingerprint,cnt,ids
+dev_3EbsQk5ebtuHBQ,26,"pay_20240428T183622Z_HjK6Q622CX,pay_20240503T105720Z_TbhfM4hkgh,pay_20240507T161851Z_MA2PQu6zrf,pay_20240512T111157Z_39xwfQXE5e,pay_20240517T125822Z_N
+[ecom-mcp 12:22:33] ecom_exec(path='/bin/sql', args=None, stdin_len=182)
+[ecom-mcp 12:22:33]   -> customer_id,cnt,ids
+cust_055,26,"pay_20240428T183622Z_HjK6Q622CX,pay_20240503T105720Z_TbhfM4hkgh,pay_20240507T161851Z_MA2PQu6zrf,pay_20240512T111157Z_39xwfQXE5e,pay_20240517T125822Z_NnQpUHrfo2,pay_202
+[ecom-mcp 12:22:40] ecom_search(pattern='fraud|payment|incident|archive|archived', root='/run/actions', limit=50)
+[ecom-mcp 12:22:40]   -> (no matches)
+[ecom-mcp 12:22:40] ecom_search(pattern='fraud|chargeback|stolen|comprom|incident', root='/proc/customers', limit=50)
+[ecom-mcp 12:22:40]   -> (no matches)
+[ecom-mcp 12:22:40] ecom_search(pattern='fraud|chargeback|stolen|comprom|incident', root='/proc/returns', limit=50)
+[ecom-mcp 12:22:40]   -> (no matches)
+[ecom-mcp 12:22:40] ecom_search(pattern='confirmed fraud incident|fraud incident|archived payment history', root='/proc', limit=50)
+[ecom-mcp 12:22:40]   -> (no matches)
+[ecom-mcp 12:22:47] ecom_exec(path='/bin/sql', args=None, stdin_len=352)
+[ecom-mcp 12:22:47]   -> device_fingerprint,payments,customers,methods,customer_ids
+[ecom-mcp 12:22:51] ecom_exec(path='/bin/sql', args=None, stdin_len=360)
+[ecom-mcp 12:22:51]   -> payment_method_fingerprint,payments,customers,devices,customer_ids
+[ecom-mcp 12:23:00] ecom_read(path='/proc/customers/cust_055.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:00]   -> 141 chars
+[ecom-mcp 12:23:00] ecom_read(path='/proc/payments/pay_20240428T183622Z_HjK6Q622CX.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:00]   -> 543 chars
+[ecom-mcp 12:23:00] ecom_read(path='/proc/payments/pay_20240531T100718Z_QNNjw5YVf7.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:01]   -> 540 chars
+[ecom-mcp 12:23:01] ecom_read(path='/proc/payments/pay_20240605T185108Z_CdmEFwp9L3.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:01]   -> 480 chars
+[ecom-mcp 12:23:06] ecom_read(path='/proc/customers/cust_042.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:06]   -> 142 chars
+[ecom-mcp 12:23:06] ecom_read(path='/proc/payments/pay_20240413T160129Z_A8tb4CtG2S.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:06]   -> 489 chars
+[ecom-mcp 12:23:06] ecom_read(path='/proc/payments/pay_20240413T160429Z_XaWPmP9Vad.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:07]   -> 482 chars
+[ecom-mcp 12:23:07] ecom_read(path='/proc/payments/pay_20240521T095405Z_39uZ98erHr.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:07]   -> 479 chars
+[ecom-mcp 12:23:16] ecom_exec(path='/bin/sql', args=None, stdin_len=421)
+[ecom-mcp 12:23:17]   -> customer_id,payments,methods,devices,first_seen,last_seen
+cust_042,20,2,4,2024-04-13T16:01:29Z,2024-06-09T13:50:47Z
+cust_032,12,2,4,2024-04-18T13:05:12Z,2024-06-08T18:07:38Z
+cust_033,12,2,4,2024-04-18
+[ecom-mcp 12:23:20] ecom_exec(path='/bin/sql', args=None, stdin_len=121)
+[ecom-mcp 12:23:20]   -> day,cnt
+2024-04-13,10
+2024-04-18,8
+2024-04-26,22
+2024-04-27,21
+2024-04-28,21
+2024-04-29,22
+2024-04-30,21
+2024-05-01,21
+2024-05-02,21
+2024-05-03,22
+2024-05-04,21
+2024-05-05,21
+2024-05-06,22
+2024-05-07,
+[ecom-mcp 12:23:27] ecom_exec(path='/bin/sql', args=None, stdin_len=254)
+[ecom-mcp 12:23:28]   -> id,customer_id,store_id,amount_cents,payment_method_fingerprint,device_fingerprint,observed_lat,observed_lon,created_at
+pay_20240413T160129Z_A8tb4CtG2S,cust_042,store_bratislava_stare_mesto,14100,pm_J
+[ecom-mcp 12:23:36] ecom_exec(path='/bin/sql', args=None, stdin_len=596)
+[ecom-mcp 12:23:36]   -> customer_id,quick_cross_store_payments,first_at,last_at
+cust_042,9,2024-04-13T16:01:55Z,2024-04-13T16:04:29Z
+cust_032,1,2024-04-18T13:14:22Z,2024-04-18T13:14:22Z
+cust_033,1,2024-04-18T13:28:54Z,2024-0
+[ecom-mcp 12:23:40] ecom_read(path='/proc/customers/cust_032.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:40]   -> 153 chars
+[ecom-mcp 12:23:40] ecom_read(path='/proc/customers/cust_033.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:40]   -> 152 chars
+[ecom-mcp 12:23:40] ecom_read(path='/proc/customers/cust_034.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:41]   -> 142 chars
+[ecom-mcp 12:23:41] ecom_read(path='/proc/customers/cust_035.json', start=0, end=0, number=False)
+[ecom-mcp 12:23:41]   -> 159 chars
+[ecom-mcp 12:23:54] ecom_exec(path='/bin/sql', args=None, stdin_len=996)
+[ecom-mcp 12:23:54]   -> customer_id,prev_id,id,prev_store,store_id,prev_created_at,created_at,minutes_between,coord_delta_sq
+cust_042,pay_20240413T160129Z_A8tb4CtG2S,pay_20240413T160155Z_Q3LvG6g3QR,store_bratislava_stare_mes
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160129Z_A8tb4CtG2S.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 489 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160155Z_Q3LvG6g3QR.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 478 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160223Z_A5UL6SWNSz.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 482 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160238Z_2XqVbvju1N.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 486 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160245Z_ToDxYSnQJ1.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 542 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160328Z_XVMF3TBPxL.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 543 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160349Z_5io8DrA2KY.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 541 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160405Z_F7xvevhy2L.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 477 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160425Z_7L6cWqg9zk.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:17]   -> 557 chars
+[ecom-mcp 12:24:17] ecom_read(path='/proc/payments/pay_20240413T160429Z_XaWPmP9Vad.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 482 chars
+[ecom-mcp 12:24:18] ecom_read(path='/proc/payments/pay_20240418T130512Z_R6zkTv7LkE.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 478 chars
+[ecom-mcp 12:24:18] ecom_read(path='/proc/payments/pay_20240418T131422Z_6JmHRkVcZ8.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 484 chars
+[ecom-mcp 12:24:18] ecom_read(path='/proc/payments/pay_20240418T132112Z_86qN5BXRgc.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 483 chars
+[ecom-mcp 12:24:18] ecom_read(path='/proc/payments/pay_20240418T132854Z_LkFkrd3T4n.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 479 chars
+[ecom-mcp 12:24:18] ecom_read(path='/proc/payments/pay_20240418T133912Z_NCGVoFZMFB.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 486 chars
+[ecom-mcp 12:24:18] ecom_read(path='/proc/payments/pay_20240418T134629Z_LfgaG9XoCQ.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 482 chars
+[ecom-mcp 12:24:18] ecom_read(path='/proc/payments/pay_20240418T135612Z_7LtDrh2HHb.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 484 chars
+[ecom-mcp 12:24:18] ecom_read(path='/proc/payments/pay_20240418T140221Z_4JoPETukFq.json', start=0, end=0, number=False)
+[ecom-mcp 12:24:18]   -> 546 chars
+[ecom-mcp 12:24:42] Starting: harness=https://api.bitgn.com/vm/vm2-Lx81VZ37uktXprmkLxdokv5PbSf
+[ecom-mcp 12:24:42] FastMCP server listening on stdio
+[ecom-mcp 12:24:50] ecom_tree(root='/docs', level=2)
+[ecom-mcp 12:24:51]   -> docs
+|-- checkout.md
+|-- discounts.md
+|-- merchant-continuity-and-critical-incidents.md
+|-- payments
+|   `-- 3ds.md
+|-- powertools-agentic-os-origin-story.md
+|-- README.md
+|-- security.md
+|-- store-as
+[ecom-mcp 12:24:55] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 12:24:55]   -> 4867 chars
+[ecom-mcp 12:24:55] ecom_read(path='/docs/merchant-continuity-and-critical-incidents.md', start=0, end=0, number=False)
+[ecom-mcp 12:24:55]   -> 11166 chars
+[ecom-mcp 12:24:55] ecom_search(pattern='fraud|incident|archiv|archived', root='/proc/payments', limit=50)
+[ecom-mcp 12:24:55]   -> /proc/payments/pay_001.json:1:{"id":"pay_001","basket_id":"basket_201","basket_archived":false,"customer_id":"cust_002","store_id":"store_vienna_praterstern","amount_cents":7600,"currency":"EUR","stat
+[ecom-mcp 12:24:55] ecom_list(path='/proc/payments')
+[ecom-mcp 12:24:55]   -> pay_001.json
+pay_002.json
+pay_003.json
+pay_004.json
+pay_005.json
+pay_006.json
+pay_007.json
+pay_008.json
+pay_009.json
+pay_010.json
+pay_011.json
+pay_012.json
+pay_013.json
+pay_014.json
+pay_015.json
+pay_0
+[ecom-mcp 12:24:59] ecom_search(pattern='fraud|chargeback|stolen|compromis|incident|archive|archived|confirmed', root='/proc/payments', limit=200)
+[ecom-mcp 12:24:59]   -> /proc/payments/pay_001.json:1:{"id":"pay_001","basket_id":"basket_201","basket_archived":false,"customer_id":"cust_002","store_id":"store_vienna_praterstern","amount_cents":7600,"currency":"EUR","stat
+[ecom-mcp 12:25:03] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 12:25:03]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 12:25:14] ecom_exec(path='/bin/sql', args=None, stdin_len=72)
+[ecom-mcp 12:25:14]   -> archived_count
+1022
+[ecom-mcp 12:25:14] ecom_exec(path='/bin/sql', args=None, stdin_len=349)
+[ecom-mcp 12:25:14]   -> payment_method_fingerprint,n,customers,devices,first_at,last_at
+[ecom-mcp 12:25:14] ecom_exec(path='/bin/sql', args=None, stdin_len=341)
+[ecom-mcp 12:25:15]   -> device_fingerprint,n,customers,methods,first_at,last_at
+[ecom-mcp 12:25:15] ecom_exec(path='/bin/sql', args=None, stdin_len=261)
+[ecom-mcp 12:25:15]   -> day,n,customers,methods,devices
+2021-04-28,12,1,2,2
+2021-05-06,10,5,5,10
+2021-05-19,22,22,22,22
+2021-05-20,21,21,21,21
+2021-05-21,21,21,21,21
+2021-05-22,22,22,22,22
+2021-05-23,21,21,21,21
+2021-05-24,2
+[ecom-mcp 12:25:19] ecom_search(pattern='fraud|chargeback|stolen', root='/proc/returns', limit=100)
+[ecom-mcp 12:25:20]   -> (no matches)
+[ecom-mcp 12:25:20] ecom_search(pattern='fraud|chargeback|archived payment|archived history', root='/docs', limit=100)
+[ecom-mcp 12:25:20]   -> (no matches)
+[ecom-mcp 12:25:20] ecom_search(pattern='pay_20210428|pay_20210506', root='/proc/payments', limit=200)
+[ecom-mcp 12:25:20]   -> /proc/payments/pay_20210428T143838Z_FJT4ktFYHA.json:1:{"id":"pay_20210428T143838Z_FJT4ktFYHA","basket_id":"archived_basket_20210428T143838Z_9pMRhLDAno","basket_archived":true,"customer_id":"cust_068",
+[ecom-mcp 12:25:27] ecom_exec(path='/bin/sql', args=None, stdin_len=371)
+[ecom-mcp 12:25:27]   -> customer_id,day,n,methods,devices,stores,first_at,last_at
+cust_068,2021-04-28,12,2,2,10,2021-04-28T14:38:38Z,2021-04-28T14:41:34Z
+cust_031,2021-05-06,2,1,2,2,2021-05-06T11:38:53Z,2021-05-06T11:47:10Z
+
+[ecom-mcp 12:25:32] ecom_search(pattern='cust_025', root='/proc/payments', limit=50)
+[ecom-mcp 12:25:33]   -> /proc/payments/pay_071.json:1:{"id":"pay_071","basket_id":"basket_271","basket_archived":false,"customer_id":"cust_025","store_id":"store_brno_veveri","amount_cents":3700,"currency":"EUR","status":"pa
+[ecom-mcp 12:25:33] ecom_read(path='/proc/customers/cust_025.json', start=0, end=0, number=False)
+[ecom-mcp 12:25:33]   -> 144 chars
+[ecom-mcp 12:25:33] ecom_read(path='/proc/customers/cust_068.json', start=0, end=0, number=False)
+[ecom-mcp 12:25:33]   -> 147 chars
+[ecom-mcp 12:25:33] ecom_read(path='/proc/customers/cust_031.json', start=0, end=0, number=False)
+[ecom-mcp 12:25:33]   -> 151 chars
+[ecom-mcp 12:25:45] ecom_exec(path='/bin/sql', args=None, stdin_len=258)
+[ecom-mcp 12:25:45]   -> customer_id,n,first_at,last_at
+cust_031,12,2021-05-06T11:38:53Z,2021-07-01T13:42:01Z
+cust_032,12,2021-05-06T12:02:53Z,2021-07-01T14:58:10Z
+cust_033,12,2021-05-06T12:20:53Z,2021-07-01T18:47:47Z
+cust_03
+[ecom-mcp 12:25:50] ecom_read(path='/proc/customers/cust_032.json', start=0, end=0, number=False)
+[ecom-mcp 12:25:50]   -> 154 chars
+[ecom-mcp 12:25:50] ecom_read(path='/proc/customers/cust_033.json', start=0, end=0, number=False)
+[ecom-mcp 12:25:50]   -> 149 chars
+[ecom-mcp 12:25:50] ecom_read(path='/proc/customers/cust_034.json', start=0, end=0, number=False)
+[ecom-mcp 12:25:51]   -> 145 chars
+[ecom-mcp 12:25:51] ecom_read(path='/proc/customers/cust_035.json', start=0, end=0, number=False)
+[ecom-mcp 12:25:51]   -> 148 chars
+[ecom-mcp 12:25:59] ecom_exec(path='/bin/sql', args=None, stdin_len=569)
+[ecom-mcp 12:25:59]   -> customer_id,id,path,created_at,store_id,payment_method_fingerprint,device_fingerprint
+cust_068,pay_20210428T143838Z_FJT4ktFYHA,/proc/payments/pay_20210428T143838Z_FJT4ktFYHA.json,2021-04-28T14:38:38Z,
+[ecom-mcp 12:26:24] ecom_read(path='/proc/payments/pay_20210428T143838Z_FJT4ktFYHA.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:24]   -> 553 chars
+[ecom-mcp 12:26:24] ecom_read(path='/proc/payments/pay_20210428T143900Z_15AuaLMi22.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:24]   -> 543 chars
+[ecom-mcp 12:26:24] ecom_read(path='/proc/payments/pay_20210428T143926Z_4s3V7sGjCG.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:24]   -> 488 chars
+[ecom-mcp 12:26:24] ecom_read(path='/proc/payments/pay_20210428T143935Z_gAd7jQvGp2.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:24]   -> 537 chars
+[ecom-mcp 12:26:24] ecom_read(path='/proc/payments/pay_20210428T143946Z_Guv7jBBZhv.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 484 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210428T144028Z_WXecxa2tEU.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 484 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210428T144044Z_Hr1GP2nrdE.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 479 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210428T144050Z_AthFLEeAUq.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 482 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210428T144108Z_EWAMYQdGY1.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 494 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210428T144120Z_7Dcnqm5WmW.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 482 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210428T144126Z_DsPqK9r45Y.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 476 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210428T144134Z_NqWpRFoqYn.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 482 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210506T113853Z_LuGaYp3sSG.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 488 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210506T114710Z_CH88xpNE7i.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 482 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210506T120253Z_FHLaja4i2r.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 482 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210506T121126Z_QUxvV35QqK.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:25]   -> 542 chars
+[ecom-mcp 12:26:25] ecom_read(path='/proc/payments/pay_20210506T122053Z_3FDm6EDeDa.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:26]   -> 483 chars
+[ecom-mcp 12:26:26] ecom_read(path='/proc/payments/pay_20210506T122627Z_WnzYMpsRPk.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:26]   -> 477 chars
+[ecom-mcp 12:26:26] ecom_read(path='/proc/payments/pay_20210506T124753Z_W5mLEQxzj5.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:26]   -> 485 chars
+[ecom-mcp 12:26:26] ecom_read(path='/proc/payments/pay_20210506T125655Z_PbRnfQc37t.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:26]   -> 482 chars
+[ecom-mcp 12:26:26] ecom_read(path='/proc/payments/pay_20210506T125853Z_NHZJDKZQfu.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:26]   -> 482 chars
+[ecom-mcp 12:26:26] ecom_read(path='/proc/payments/pay_20210506T130608Z_jT661ai8wU.json', start=0, end=0, number=False)
+[ecom-mcp 12:26:26]   -> 483 chars

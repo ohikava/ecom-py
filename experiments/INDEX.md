@@ -9,6 +9,7 @@
 | 004 | gpt5-model          | Тот же scaffolding 002, но `MODEL_ID=openai/gpt-5` (без других правок)             | **−3.22 pp** → 32.26% (10/31, **хуже**) | 36k in / **9.2k out** (×5!) / 141s (×6!) | завершён |
 | 005 | codex-mcp-port      | Убрать свой OpenAI-loop; Codex CLI + ECOM MCP server; `gpt-5.4` через Codex auth   | **+29.04 pp** → 64.52% (20/31)   | 149k in (**129k cached**) / 1.68k out / 47.6s | завершён |
 | 006 | codex-refs-fix      | `ecom_read_silent` + post-process DENIED refs + prompt SQL-step-5                  | **+12.90 pp на overlap** → 77.42% (24/31), 74.24% на расширенном 40-task бенчмарке | 210k in (**180k cached**) / 1.72k out / 52.1s | завершён |
+| 007 | codex-discount-refs | topic→policy doc map (`/docs/discounts.md`, `/docs/payments/3ds.md`) для DENIED   | **+2.77 pp** → 77.01% (30/40); 2/3 target wins (t25, t37); шум съел сигнал на overlap | 211k in (177k cached) / 1.88k out / 52.2s | завершён |
 
 Базовая модель: `openai/gpt-4.1` через OpenRouter (если не указано иное).
 Бенчмарк: `bitgn/ecom1-dev` (31 task).
