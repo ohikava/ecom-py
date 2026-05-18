@@ -8,6 +8,7 @@
 | 003 | sql-discipline      | Schema-first SQL + LIKE/LOWER + 0-row fallback + count/yes-no правила              | **±0 pp** → 35.48% (перетасовка) | 97k in / 2.65k out (+162% к 002) | завершён |
 | 004 | gpt5-model          | Тот же scaffolding 002, но `MODEL_ID=openai/gpt-5` (без других правок)             | **−3.22 pp** → 32.26% (10/31, **хуже**) | 36k in / **9.2k out** (×5!) / 141s (×6!) | завершён |
 | 005 | codex-mcp-port      | Убрать свой OpenAI-loop; Codex CLI + ECOM MCP server; `gpt-5.4` через Codex auth   | **+29.04 pp** → 64.52% (20/31)   | 149k in (**129k cached**) / 1.68k out / 47.6s | завершён |
+| 006 | codex-refs-fix      | `ecom_read_silent` + post-process DENIED refs + prompt SQL-step-5                  | **+12.90 pp на overlap** → 77.42% (24/31), 74.24% на расширенном 40-task бенчмарке | 210k in (**180k cached**) / 1.72k out / 52.1s | завершён |
 
 Базовая модель: `openai/gpt-4.1` через OpenRouter (если не указано иное).
 Бенчмарк: `bitgn/ecom1-dev` (31 task).
