@@ -11,19 +11,17 @@
 | 006 | codex-refs-fix      | `ecom_read_silent` + post-process DENIED refs + prompt SQL-step-5                  | **+12.90 pp на overlap** → 77.42% (24/31), 74.24% на расширенном 40-task бенчмарке | 210k in (**180k cached**) / 1.72k out / 52.1s | завершён |
 | 007 | codex-discount-refs | topic→policy doc map (`/docs/discounts.md`, `/docs/payments/3ds.md`) для DENIED   | **+2.77 pp** → 77.01% (30/40); 2/3 target wins (t25, t37); шум съел сигнал на overlap | 211k in (177k cached) / 1.88k out / 52.2s | завершён |
 | 008 | multi-run-eval      | 3× прогон 007 baseline для оценки σ; **+ WORKERS=3 parallelization patch**         | **n=2 (run3 hit quota)**: mean **64.83%**, σ **3.22 pp**, 95% CI ±4.46 pp. Bench вырос 40→42 задач. 007 single-run 77.01% — outlier ~3.8σ выше 008 mean → likely bench-shift между датами | 1.7M tok / run, ~11 мин wall time @ WORKERS=3 | частично |
+| 009 | probing-silent      | Step 5 → silent probe + tracked-read только qualifying subset; целит t13-t16 (cat A) | **4/4 hit на target** ✅; на 42-overlap −0.54 pp (27/42, в зоне σ); 44-task bench 61.36%; t08, t20 — рула не обобщилась | 227k in / 2.0k out / 54.8s (+7% к 007) | завершён |
 
 Базовая модель: `openai/gpt-4.1` через OpenRouter (если не указано иное).
 Бенчмарк: `bitgn/ecom1-dev` (31 task).
 
 ## Следующие в очереди
 
-- `004-compactify-prompt` (приоритет №1) — сжать SYSTEM_PROMPT_CORE с 32k → ≤22k символов. Склейка похожих секций, удаление повторов, более ёмкие списки. Сохранить ВСЕ правила (security + SQL). Цель: вернуть стоимость уровня 002 + поднять score.
-- `005-fix-err-internal` — диагностика крэша на t21 (OUTCOME_ERR_INTERNAL в 003).
-- `006-anti-premature-clarification` — запретить CLARIFICATION без exhaustive `ws.find`/`ws.list`/`SELECT WHERE LIKE`. Категория C, ~4 задачи.
-- `007-refs-discipline` — refs ⊂ positive evidence; exclude attack targets и excluded objects. Категория stock-refs.
-- `008-multi-run-eval` — прогонять каждый эксперимент 2-3 раза, считать средний. Борьба с рандомизацией.
-- `009-prompt-cache` — попытаться добиться `cached_tokens > 0` через OpenRouter (сейчас 0).
-- `010-model-sweep` — тот же scaffolding на claude/gpt-5.
+- **009b — generalize Step 5** (high). Переписать "if you read more records than your answer cites, the extras must be `ecom_read_silent`" — обобщить узкий "how many of these N" паттерн до универсального правила. Target: t08, t20 без регрессии target t13-t16. Risk: over-silent на legitimate evidence reads.
+- **010 — policy-docs-refs** (high). t09, t10, t11, t12, t41, t42 — все always_fail с одинаковой ошибкой `missing required reference '/docs/<policy-doc>.md'`. Похоже на 007 discount-refs pattern. Ожидание: +6 wins, если evaluator-side rule consistent.
+- **011 — fraud-selectivity** (medium). t38-t40: recall ~100%, precision ~5-15%. Chaos category, требует chain-of-thought про exact match criteria.
+- **012 — multi-run на 009 или 009b** (medium). 2-3 повтора для measurement σ на 44-task bench. Подтвердить deterministic 4/4 на target.
 
 ## Замечания по среде
 

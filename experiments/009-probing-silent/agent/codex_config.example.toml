@@ -1,0 +1,18 @@
+# Example snippet for ~/.codex/config.toml
+#
+# Codex CLI reads ~/.codex/config.toml on startup. The 009-probing-silent agent
+# relies on the `bitgn-ecom` MCP server being registered there and pointing at
+# THIS checkout of ecom_mcp_server.py — otherwise Codex will spawn an unknown /
+# stale server and tool calls will fail.
+#
+# Copy the block below into your ~/.codex/config.toml (merging with whatever is
+# already there). The VAULT_HARNESS_URL value here is just a placeholder —
+# codex_agent.py rewrites it per task through `-c mcp_servers.bitgn-ecom.env.VAULT_HARNESS_URL=...`.
+
+[mcp_servers.bitgn-ecom]
+command = "/Users/ivan/Documents/ai/ecom-py/venv/bin/python"
+args = ["/Users/ivan/Documents/ai/ecom-py/experiments/009-probing-silent/agent/ecom_mcp_server.py"]
+
+[mcp_servers.bitgn-ecom.env]
+VAULT_HARNESS_URL = "https://api.bitgn.com"
+VAULT_MCP_LOG     = "/Users/ivan/Documents/ai/ecom-py/experiments/009-probing-silent/agent/ecom_mcp.log"
