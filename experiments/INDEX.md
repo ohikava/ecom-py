@@ -12,16 +12,18 @@
 | 007 | codex-discount-refs | topic→policy doc map (`/docs/discounts.md`, `/docs/payments/3ds.md`) для DENIED   | **+2.77 pp** → 77.01% (30/40); 2/3 target wins (t25, t37); шум съел сигнал на overlap | 211k in (177k cached) / 1.88k out / 52.2s | завершён |
 | 008 | multi-run-eval      | 3× прогон 007 baseline для оценки σ; **+ WORKERS=3 parallelization patch**         | **n=2 (run3 hit quota)**: mean **64.83%**, σ **3.22 pp**, 95% CI ±4.46 pp. Bench вырос 40→42 задач. 007 single-run 77.01% — outlier ~3.8σ выше 008 mean → likely bench-shift между датами | 1.7M tok / run, ~11 мин wall time @ WORKERS=3 | частично |
 | 009 | probing-silent      | Step 5 → silent probe + tracked-read только qualifying subset; целит t13-t16 (cat A) | **4/4 hit на target** ✅; на 42-overlap −0.54 pp (27/42, в зоне σ); 44-task bench 61.36%; t08, t20 — рула не обобщилась | 227k in / 2.0k out / 54.8s (+7% к 007) | завершён |
+| 010 | policy-docs-refs    | Bootstrap `tree /docs -L 4` + prompt-rule "cite matching dated policy doc"; целит t09-t12, t41-t42 (cat refs-doc) | **+11.05 pp на 40t-overlap** ✅ → 78.55%; 3/3 hits на t09-t11 (t12 over-citation), 1/1 на t41 smoke; t41-t44 quota-corrupted на full | 232k in / 1.77k out / 49.2s (cost-neutral, **−10% elapsed**) | завершён (40/44 clean) |
 
 Базовая модель: `openai/gpt-4.1` через OpenRouter (если не указано иное).
 Бенчмарк: `bitgn/ecom1-dev` (31 task).
 
 ## Следующие в очереди
 
-- **009b — generalize Step 5** (high). Переписать "if you read more records than your answer cites, the extras must be `ecom_read_silent`" — обобщить узкий "how many of these N" паттерн до универсального правила. Target: t08, t20 без регрессии target t13-t16. Risk: over-silent на legitimate evidence reads.
-- **010 — policy-docs-refs** (high). t09, t10, t11, t12, t41, t42 — все always_fail с одинаковой ошибкой `missing required reference '/docs/<policy-doc>.md'`. Похоже на 007 discount-refs pattern. Ожидание: +6 wins, если evaluator-side rule consistent.
-- **011 — fraud-selectivity** (medium). t38-t40: recall ~100%, precision ~5-15%. Chaos category, требует chain-of-thought про exact match criteria.
-- **012 — multi-run на 009 или 009b** (medium). 2-3 повтора для measurement σ на 44-task bench. Подтвердить deterministic 4/4 на target.
+- **010-followup — rerun t41-t44** после quota reset (2026-05-25 00:37). Подтвердить t41 = 1.00 на full, узнать судьбу t43/t44 (новые always_fail).
+- **011 — generalize Step 5** (high; был 009b). Универсальный принцип "if refs > # of objects your answer evidence is about, extras must be silent". Target t08, t12, t20 (over-citation catalog). Потенциал +3 wins.
+- **012 — fraud-selectivity / закрепить t38 gain** (medium). 010 неожиданно подняла t38 с 0.07 → 0.42 partial — investigate какой ops-policy-note сработал, попробовать распространить на t39, t40.
+- **013 — multi-run на 010** (medium). 2-3 повтора для measurement σ на 44-task bench. 010 — первый clean signal выше 2σ, валидация многократным прогоном ценна.
+- **014 — outcome-mismatch** (low; t25, t26, t28). False-positive DENIED. Чувствительно к security baseline, риск регрессий.
 
 ## Замечания по среде
 
