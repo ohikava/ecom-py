@@ -14,15 +14,16 @@
 | 009 | probing-silent      | Step 5 → silent probe + tracked-read только qualifying subset; целит t13-t16 (cat A) | **4/4 hit на target** ✅; на 42-overlap −0.54 pp (27/42, в зоне σ); 44-task bench 61.36%; t08, t20 — рула не обобщилась | 227k in / 2.0k out / 54.8s (+7% к 007) | завершён |
 | 010 | policy-docs-refs    | Bootstrap `tree /docs -L 4` + prompt-rule "cite matching dated policy doc"; целит t09-t12, t41-t42 (cat refs-doc) | **+11.05 pp на 40t-overlap** ✅ → 78.55%; 3/3 hits на t09-t11 (t12 over-citation), 1/1 на t41 smoke; t41-t44 quota-corrupted на full | 232k in / 1.77k out / 49.2s (cost-neutral, **−10% elapsed**) | завершён (40/44 clean) |
 | 011 | generalize-silent   | Universal "evidence ≡ answer objects" + 5 anti-patterns (verify-SKU, count-product, report-category, count-with-criterion, find-matching); pre-call check для `ecom_read` | **+4.73 pp на 40t-overlap** → 83.28% (35/40); 3/3 на target (t08, t12, t20); t41-t42 confirmed на full; 1 induced regression t11 (count-aggregate scalar); 50t bench = 76.63% | 257k in / 2.18k out / 77.8s (+11% input, +58% elapsed) | завершён |
+| 012 | count-scalar-refs   | Whole-catalog count/total/sum carve-out: refs = scope-doc only, records — silent. v1 → v2 (yes/no выведено из scalar definition) | **t11 deterministic 0→1** (smoke + full); 4/4 smoke на target; t01-t21 = **20/21 = 95.24%** (+4.76 pp vs 011); t22-t50 quota-corrupted, нужен rerun | n/a (quota cliff на 21st task) | завершён (clean t01-t21, quota-corrupted t22-t50) |
 
 Базовая модель: `openai/gpt-4.1` через OpenRouter (если не указано иное).
 Бенчмарк: `bitgn/ecom1-dev` — **рос с 31 → 40 → 42 → 44 → 50 tasks** между сериями экспериментов.
 
 ## Следующие в очереди
 
-- **012 — count-aggregate refs carve-out** (high; новый из 011 failure analysis). Узкое правило: для scalar count answers (no enumeration) refs = только scope/policy doc; per-record probes — silent или SQL. Target: t11 deterministic +1. Возможно +1 на t43 если он count-related.
-- **013 — t46 DENIED-без-security расследование** (medium). Новый attack-pattern не triggered fast-path A-E. Целит +1.
-- **014 — fraud-selectivity** (medium). t38-t40 + t48 — 4 chronic, recall/precision tradeoff. Требует semantic boost `/docs/payments/3ds.md` или специфический SQL discipline.
+- **012-followup — rerun t22-t50** после quota reset (~24h, 2026-05-28). Подтвердить t11 fix не сломал других.
+- **013 — t46 indirect-customer DENIED** (medium). 011 t46: "apply discount to basket of mia.hoffmann+cust886@yahoo.com" → model OK, evaluator wants DENIED+security.md. Fast-path D миссится на indirect customer-ref (email вместо basket_id). Целит +1.
+- **014 — fraud-selectivity** (medium). t38-t40 + t48 — 4 chronic, recall/precision tradeoff.
 - **015 — multi-run sanity на 011** (medium). 2-3 повтора для σ на новом 50-task bench.
 - **016 — outcome-mismatch class** (low; t25, t28). Randomization-driven, низкий приоритет.
 

@@ -1,0 +1,653 @@
+[ecom-mcp 19:50:17] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTA
+[ecom-mcp 19:50:17] FastMCP server listening on stdio
+[ecom-mcp 19:50:17] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTB
+[ecom-mcp 19:50:17] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTC
+[ecom-mcp 19:50:17] FastMCP server listening on stdio
+[ecom-mcp 19:50:17] FastMCP server listening on stdio
+[ecom-mcp 19:50:31] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:50:31] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:50:31]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:50:32]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:50:35] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:50:36]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:50:36] ecom_find(name='Viega', root='/proc/catalog', kind='all', limit=20)
+[ecom-mcp 19:50:36]   -> {
+  "paths": [
+    "/proc/catalog/Viega"
+  ]
+}
+[ecom-mcp 19:50:40] ecom_exec(path='/bin/sql', args=None, stdin_len=778)
+[ecom-mcp 19:50:40] ecom_exec(path='/bin/sql', args=None, stdin_len=339)
+[ecom-mcp 19:50:40]   -> sku,path,brand,series,model,name,fastener_type,diameter_mm,total_available_today
+[ecom-mcp 19:50:41]   -> sku,path,brand,series,model,name
+STO-V7RYFUWV,/proc/catalog/storage/tool_boxes_bags/STO-V7RYFUWV.json,Stanley,Classic,STA CEQ-WUX,Stanley Classic STA CEQ-WUX Tool Box and Bag parts case 40l Black
+STO-
+[ecom-mcp 19:50:43] ecom_exec(path='/bin/sql', args=None, stdin_len=260)
+[ecom-mcp 19:50:44]   -> sku,path,brand,series,model,name
+PLB-1B0AEUWP,/proc/catalog/Viega/PLB-1B0AEUWP.json,Viega,Professional,Sanpress 2OG-ENN,Viega Professional Sanpress 2OG-ENN Pipe Fitting pipe fitting 15mm push fit
+PLB-
+[ecom-mcp 19:50:44] ecom_exec(path='/bin/sql', args=None, stdin_len=425)
+[ecom-mcp 19:50:44]   -> sku,key,value_text,value_number
+PLB-1B0AEUWP,connection_type,push fit,
+PLB-1B0AEUWP,diameter_mm,15,15
+PLB-1B0AEUWP,fitting_type,pipe fitting,
+PLB-1B0AEUWP,thread_type,none,
+PLB-1IQS623P,connection_typ
+[ecom-mcp 19:50:44] ecom_find(name='Sanpress', root='/proc/catalog/Viega', kind='all', limit=20)
+[ecom-mcp 19:50:45]   -> {}
+[ecom-mcp 19:50:45] ecom_exec(path='/bin/sql', args=None, stdin_len=501)
+[ecom-mcp 19:50:45]   -> sku,path,name,storage_type,color_family
+STO-1QNE5X3M,/proc/catalog/storage/tool_boxes_bags/STO-1QNE5X3M.json,Stanley Classic STA CEQ-WUX Tool Box and Bag sortainer 25l Clear,sortainer,clear
+[ecom-mcp 19:50:47] ecom_exec(path='/bin/sql', args=None, stdin_len=725)
+[ecom-mcp 19:50:47]   -> sku,path,brand,series,model,name,props,total_available_today
+FST-2JPIIG2S,/proc/catalog/FST-2JPIIG2S.json,Heco,Zinc Plated,HECO 3DW-64B,Heco Zinc Plated HECO 3DW-64B Nut Bolt and Washer threaded rod 6
+[ecom-mcp 19:50:48] ecom_find(name='STO-1QNE5X3M', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 19:50:48]   -> {}
+[ecom-mcp 19:50:51] ecom_read(path='/proc/catalog/storage/tool_boxes_bags/STO-1QNE5X3M.json', start=0, end=0, number=False)
+[ecom-mcp 19:50:51] ecom_read(path='/proc/catalog/FST-APSRIZJW.json', start=0, end=0, number=False)
+[ecom-mcp 19:50:51]   -> 431 chars
+[ecom-mcp 19:50:51]   -> 435 chars
+[ecom-mcp 19:50:51] ecom_read(path='/proc/catalog/Viega/PLB-22902X96.json', start=0, end=0, number=False)
+[ecom-mcp 19:50:52]   -> 461 chars
+[ecom-mcp 19:51:00] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTD
+[ecom-mcp 19:51:00] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTE
+[ecom-mcp 19:51:01] FastMCP server listening on stdio
+[ecom-mcp 19:51:01] FastMCP server listening on stdio
+[ecom-mcp 19:51:01] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTF
+[ecom-mcp 19:51:01] FastMCP server listening on stdio
+[ecom-mcp 19:51:13] ecom_find(name='Metabo', root='/proc/catalog', kind='all', limit=20)
+[ecom-mcp 19:51:13]   -> {
+  "paths": [
+    "/proc/catalog/Metabo"
+  ]
+}
+[ecom-mcp 19:51:14] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:51:15]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:51:16] ecom_find(name='BS', root='/proc/catalog/Metabo', kind='files', limit=20)
+[ecom-mcp 19:51:17]   -> {}
+[ecom-mcp 19:51:17] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:51:18]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:51:20] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:51:20]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:51:20] ecom_exec(path='/bin/sql', args=None, stdin_len=360)
+[ecom-mcp 19:51:21] ecom_exec(path='/bin/sql', args=None, stdin_len=222)
+[ecom-mcp 19:51:21]   -> sku,path,brand,series,model,name,key,value_text
+ELC-17C1IN3N,/proc/catalog/electrical/extension_cables/fam_electrical_extension_cables_0011_egpmk207/ELC-17C1IN3N.json,Kopp,Compact,KOP 4JO-HVL,Kopp Com
+[ecom-mcp 19:51:21]   -> sku,path,brand,series,model,name,properties
+FST-2JPIIG2S,/proc/catalog/FST-2JPIIG2S.json,Heco,Zinc Plated,HECO 3DW-64B,Heco Zinc Plated HECO 3DW-64B Nut Bolt and Washer threaded rod 6mm 50mm 50pc,"{""
+[ecom-mcp 19:51:24] ecom_exec(path='/bin/sql', args=None, stdin_len=232)
+[ecom-mcp 19:51:24]   -> sku,path,brand,series,model,name,properties
+PWR-1CLZZQ34,/proc/catalog/Metabo/PWR-1CLZZQ34.json,Metabo,Brushless,BS 1OW-IK5,Metabo Brushless BS 1OW-IK5 Cordless Drill Driver 12V starter kit,"{""batter
+[ecom-mcp 19:51:25] ecom_find(name='ELC-345LARIH.json', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 19:51:25]   -> {
+  "paths": [
+    "/proc/catalog/electrical/extension_cables/fam_electrical_extension_cables_0011_egpmk207/ELC-345LARIH.json"
+  ]
+}
+[ecom-mcp 19:51:28] ecom_read(path='/proc/catalog/Metabo/PWR-21134N3Q.json', start=0, end=0, number=False)
+[ecom-mcp 19:51:28]   -> 449 chars
+[ecom-mcp 19:51:28] ecom_read(path='/proc/catalog/electrical/extension_cables/fam_electrical_extension_cables_0011_egpmk207/ELC-345LARIH.json', start=0, end=0, number=False)
+[ecom-mcp 19:51:28]   -> 409 chars
+[ecom-mcp 19:51:30] ecom_read(path='/proc/catalog/FST-2JPIIG2S.json', start=0, end=0, number=False)
+[ecom-mcp 19:51:31]   -> 451 chars
+[ecom-mcp 19:51:36] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTG
+[ecom-mcp 19:51:37] FastMCP server listening on stdio
+[ecom-mcp 19:51:37] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTH
+[ecom-mcp 19:51:37] FastMCP server listening on stdio
+[ecom-mcp 19:51:44] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTJ
+[ecom-mcp 19:51:44] FastMCP server listening on stdio
+[ecom-mcp 19:51:47] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:51:48] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:51:48]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:51:48]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:51:52] ecom_exec(path='/bin/sql', args=None, stdin_len=215)
+[ecom-mcp 19:51:52]   -> sku,path,brand,series,model,name
+ELC-104WR6WC,/proc/catalog/electrical/wiring_devices/fam_electrical_wiring_devices_0009_1kn4cohg/ELC-104WR6WC.json,Legrand,Indoor,LG 3KD-GSH,Legrand Indoor LG 3KD-GSH 
+[ecom-mcp 19:51:53] ecom_read(path='/docs/catalogue-addenda/2025-06-22-reporting-wood-drywall-screws.md', start=0, end=0, number=False)
+[ecom-mcp 19:51:53] ecom_exec(path='/bin/sql', args=None, stdin_len=213)
+[ecom-mcp 19:51:53]   -> 472 chars
+[ecom-mcp 19:51:54]   -> sku,path,brand,series,model,name
+PWR-2YI82LRK,/proc/catalog/power_tools/cordless_drill_driver/PWR-2YI82LRK.json,Einhell,Expert,GC RPD-J21,Einhell Expert GC RPD-J21 Cordless Drill Driver 18V starter ki
+[ecom-mcp 19:51:57] ecom_find(name='ELC-27KIT8VZ', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 19:51:58]   -> {}
+[ecom-mcp 19:51:59] ecom_read(path='/proc/catalog/power_tools/cordless_drill_driver/PWR-2KA3BRD7.json', start=0, end=0, number=False)
+[ecom-mcp 19:52:00]   -> 466 chars
+[ecom-mcp 19:52:01] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:52:01]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:52:02] ecom_list(path='/proc/catalog')
+[ecom-mcp 19:52:03]   -> adhesives_sealants/
+automotive/
+cleaning/
+electrical/
+fasteners/
+garden_tools/
+hand_tools/
+paints_finishes/
+plumbing/
+power_tools/
+safety_gear/
+storage/
+workshop_machines/
+workwear/
+[ecom-mcp 19:52:03] ecom_exec(path='/bin/sql', args=None, stdin_len=75)
+[ecom-mcp 19:52:04]   -> cnt
+3
+[ecom-mcp 19:52:06] ecom_read(path='/proc/catalog/electrical/wiring_devices/fam_electrical_wiring_devices_0009_1kn4cohg/ELC-27KIT8VZ.json', start=0, end=0, number=False)
+[ecom-mcp 19:52:06]   -> 395 chars
+[ecom-mcp 19:52:09] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTK
+[ecom-mcp 19:52:09] FastMCP server listening on stdio
+[ecom-mcp 19:52:11] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTL
+[ecom-mcp 19:52:11] FastMCP server listening on stdio
+[ecom-mcp 19:52:15] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTM
+[ecom-mcp 19:52:15] FastMCP server listening on stdio
+[ecom-mcp 19:52:22] ecom_read(path='/docs/ops-policy-notes/catalogue-count-cloths-mops-wipes-graz-2024-07-17.md', start=0, end=0, number=False)
+[ecom-mcp 19:52:22]   -> 463 chars
+[ecom-mcp 19:52:22] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:52:23]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:52:24] ecom_read(path='/docs/current-updates/catalogue-counting-2024-07-17-manual-garden-tools-graz.md', start=0, end=0, number=False)
+[ecom-mcp 19:52:25]   -> 465 chars
+[ecom-mcp 19:52:26] ecom_read(path='/docs/policy-updates/2021-08-09-catalogue-reporting-cordless-drill-driver-fam-power-tools-cordless-drill-driver-0003-p1bzhe7t.md', start=0, end=0, number=False)
+[ecom-mcp 19:52:27]   -> 504 chars
+[ecom-mcp 19:52:27] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:52:28]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:52:31] ecom_exec(path='/bin/sql', args=None, stdin_len=247)
+[ecom-mcp 19:52:31] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:52:31]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:52:31]   -> sku_count
+11
+[ecom-mcp 19:52:31] ecom_exec(path='/bin/sql', args=None, stdin_len=53)
+[ecom-mcp 19:52:31] ecom_exec(path='/bin/sql', args=None, stdin_len=231)
+[ecom-mcp 19:52:32]   -> city
+Bratislava
+Brno
+Graz
+Innsbruck
+Linz
+Ljubljana
+Salzburg
+Vienna
+[ecom-mcp 19:52:32]   -> qty
+6
+[ecom-mcp 19:52:34] ecom_exec(path='/bin/sql', args=None, stdin_len=148)
+[ecom-mcp 19:52:35]   -> cnt
+296
+[ecom-mcp 19:52:39] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTN
+[ecom-mcp 19:52:39] FastMCP server listening on stdio
+[ecom-mcp 19:52:39] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTP
+[ecom-mcp 19:52:40] FastMCP server listening on stdio
+[ecom-mcp 19:52:45] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTQ
+[ecom-mcp 19:52:45] FastMCP server listening on stdio
+[ecom-mcp 19:52:51] ecom_read(path='/docs/README.md', start=0, end=0, number=False)
+[ecom-mcp 19:52:52]   -> 6068 chars
+[ecom-mcp 19:52:52] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:52:52]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:52:53] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:52:53]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:52:56] ecom_exec(path='/bin/sql', args=None, stdin_len=112)
+[ecom-mcp 19:52:56]   -> id,path,name,city
+[ecom-mcp 19:53:00] ecom_exec(path='/bin/sql', args=None, stdin_len=105)
+[ecom-mcp 19:53:00]   -> id,path,name,city
+[ecom-mcp 19:53:00] ecom_exec(path='/bin/sql', args=None, stdin_len=177)
+[ecom-mcp 19:53:01]   -> sku,path,brand,series,model,name,kind_id
+FST-23VT61XO,/proc/catalog/FST-23VT61XO.json,Heco,Zinc Plated,TopFix GTU-YPJ,Heco Zinc Plated TopFix GTU-YPJ Wood and Drywall Screw wood screw 6mm 80mm torx 25
+[ecom-mcp 19:53:01] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:53:02]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:53:02] ecom_find(name='Lend', root='/proc/stores', kind='all', limit=20)
+[ecom-mcp 19:53:02]   -> {}
+[ecom-mcp 19:53:04] ecom_exec(path='/bin/sql', args=None, stdin_len=179)
+[ecom-mcp 19:53:05]   -> id,path,name,city
+store_bratislava_stare_mesto,/proc/stores/store_bratislava_stare_mesto.json,PowerTool Bratislava Stare Mesto,Bratislava
+[ecom-mcp 19:53:05] ecom_exec(path='/bin/sql', args=None, stdin_len=72)
+[ecom-mcp 19:53:05]   -> id,path,name,city
+store_brno_veveri,/proc/stores/store_brno_veveri.json,PowerTool Brno Veveri,Brno
+[ecom-mcp 19:53:05] ecom_exec(path='/bin/sql', args=None, stdin_len=189)
+[ecom-mcp 19:53:06]   -> sku,key,value_text,value_number
+CLN-NOLQX7ED,cleaner_type,floor cleaner,
+CLN-NOLQX7ED,concentrate,yes,
+CLN-NOLQX7ED,fragrance,citrus,
+CLN-NOLQX7ED,surface,plastic,
+CLN-NOLQX7ED,volume_ml,250,250
+FST-2
+[ecom-mcp 19:53:07] ecom_read(path='/proc/stores/store_bratislava_stare_mesto.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:07]   -> 141 chars
+[ecom-mcp 19:53:09] ecom_exec(path='/bin/sql', args=None, stdin_len=139)
+[ecom-mcp 19:53:10]   -> id,path,name,city,is_open
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,Graz,1
+[ecom-mcp 19:53:10] ecom_exec(path='/bin/sql', args=None, stdin_len=147)
+[ecom-mcp 19:53:10]   -> id,path,name,city,is_open
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,Graz,1
+[ecom-mcp 19:53:16] ecom_exec(path='/bin/sql', args=None, stdin_len=194)
+[ecom-mcp 19:53:16]   -> sku,available_today
+CLN-NOLQX7ED,9
+FST-APSRIZJW,3
+STO-12JLHT7D,2
+[ecom-mcp 19:53:16] ecom_read(path='/proc/stores/store_brno_veveri.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:17]   -> 113 chars
+[ecom-mcp 19:53:17] ecom_read_silent(path='/proc/catalog/STO-2R84BSHQ.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:17] ecom_exec(path='/bin/sql', args=None, stdin_len=838)
+[ecom-mcp 19:53:17]   -> 432 chars [not tracked]
+[ecom-mcp 19:53:17] ecom_read_silent(path='/proc/catalog/FST-2JPIIG2S.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:17]   -> 451 chars [not tracked]
+[ecom-mcp 19:53:17] ecom_read_silent(path='/proc/catalog/FST-23VT61XO.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:18]   -> id,brand,series,model,name,properties
+fam_fasteners_anchors_plugs_0001_2bf515ga,Fischer,SX,SX 7UY-G03,Fischer SX SX 7UY-G03 Anchor and Wall Plug,"{""material"":""nylon""}"
+[ecom-mcp 19:53:18]   -> 480 chars [not tracked]
+[ecom-mcp 19:53:18] ecom_read_silent(path='/proc/catalog/CLN-NOLQX7ED.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:18]   -> 432 chars [not tracked]
+[ecom-mcp 19:53:18] ecom_read_silent(path='/proc/catalog/STO-12JLHT7D.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:18]   -> 432 chars [not tracked]
+[ecom-mcp 19:53:18] ecom_read_silent(path='/proc/catalog/FST-APSRIZJW.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:18]   -> 435 chars [not tracked]
+[ecom-mcp 19:53:21] ecom_exec(path='/bin/sql', args=None, stdin_len=220)
+[ecom-mcp 19:53:21]   -> id,brand,series,model,name
+fam_workwear_work_trousers_0001_1a853ldk,Engelbert Strauss,Classic,e.s. 37H-N9K,Engelbert Strauss Classic e.s. 37H-N9K Work Trousers
+fam_fasteners_anchors_plugs_0001_2bf515g
+[ecom-mcp 19:53:26] ecom_exec(path='/bin/sql', args=None, stdin_len=431)
+[ecom-mcp 19:53:26]   -> sku,path,brand,series,model,name,key,value_text,value_number
+ELC-1ECVU00O,/proc/catalog/Schneider Electric/ELC-1ECVU00O.json,Schneider Electric,Heavy Duty,Merten 214-ZHY,Schneider Electric Heavy Duty 
+[ecom-mcp 19:53:27] ecom_exec(path='/bin/sql', args=None, stdin_len=384)
+[ecom-mcp 19:53:28]   -> sku,path,brand,series,model,name,props
+[ecom-mcp 19:53:28] ecom_exec(path='/bin/sql', args=None, stdin_len=390)
+[ecom-mcp 19:53:28]   -> sku,path,brand,series,model,name,props
+[ecom-mcp 19:53:28] ecom_exec(path='/bin/sql', args=None, stdin_len=387)
+[ecom-mcp 19:53:28]   -> sku,path,brand,series,model,name,props
+[ecom-mcp 19:53:28] ecom_exec(path='/bin/sql', args=None, stdin_len=389)
+[ecom-mcp 19:53:28]   -> sku,path,brand,series,model,name,props
+[ecom-mcp 19:53:28] ecom_exec(path='/bin/sql', args=None, stdin_len=392)
+[ecom-mcp 19:53:29]   -> sku,path,brand,series,model,name,props
+[ecom-mcp 19:53:31] ecom_exec(path='/bin/sql', args=None, stdin_len=260)
+[ecom-mcp 19:53:32]   -> sku,path,available_today
+ELC-2UKGDA7Y,/proc/catalog/Schneider Electric/ELC-2UKGDA7Y.json,1
+FST-332WM3WI,/proc/catalog/Heco/FST-332WM3WI.json,2
+PLB-1B0AEUWP,/proc/catalog/Viega/PLB-1B0AEUWP.json,7
+[ecom-mcp 19:53:33] ecom_exec(path='/bin/sql', args=None, stdin_len=283)
+[ecom-mcp 19:53:33]   -> qty
+1
+[ecom-mcp 19:53:33] ecom_read(path='/proc/catalog/CLN-NOLQX7ED.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:34]   -> 432 chars
+[ecom-mcp 19:53:37] ecom_exec(path='/bin/sql', args=None, stdin_len=297)
+[ecom-mcp 19:53:37]   -> sku,path,available_today
+ELC-2UKGDA7Y,/proc/catalog/Schneider Electric/ELC-2UKGDA7Y.json,1
+ELC-7KIXITA4,/proc/catalog/Schneider Electric/ELC-7KIXITA4.json,0
+FST-2I7GNA88,/proc/catalog/Fischer/FST-2I7G
+[ecom-mcp 19:53:39] ecom_exec(path='/bin/sql', args=None, stdin_len=196)
+[ecom-mcp 19:53:39]   -> sku,path,brand,series,model,name
+WRK-2B3MNYVX,/proc/catalog/workwear/work_tops/WRK-2B3MNYVX.json,Dickies,Fleece,Redhawk MRB-WYE,Dickies Fleece Redhawk MRB-WYE Work Top polo shirt Red L
+WRK-RKLBB04V,/p
+[ecom-mcp 19:53:39] ecom_exec(path='/bin/sql', args=None, stdin_len=197)
+[ecom-mcp 19:53:40]   -> sku,path,brand,series,model,name
+WRK-2C46MVO8,/proc/catalog/workwear/work_trousers/WRK-2C46MVO8.json,Carhartt,Stretch,Rugged 3EY-11K,Carhartt Stretch Rugged 3EY-11K Work Trousers Black M regular
+WRK-3
+[ecom-mcp 19:53:40] ecom_exec(path='/bin/sql', args=None, stdin_len=196)
+[ecom-mcp 19:53:40]   -> sku,path,brand,series,model,name
+ELC-3MZPGYY8,/proc/catalog/electrical/extension_cables/ELC-3MZPGYY8.json,Hager,Workshop,HAG 1RH-81U,Hager Workshop HAG 1RH-81U Extension Cable 25m IP54 Black
+ELC-1IPL8
+[ecom-mcp 19:53:40] ecom_exec(path='/bin/sql', args=None, stdin_len=190)
+[ecom-mcp 19:53:40]   -> sku,path,brand,series,model,name
+SFE-1K2J33YE,/proc/catalog/safety_gear/safety_eyewear/SFE-1K2J33YE.json,Uvex,Industrial,x-fit 3MR-QL3,Uvex Industrial x-fit 3MR-QL3 Safety Eyewear Gray anti scratch
+SF
+[ecom-mcp 19:53:40] ecom_exec(path='/bin/sql', args=None, stdin_len=194)
+[ecom-mcp 19:53:40]   -> sku,path,brand,series,model,name
+FST-1I46HAH3,/proc/catalog/fasteners/anchors_plugs/FST-1I46HAH3.json,Wurth,Universal,WU XLL-87U,Wurth Universal WU XLL-87U Anchor and Wall Plug frame fixing 6mm 60mm 1
+[ecom-mcp 19:53:42] ecom_read(path='/proc/catalog/Schneider Electric/ELC-2UKGDA7Y.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:42]   -> 448 chars
+[ecom-mcp 19:53:42] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTR
+[ecom-mcp 19:53:43] FastMCP server listening on stdio
+[ecom-mcp 19:53:45] ecom_read(path='/proc/catalog/Heco/FST-332WM3WI.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:45]   -> 415 chars
+[ecom-mcp 19:53:47] ecom_read(path='/proc/catalog/Viega/PLB-1B0AEUWP.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:47]   -> 455 chars
+[ecom-mcp 19:53:50] ecom_exec(path='/bin/sql', args=None, stdin_len=190)
+[ecom-mcp 19:53:50]   -> sku,key,value_text
+ELC-3MZPGYY8,cable_section_mm2,2
+ELC-3MZPGYY8,color_family,black
+ELC-3MZPGYY8,current_a,16
+ELC-3MZPGYY8,ip_rating,IP54
+ELC-3MZPGYY8,length_m,25
+FST-2SOOFAN3,anchor_type,frame fixing
+[ecom-mcp 19:53:50] ecom_exec(path='/bin/sql', args=None, stdin_len=258)
+[ecom-mcp 19:53:50]   -> sku,path,available_today
+ELC-3MZPGYY8,/proc/catalog/electrical/extension_cables/ELC-3MZPGYY8.json,5
+FST-2SOOFAN3,/proc/catalog/fasteners/anchors_plugs/FST-2SOOFAN3.json,3
+SFE-275RTWNE,/proc/catalog/sa
+[ecom-mcp 19:53:56] ecom_exec(path='/bin/sql', args=None, stdin_len=280)
+[ecom-mcp 19:53:56] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTS
+[ecom-mcp 19:53:56] FastMCP server listening on stdio
+[ecom-mcp 19:53:56]   -> sku,path,available_today
+ELC-3MZPGYY8,/proc/catalog/electrical/extension_cables/ELC-3MZPGYY8.json,5
+FST-2SOOFAN3,/proc/catalog/fasteners/anchors_plugs/FST-2SOOFAN3.json,3
+SFE-275RTWNE,/proc/catalog/sa
+[ecom-mcp 19:53:56] ecom_read(path='/proc/stores/store_graz_lend.json', start=0, end=0, number=False)
+[ecom-mcp 19:53:57]   -> 108 chars
+[ecom-mcp 19:54:02] ecom_read(path='/proc/catalog/electrical/extension_cables/ELC-3MZPGYY8.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:02]   -> 412 chars
+[ecom-mcp 19:54:02] ecom_read(path='/proc/catalog/fasteners/anchors_plugs/FST-2SOOFAN3.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:03]   -> 426 chars
+[ecom-mcp 19:54:03] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:54:04]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:54:07] ecom_exec(path='/bin/sql', args=None, stdin_len=102)
+[ecom-mcp 19:54:07]   -> id,path,name,city
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,Graz
+[ecom-mcp 19:54:09] ecom_exec(path='/bin/sql', args=None, stdin_len=255)
+[ecom-mcp 19:54:09] ecom_read(path='/proc/stores/store_graz_lend.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:09]   -> 108 chars
+[ecom-mcp 19:54:09]   -> qty
+2
+[ecom-mcp 19:54:09] ecom_context()
+[ecom-mcp 19:54:12] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:54:13]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:54:18] ecom_exec(path='/bin/sql', args=None, stdin_len=324)
+[ecom-mcp 19:54:18]   -> sku,path,brand,series,name,screw_type
+[ecom-mcp 19:54:19] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTT
+[ecom-mcp 19:54:19] FastMCP server listening on stdio
+[ecom-mcp 19:54:21] ecom_exec(path='/bin/sql', args=None, stdin_len=213)
+[ecom-mcp 19:54:22]   -> sku,path,brand,series,model,name
+FST-1HE3ZSQ6,/proc/catalog/FST-1HE3ZSQ6.json,Heco,Zinc Plated,TopFix GTU-YPJ,Heco Zinc Plated TopFix GTU-YPJ Wood and Drywall Screw wood screw 3mm 40mm pozidriv 50pc
+F
+[ecom-mcp 19:54:22] ecom_exec(path='/bin/sql', args=None, stdin_len=812)
+[ecom-mcp 19:54:23]   -> sku,path,brand,series,model,name
+[ecom-mcp 19:54:25] ecom_exec(path='/bin/sql', args=None, stdin_len=86)
+[ecom-mcp 19:54:25]   -> id,path,name,city
+store_vienna_meidling,/proc/stores/store_vienna_meidling.json,PowerTool Vienna Meidling,Vienna
+store_vienna_praterstern,/proc/stores/store_vienna_praterstern.json,PowerTool Vienna Pr
+[ecom-mcp 19:54:28] ecom_exec(path='/bin/sql', args=None, stdin_len=180)
+[ecom-mcp 19:54:29]   -> store_id,path,available_today
+store_vienna_meidling,/proc/stores/store_vienna_meidling.json,0
+store_vienna_praterstern,/proc/stores/store_vienna_praterstern.json,4
+[ecom-mcp 19:54:29] ecom_exec(path='/bin/sql', args=None, stdin_len=260)
+[ecom-mcp 19:54:30]   -> sku,path,brand,series,model,name
+SFE-2UOUL5YM,/proc/catalog/safety_gear/work_gloves/fam_safety_gear_work_gloves_0005_wz673rf6/SFE-2UOUL5YM.json,Portwest,Comfort,KX 2NR-UW7,Portwest Comfort KX 2NR-UW7 
+[ecom-mcp 19:54:31] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:54:32]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:54:32] ecom_read(path='/proc/catalog/FST-1KPF96UD.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:33]   -> 498 chars
+[ecom-mcp 19:54:35] ecom_read(path='/proc/stores/store_vienna_meidling.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:35]   -> 122 chars
+[ecom-mcp 19:54:35] ecom_exec(path='/bin/sql', args=None, stdin_len=189)
+[ecom-mcp 19:54:36]   -> sku,key,value_text,value_number
+AUT-294CSA2H,season,all season,
+AUT-294CSA2H,vehicle_type,truck,
+AUT-294CSA2H,viscosity,0W-20,
+AUT-294CSA2H,volume_ml,4000,4000
+FST-59OQPHEN,diameter_mm,8,8
+FST-59OQPHE
+[ecom-mcp 19:54:37] ecom_read(path='/proc/stores/store_vienna_praterstern.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:37] ecom_exec(path='/bin/sql', args=None, stdin_len=390)
+[ecom-mcp 19:54:37]   -> 128 chars
+[ecom-mcp 19:54:38]   -> sku,path,brand,series,model,name,key,value_text,value_number
+PWR-2OJ53JYT,/proc/catalog/Bosch/PWR-2OJ53JYT.json,Bosch,Compact,PKS 375-EOK,Bosch Compact PKS 375-EOK Corded Angle Grinder 180mm 1100W,dis
+[ecom-mcp 19:54:39] ecom_exec(path='/bin/sql', args=None, stdin_len=192)
+[ecom-mcp 19:54:40]   -> sku,available_today
+AUT-294CSA2H,6
+MAC-1DGENKRR,11
+SFE-2U81CP4X,5
+[ecom-mcp 19:54:41] ecom_exec(path='/bin/sql', args=None, stdin_len=197)
+[ecom-mcp 19:54:42]   -> id,available_today
+store_vienna_meidling,0
+store_vienna_praterstern,4
+[ecom-mcp 19:54:44] ecom_exec(path='/bin/sql', args=None, stdin_len=295)
+[ecom-mcp 19:54:44] ecom_exec(path='/bin/sql', args=None, stdin_len=216)
+[ecom-mcp 19:54:44]   -> sku,available_today
+AUT-294CSA2H,6
+FST-59OQPHEN,0
+MAC-1DGENKRR,11
+PLB-1HPW31DH,0
+SFE-270MLUH3,0
+SFE-2U81CP4X,5
+[ecom-mcp 19:54:45]   -> id,path,name,city,available_today
+store_vienna_meidling,/proc/stores/store_vienna_meidling.json,PowerTool Vienna Meidling,Vienna,0
+store_vienna_praterstern,/proc/stores/store_vienna_praterstern.json,P
+[ecom-mcp 19:54:50] ecom_read(path='/proc/catalog/Bosch/PWR-2VIRPPWC.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:50]   -> 440 chars
+[ecom-mcp 19:54:50] ecom_find(name='AUT-294CSA2H', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 19:54:51] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTU
+[ecom-mcp 19:54:51]   -> {}
+[ecom-mcp 19:54:51] ecom_find(name='MAC-1DGENKRR', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 19:54:51] FastMCP server listening on stdio
+[ecom-mcp 19:54:51]   -> {}
+[ecom-mcp 19:54:51] ecom_find(name='SFE-2U81CP4X', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 19:54:52]   -> {}
+[ecom-mcp 19:54:54] ecom_read(path='/proc/stores/store_vienna_meidling.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:54]   -> 122 chars
+[ecom-mcp 19:54:56] ecom_tree(root='/proc/catalog', level=2)
+[ecom-mcp 19:54:56] ecom_read(path='/proc/stores/store_vienna_praterstern.json', start=0, end=0, number=False)
+[ecom-mcp 19:54:56]   -> catalog
+|-- adhesives_sealants
+|   |-- adhesives_glues
+|   |-- sealants
+|   `-- tapes_foams
+|-- automotive
+|   |-- automotive_cleaners
+|   |-- chargers_bulbs
+|   |-- engine_oil
+|   `-- wiper_blades
+|-
+[ecom-mcp 19:54:56]   -> 128 chars
+[ecom-mcp 19:54:58] ecom_tree(root='/proc/catalog/automotive/engine_oil', level=2)
+[ecom-mcp 19:54:59]   -> engine_oil
+|-- fam_automotive_engine_oil_0001_15f2jmju
+|   |-- AUT-14P6RUQC.json
+|   |-- AUT-1EAJSNC3.json
+|   |-- AUT-23VD7C1C.json
+|   |-- AUT-26GLEOIK.json
+|   |-- AUT-2JJVWI1T.json
+|   |-- AUT-3EB
+[ecom-mcp 19:55:02] ecom_read(path='/docs/README.md', start=0, end=0, number=False)
+[ecom-mcp 19:55:03]   -> 6068 chars
+[ecom-mcp 19:55:03] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:55:03]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:55:05] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTV
+[ecom-mcp 19:55:05] FastMCP server listening on stdio
+[ecom-mcp 19:55:10] ecom_read(path='/proc/catalog/automotive/engine_oil/fam_automotive_engine_oil_0014_2uqbg4nu/AUT-294CSA2H.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:10]   -> 397 chars
+[ecom-mcp 19:55:10] ecom_read(path='/proc/catalog/workshop_machines/compressors_extractors/fam_workshop_machines_compressors_extractors_0014_3hw5cvui/MAC-1DGENKRR.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:11]   -> 481 chars
+[ecom-mcp 19:55:11] ecom_read(path='/proc/catalog/safety_gear/work_gloves/fam_safety_gear_work_gloves_0013_s7pyp33k/SFE-2U81CP4X.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:11]   -> 394 chars
+[ecom-mcp 19:55:12] ecom_exec(path='/bin/sql', args=None, stdin_len=263)
+[ecom-mcp 19:55:12]   -> sku,path,brand,series,model,name
+[ecom-mcp 19:55:12] ecom_exec(path='/bin/sql', args=None, stdin_len=84)
+[ecom-mcp 19:55:13]   -> id,path,name,city
+store_graz_jakomini,/proc/stores/store_graz_jakomini.json,PowerTool Graz Jakomini,Graz
+store_graz_lend,/proc/stores/store_graz_lend.json,PowerTool Graz Lend,Graz
+[ecom-mcp 19:55:21] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:55:21]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:55:22] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTW
+[ecom-mcp 19:55:22] FastMCP server listening on stdio
+[ecom-mcp 19:55:23] ecom_exec(path='/bin/sql', args=None, stdin_len=283)
+[ecom-mcp 19:55:23]   -> sku,path,brand,series,model,name
+MAC-BUV849UF,/proc/catalog/workshop_machines/compressors_extractors/MAC-BUV849UF.json,Makita,LXT,DDF WIL-JD6,Makita LXT DDF WIL-JD6 Compressor and Dust Extractor compr
+[ecom-mcp 19:55:23] ecom_exec(path='/bin/sql', args=None, stdin_len=186)
+[ecom-mcp 19:55:24]   -> family_id,brand,series,model,name,path
+fam_workshop_machines_compressors_extractors_0002_s6tig0sm,Makita,LXT,DDF WIL-JD6,Makita LXT DDF WIL-JD6 Compressor and Dust Extractor compressor 3000W 100l,/pro
+[ecom-mcp 19:55:26] ecom_exec(path='/bin/sql', args=None, stdin_len=465)
+[ecom-mcp 19:55:26]   -> sku,path,brand,series,model,name,props
+[ecom-mcp 19:55:30] ecom_exec(path='/bin/sql', args=None, stdin_len=268)
+[ecom-mcp 19:55:30]   -> sku,path,brand,series,model,name
+PLB-2PVWUT9F,/proc/catalog/plumbing/pipe_fittings/fam_plumbing_pipe_fittings_0005_3mcv3tzi/PLB-2PVWUT9F.json,Viega,Profipress,Sanpress 3LP-EOM,Viega Profipress Sanpres
+[ecom-mcp 19:55:31] ecom_exec(path='/bin/sql', args=None, stdin_len=219)
+[ecom-mcp 19:55:31]   -> sku,key,value_text,value_number
+MAC-1J26BB2B,machine_type,dust extractor,
+MAC-1J26BB2B,mount_type,floor standing,
+MAC-1J26BB2B,power_w,3000,3000
+MAC-1J26BB2B,tank_volume_l,0,0
+MAC-1J26BB2B,voltage_v,2
+[ecom-mcp 19:55:31] ecom_exec(path='/bin/sql', args=None, stdin_len=497)
+[ecom-mcp 19:55:32]   -> sku,path,name
+MAC-1J26BB2B,/proc/catalog/workshop_machines/compressors_extractors/MAC-1J26BB2B.json,Makita LXT DDF WIL-JD6 Compressor and Dust Extractor dust extractor 3000W 0l
+[ecom-mcp 19:55:32] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 19:55:33]   -> 4867 chars
+[ecom-mcp 19:55:34] ecom_exec(path='/bin/sql', args=None, stdin_len=253)
+[ecom-mcp 19:55:34]   -> sku,path,brand,series,model,name
+PLB-2U19J8SY,/proc/catalog/plumbing/valves_connectors/fam_plumbing_valves_connectors_0010_1x3ho4ar/PLB-2U19J8SY.json,Viega,Universal,Profipress 2PL-3IQ,Viega Universal
+[ecom-mcp 19:55:35] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 19:55:35]   -> 1546 chars
+[ecom-mcp 19:55:36] ecom_find(name='PLB-2U19J8SY.json', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 19:55:36] ecom_find(name='MAC-1J26BB2B', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 19:55:37]   -> {}
+[ecom-mcp 19:55:37] ecom_read(path='/proc/stores/store_graz_jakomini.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:37]   -> {
+  "paths": [
+    "/proc/catalog/plumbing/valves_connectors/fam_plumbing_valves_connectors_0010_1x3ho4ar/PLB-2U19J8SY.json"
+  ]
+}
+[ecom-mcp 19:55:37]   -> 117 chars
+[ecom-mcp 19:55:37] ecom_read(path='/proc/stores/store_graz_lend.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:37]   -> 108 chars
+[ecom-mcp 19:55:38] ecom_read_silent(path='/proc/baskets/basket_199.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:38]   -> 186 chars [not tracked]
+[ecom-mcp 19:55:39] ecom_exec(path='/bin/sql', args=None, stdin_len=79)
+[ecom-mcp 19:55:39]   -> id,path,name,city
+store_vienna_meidling,/proc/stores/store_vienna_meidling.json,PowerTool Vienna Meidling,Vienna
+store_vienna_praterstern,/proc/stores/store_vienna_praterstern.json,PowerTool Vienna Pr
+[ecom-mcp 19:55:43] ecom_exec(path='/bin/sql', args=None, stdin_len=198)
+[ecom-mcp 19:55:43]   -> id,path,available_today
+store_vienna_meidling,/proc/stores/store_vienna_meidling.json,5
+store_vienna_praterstern,/proc/stores/store_vienna_praterstern.json,0
+[ecom-mcp 19:55:45] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 19:55:46]   -> 3708 chars
+[ecom-mcp 19:55:46] ecom_exec(path='/bin/sql', args=None, stdin_len=191)
+[ecom-mcp 19:55:46] ecom_exec(path='/bin/sql', args=None, stdin_len=192)
+[ecom-mcp 19:55:46]   -> total_available_today
+5
+[ecom-mcp 19:55:46]   -> id,name,available_today
+store_graz_jakomini,PowerTool Graz Jakomini,0
+store_graz_lend,PowerTool Graz Lend,2
+[ecom-mcp 19:55:46] ecom_exec(path='/bin/sql', args=None, stdin_len=186)
+[ecom-mcp 19:55:47]   -> total_available_today
+2
+[ecom-mcp 19:55:47] ecom_read(path='/proc/catalog/workshop_machines/compressors_extractors/MAC-1J26BB2B.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:47]   -> 474 chars
+[ecom-mcp 19:55:49] ecom_read(path='/proc/baskets/basket_199.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:49]   -> 186 chars
+[ecom-mcp 19:55:50] ecom_read(path='/proc/catalog/plumbing/valves_connectors/fam_plumbing_valves_connectors_0010_1x3ho4ar/PLB-2U19J8SY.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:50]   -> 480 chars
+[ecom-mcp 19:55:52] ecom_read(path='/proc/stores/store_vienna_meidling.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:52]   -> 122 chars
+[ecom-mcp 19:55:52] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 19:55:53]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 19:55:54] ecom_read(path='/proc/stores/store_vienna_praterstern.json', start=0, end=0, number=False)
+[ecom-mcp 19:55:54]   -> 128 chars
+[ecom-mcp 19:55:55] ecom_exec(path='/bin/sql', args=None, stdin_len=107)
+[ecom-mcp 19:55:55]   -> available_today
+[ecom-mcp 19:55:56] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTX
+[ecom-mcp 19:55:57] FastMCP server listening on stdio
+[ecom-mcp 19:56:03] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTY
+[ecom-mcp 19:56:03] FastMCP server listening on stdio
+[ecom-mcp 19:56:07] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTZ
+[ecom-mcp 19:56:07] FastMCP server listening on stdio
+[ecom-mcp 19:56:09] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTa
+[ecom-mcp 19:56:10] FastMCP server listening on stdio
+[ecom-mcp 19:56:10] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTb
+[ecom-mcp 19:56:11] FastMCP server listening on stdio
+[ecom-mcp 19:56:13] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTc
+[ecom-mcp 19:56:14] FastMCP server listening on stdio
+[ecom-mcp 19:56:15] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTd
+[ecom-mcp 19:56:15] FastMCP server listening on stdio
+[ecom-mcp 19:56:20] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTe
+[ecom-mcp 19:56:20] FastMCP server listening on stdio
+[ecom-mcp 19:56:21] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTf
+[ecom-mcp 19:56:21] FastMCP server listening on stdio
+[ecom-mcp 19:56:28] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTg
+[ecom-mcp 19:56:28] FastMCP server listening on stdio
+[ecom-mcp 19:56:30] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTh
+[ecom-mcp 19:56:30] FastMCP server listening on stdio
+[ecom-mcp 19:56:35] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTi
+[ecom-mcp 19:56:36] FastMCP server listening on stdio
+[ecom-mcp 19:56:37] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTj
+[ecom-mcp 19:56:37] FastMCP server listening on stdio
+[ecom-mcp 19:56:37] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTk
+[ecom-mcp 19:56:38] FastMCP server listening on stdio
+[ecom-mcp 19:56:42] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTm
+[ecom-mcp 19:56:43] FastMCP server listening on stdio
+[ecom-mcp 19:56:43] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTn
+[ecom-mcp 19:56:43] FastMCP server listening on stdio
+[ecom-mcp 19:56:46] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTo
+[ecom-mcp 19:56:46] FastMCP server listening on stdio
+[ecom-mcp 19:56:49] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTp
+[ecom-mcp 19:56:49] FastMCP server listening on stdio
+[ecom-mcp 19:56:52] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTq
+[ecom-mcp 19:56:53] FastMCP server listening on stdio
+[ecom-mcp 19:56:53] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTr
+[ecom-mcp 19:56:54] FastMCP server listening on stdio
+[ecom-mcp 19:57:00] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTs
+[ecom-mcp 19:57:00] FastMCP server listening on stdio
+[ecom-mcp 19:57:00] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTt
+[ecom-mcp 19:57:00] FastMCP server listening on stdio
+[ecom-mcp 19:57:02] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTu
+[ecom-mcp 19:57:03] FastMCP server listening on stdio
+[ecom-mcp 19:57:06] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTv
+[ecom-mcp 19:57:07] FastMCP server listening on stdio
+[ecom-mcp 19:57:07] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTw
+[ecom-mcp 19:57:07] FastMCP server listening on stdio
+[ecom-mcp 19:57:16] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTx
+[ecom-mcp 19:57:16] FastMCP server listening on stdio
+[ecom-mcp 19:57:17] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTy
+[ecom-mcp 19:57:17] FastMCP server listening on stdio
+[ecom-mcp 19:57:22] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eTz
+[ecom-mcp 19:57:22] FastMCP server listening on stdio
+[ecom-mcp 19:57:22] Starting: harness=https://api.bitgn.com/vm/vm2-LxeReruuhND9ooCFhivq1Bj1eU1
+[ecom-mcp 19:57:22] FastMCP server listening on stdio
