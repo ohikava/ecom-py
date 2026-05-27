@@ -1,0 +1,183 @@
+[ecom-mcp 22:18:15] Starting: harness=https://api.bitgn.com/vm/vm2-Lxem5WVxmo2Z1noWijotgDeJ7Lc
+[ecom-mcp 22:18:16] FastMCP server listening on stdio
+[ecom-mcp 22:18:23] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:18:24]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 22:18:24] ecom_find(name='Heco', root='/proc', kind='files', limit=10)
+[ecom-mcp 22:18:24]   -> {}
+[ecom-mcp 22:18:41] ecom_find(name='Heco', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 22:18:42]   -> {}
+[ecom-mcp 22:18:42] ecom_search(pattern='Heco', root='/proc/catalog', limit=10)
+[ecom-mcp 22:18:42]   -> /proc/catalog/FST-1HE3ZSQ6.json:1:{"sku":"FST-1HE3ZSQ6","category_id":"fasteners","kind_id":"wood_drywall_screws","family_id":"fam_fasteners_wood_drywall_screws_0001_tjhwqk77","brand":"Heco","series":
+[ecom-mcp 22:19:30] ecom_exec(path='/bin/sql', args=None, stdin_len=113)
+[ecom-mcp 22:19:31]   -> store_id,sku,on_hand,reserved,available_today
+store_vienna_praterstern,FST-23VT61XO,0,0,0
+store_vienna_meidling,FST-23VT61XO,1,0,1
+store_linz_hauptplatz,FST-23VT61XO,7,1,6
+store_bratislava_stare_mesto
+[ecom-mcp 22:19:31] ecom_read(path='/proc/catalog/FST-23VT61XO.json', start=0, end=0, number=False)
+[ecom-mcp 22:19:31]   -> 480 chars
+[ecom-mcp 22:19:46] ecom_tree(root='/docs', level=4)
+[ecom-mcp 22:19:47]   -> docs
+|-- checkout.md
+|-- discounts.md
+|-- merchant-continuity-and-critical-incidents.md
+|-- os-and-tooling-incidents-and-workarounds.md
+|-- payments
+|   `-- 3ds.md
+|-- powertools-agentic-os-origin-sto
+[ecom-mcp 22:22:08] ecom_exec(path='/bin/checkout', args=None, stdin_len=6)
+[ecom-mcp 22:22:15]   -> stderr:
+checkout: expected exactly one basket id
+[exit 1]
+[ecom-mcp 22:27:53] Starting: harness=https://api.bitgn.com/vm/vm2-Lxem5WVxmo2Z1noWijotgDeJ7Ld
+[ecom-mcp 22:27:53] FastMCP server listening on stdio
+[ecom-mcp 22:28:43] ecom_find(name='Wiha', root='/proc/catalog', kind='dirs', limit=10)
+[ecom-mcp 22:28:48]   -> {
+  "paths": [
+    "/proc/catalog/Wiha"
+  ]
+}
+[ecom-mcp 22:28:48] ecom_search(pattern='13X-B49', root='/proc/catalog', limit=10)
+[ecom-mcp 22:28:51]   -> /proc/catalog/Wiha/HND-285R47SD.json:1:{"sku":"HND-285R47SD","category_id":"hand_tools","kind_id":"screwdriver_hex_sets","family_id":"fam_hand_tools_screwdriver_hex_sets_0001_1zp9rotv","brand":"Wiha",
+[ecom-mcp 22:36:00] ecom_read(path='/proc/catalog/Wiha/HND-285R47SD.json', start=0, end=0, number=False)
+[ecom-mcp 22:36:10]   -> 428 chars
+[ecom-mcp 22:36:10] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:36:13]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 22:38:56] Starting: harness=https://api.bitgn.com/vm/vm2-Lxem5WVxmo2Z1noWijotgDeJ7Le
+[ecom-mcp 22:38:57] FastMCP server listening on stdio
+[ecom-mcp 22:39:44] ecom_search(pattern='fid3', root='/proc/catalog', limit=10)
+[ecom-mcp 22:39:49]   -> (no matches)
+[ecom-mcp 22:39:49] ecom_search(pattern='FID', root='/proc/catalog', limit=20)
+[ecom-mcp 22:39:52]   -> (no matches)
+[ecom-mcp 22:41:00] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:41:02]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 22:43:26] ecom_search(pattern='milwaukee.*fid|FID.*milwaukee', root='/proc/catalog', limit=10)
+[ecom-mcp 22:43:28]   -> (no matches)
+[ecom-mcp 22:43:28] ecom_search(pattern='FID3', root='/proc/catalog', limit=10)
+[ecom-mcp 22:43:30]   -> (no matches)
+[ecom-mcp 22:44:06] ecom_exec(path='/bin/sql', args=None, stdin_len=146)
+[ecom-mcp 22:44:11]   -> sku,brand,series,model,name
+[ecom-mcp 22:45:13] ecom_search(pattern='milwaukee', root='/proc/inventory', limit=10)
+[ecom-mcp 22:45:19]   -> ERROR: search failed: not found
+[ecom-mcp 22:45:19] ecom_search(pattern='FID', root='/', limit=10)
+[ecom-mcp 22:45:19]   -> (no matches)
+[ecom-mcp 22:48:00] Starting: harness=https://api.bitgn.com/vm/vm2-Lxem5WVxmo2Z1noWijotgDeJ7Lf
+[ecom-mcp 22:48:01] FastMCP server listening on stdio
+[ecom-mcp 22:48:35] ecom_find(name='Dresselhaus', root='/proc/catalog', kind='dirs', limit=10)
+[ecom-mcp 22:48:39]   -> {}
+[ecom-mcp 22:48:39] ecom_search(pattern='Dresselhaus', root='/proc/catalog', limit=10)
+[ecom-mcp 22:48:43]   -> /proc/catalog/fasteners/nuts_bolts_washers/fam_fasteners_nuts_bolts_washers_0001_3v0579nu/FST-14HJI67A.json:1:{"sku":"FST-14HJI67A","category_id":"fasteners","kind_id":"nuts_bolts_washers","family_id"
+[ecom-mcp 22:55:28] ecom_search(pattern='PXG-AY9', root='/', limit=30)
+[ecom-mcp 22:55:42]   -> /proc/catalog/fasteners/wood_drywall_screws/fam_fasteners_wood_drywall_screws_0010_2iauhlb9/FST-11OC68IL.json:1:{"sku":"FST-11OC68IL","category_id":"fasteners","kind_id":"wood_drywall_screws","family_
+[ecom-mcp 22:57:26] ecom_read(path='/proc/catalog/fasteners/wood_drywall_screws/fam_fasteners_wood_drywall_screws_0010_2iauhlb9/FST-20H52HEB.json', start=0, end=0, number=False)
+[ecom-mcp 22:57:33] Starting: harness=https://api.bitgn.com/vm/vm2-Lxem5WVxmo2Z1noWijotgDeJ7Lg
+[ecom-mcp 22:57:34] FastMCP server listening on stdio
+[ecom-mcp 22:58:50] ecom_search(pattern='Heco', root='/proc/catalog', limit=10)
+[ecom-mcp 22:59:02]   -> /proc/catalog/FST-1HE3ZSQ6.json:1:{"sku":"FST-1HE3ZSQ6","category_id":"fasteners","kind_id":"wood_drywall_screws","family_id":"fam_fasteners_wood_drywall_screws_0001_tjhwqk77","brand":"Heco","series":
+[ecom-mcp 23:00:03] ecom_find(name='fam_fasteners_wood_drywall_screws_0001_tjhwqk77', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 23:00:10]   -> {}
+[ecom-mcp 23:02:34] ecom_read(path='/proc/catalog/FST-1HE3ZSQ6.json', start=0, end=0, number=False)
+[ecom-mcp 23:02:37]   -> 488 chars
+[ecom-mcp 23:02:58] ecom_read(path='/proc/catalog/FST-1KPF96UD.json', start=0, end=0, number=False)
+[ecom-mcp 23:03:01]   -> 498 chars
+[ecom-mcp 23:03:01] ecom_read_silent(path='/proc/catalog/FST-23VT61XO.json', start=0, end=0, number=False)
+[ecom-mcp 23:03:01]   -> 480 chars [not tracked]
+[ecom-mcp 23:04:52] Starting: harness=https://api.bitgn.com/vm/vm2-Lxem5WVxmo2Z1noWijotgDeJ7Lh
+[ecom-mcp 23:04:53] FastMCP server listening on stdio
+[ecom-mcp 23:06:21] ecom_exec(path='/bin/sql', args=None, stdin_len=36)
+[ecom-mcp 23:06:26]   -> name,sql
+categories,"CREATE TABLE categories (
+	id TEXT PRIMARY KEY,
+	name TEXT NOT NULL,
+	department TEXT NOT NULL
+)"
+sqlite_autoindex_categories_1,
+product_kinds,"CREATE TABLE product_kinds (
+	id TE
+[ecom-mcp 23:06:26] ecom_find(name='Fischer', root='/', kind='all', limit=10)
+[ecom-mcp 23:06:27]   -> {
+  "paths": [
+    "/proc/catalog/Fischer"
+  ]
+}
+[ecom-mcp 23:08:15] ecom_exec(path='/bin/sql', args=None, stdin_len=95)
+[ecom-mcp 23:08:17]   -> sku,path,brand,series,model,name,properties
+FST-2I7GNA88,/proc/catalog/Fischer/FST-2I7GNA88.json,Fischer,SX,SX 7UY-G03,Fischer SX SX 7UY-G03 Anchor and Wall Plug cavity fixing 6mm 60mm 200pc,"{""ancho
+[ecom-mcp 23:11:26] ecom_read(path='/proc/catalog/Fischer/FST-WY12PHPB.json', start=0, end=0, number=False)
+[ecom-mcp 23:11:29]   -> 420 chars
+[ecom-mcp 23:11:29] ecom_read(path='/proc/catalog/Fischer/FST-69283OWE.json', start=0, end=0, number=False)
+[ecom-mcp 23:11:29]   -> 420 chars
+[ecom-mcp 23:14:02] Starting: harness=https://api.bitgn.com/vm/vm2-Lxem5WVxmo2Z1noWijotgDeJ7Li
+[ecom-mcp 23:14:02] FastMCP server listening on stdio
+[ecom-mcp 23:15:07] ecom_read(path='/proc/catalog/Fischer/FST-WY12PHPB.json', start=0, end=0, number=False)
+[ecom-mcp 23:15:25] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 23:15:28]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 23:15:28] ecom_find(name='Shell', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 23:15:29]   -> {}
+[ecom-mcp 23:18:14] ecom_find(name='shell', root='/', kind='all', limit=10)
+[ecom-mcp 23:18:16]   -> {}
+[ecom-mcp 23:18:16] ecom_list(path='/proc/catalog')
+[ecom-mcp 23:18:16]   -> adhesives_sealants/
+automotive/
+cleaning/
+electrical/
+fasteners/
+garden_tools/
+hand_tools/
+paints_finishes/
+plumbing/
+power_tools/
+safety_gear/
+storage/
+workshop_machines/
+workwear/
+[ecom-mcp 23:23:17] Starting: harness=https://api.bitgn.com/vm/vm2-Lxem5WVxmo2Z1noWijotgDeJ7Lj
+[ecom-mcp 23:23:17] FastMCP server listening on stdio
+[ecom-mcp 23:24:19] ecom_find(name='Dresselhaus', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 23:24:22]   -> {}
+[ecom-mcp 23:24:22] ecom_find(name='1DA-WYU', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 23:24:22]   -> {}
+[ecom-mcp 23:24:36] ecom_list(path='/proc/catalog')
+[ecom-mcp 23:24:38]   -> adhesives_sealants/
+automotive/
+cleaning/
+electrical/
+fasteners/
+garden_tools/
+hand_tools/
+paints_finishes/
+plumbing/
+power_tools/
+safety_gear/
+storage/
+workshop_machines/
+workwear/
+[ecom-mcp 23:24:38] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 23:24:39]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 23:28:14] ecom_tree(root='/proc/catalog/fasteners', level=3)
+[ecom-mcp 23:28:15]   -> fasteners
+|-- anchors_plugs
+|   |-- fam_fasteners_anchors_plugs_0001_1fimm0xb
+|   |   |-- FST-15Z8J68X.json
+|   |   |-- FST-1HSFWAEN.json
+|   |   |-- FST-1IV1IJZW.json
+|   |   |-- FST-1LJU6HPW.json
+| 
+[ecom-mcp 23:28:15] ecom_exec(path='/bin/sql', args=None, stdin_len=112)
+[ecom-mcp 23:28:18]   -> sku,path,brand,series,model,name,kind_id,family_id
+FST-1NDRNUH3,/proc/catalog/fasteners/wood_drywall_screws/fam_fasteners_wood_drywall_screws_0002_22jtolf8/FST-1NDRNUH3.json,Dresselhaus,Outdoor,DRE 2A

@@ -1,0 +1,28 @@
+# 014 — DOES NOT require any ~/.codex/config.toml entries.
+#
+# Unlike 005-013, the 014 runner inlines every relevant config key as a `-c`
+# override on every `codex exec` invocation:
+#   - MCP server: command, args, and per-task env (VAULT_HARNESS_URL,
+#     VAULT_MCP_REFS, VAULT_MCP_LOG).
+#   - Model provider: model_provider + model_providers.openrouter.{name,
+#     base_url, env_key, wire_api}.
+#
+# The block below is what an equivalent ~/.codex/config.toml fragment would
+# look like if you wanted to set it permanently — provided as documentation,
+# NOT consumed by the runner.
+
+[mcp_servers.bitgn-ecom]
+command = "/Users/ivan/Documents/ai/ecom-py/venv/bin/python"
+args = ["/Users/ivan/Documents/ai/ecom-py/experiments/014-deepseek-openrouter/agent/ecom_mcp_server.py"]
+
+[mcp_servers.bitgn-ecom.env]
+VAULT_HARNESS_URL = "https://api.bitgn.com"
+VAULT_MCP_LOG     = "/Users/ivan/Documents/ai/ecom-py/experiments/014-deepseek-openrouter/agent/ecom_mcp.log"
+
+[model_providers.openrouter]
+name     = "openrouter"
+base_url = "https://openrouter.ai/api/v1"
+env_key  = "OPENROUTER_API_KEY"
+# DeepSeek and most OpenRouter models speak OpenAI /chat/completions. Codex's
+# default `responses` would 404 against OpenRouter.
+wire_api = "chat"

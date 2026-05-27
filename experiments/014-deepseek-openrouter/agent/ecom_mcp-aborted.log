@@ -1,0 +1,128 @@
+[ecom-mcp 21:38:00] Starting: harness=https://api.bitgn.com/vm/vm2-LxefnzkSkgiRyNZMKKKJ9u5c16g
+[ecom-mcp 21:38:00] FastMCP server listening on stdio
+[ecom-mcp 21:38:14] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 21:38:15]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 21:38:15] ecom_find(name='Heco', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 21:38:15]   -> {}
+[ecom-mcp 21:39:38] ecom_exec(path='/bin/sql', args=None, stdin_len=125)
+[ecom-mcp 21:39:39]   -> sku,brand,series,model,name
+FST-23VT61XO,Heco,Zinc Plated,TopFix GTU-YPJ,Heco Zinc Plated TopFix GTU-YPJ Wood and Drywall Screw wood screw 6mm 80mm torx 25pc
+FST-1KPF96UD,Heco,Zinc Plated,TopFix GTU-Y
+[ecom-mcp 21:41:28] ecom_find(name='FST-1HE3ZSQ6', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 21:41:29]   -> {}
+[ecom-mcp 21:47:04] Starting: harness=https://api.bitgn.com/vm/vm2-LxefnzkSkgiRyNZMKKKJ9u5c16h
+[ecom-mcp 21:47:04] FastMCP server listening on stdio
+[ecom-mcp 21:47:47] ecom_find(name='MEL 233-MOB', root='/', kind='all', limit=10)
+[ecom-mcp 21:47:48]   -> {}
+[ecom-mcp 21:47:48] ecom_search(pattern='MEL.?233', root='/proc/catalog', limit=10)
+[ecom-mcp 21:47:48]   -> /proc/catalog/Mellerud/CLN-15KJ3KVR.json:1:{"sku":"CLN-15KJ3KVR","category_id":"cleaning","kind_id":"cleaning_liquids","family_id":"fam_cleaning_cleaning_liquids_0001_2qh4r4kn","brand":"Mellerud","ser
+[ecom-mcp 21:48:08] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 21:48:09]   -> 4867 chars
+[ecom-mcp 21:48:14] ecom_read(path='/proc/catalog/Mellerud/CLN-3Q19VP4J.json', start=0, end=0, number=False)
+[ecom-mcp 21:48:14]   -> 421 chars
+[ecom-mcp 21:49:40] Starting: harness=https://api.bitgn.com/vm/vm2-LxefnzkSkgiRyNZMKKKJ9u5c16i
+[ecom-mcp 21:49:41] FastMCP server listening on stdio
+[ecom-mcp 21:49:52] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 21:49:53]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 21:49:53] ecom_find(name='Bostik', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 21:49:53]   -> {}
+[ecom-mcp 21:50:15] ecom_exec(path='/bin/sql', args=None, stdin_len=108)
+[ecom-mcp 21:50:16]   -> sku,name,brand,series,model
+ADH-2LEIGW7O,Pattex Universal Repair 56O-393 Sealant sanitary sealant Clear 280ml,Pattex,Universal,Repair 56O-393
+ADH-35UD9OTV,Pattex Universal Repair 56O-393 Sealant acryl
+[ecom-mcp 21:51:13] ecom_read(path='/proc/catalog/Bostik/ADH-1QVUR1QW.json', start=0, end=0, number=False)
+[ecom-mcp 21:52:05] ecom_find(name='ADH-1QVUR1QW', root='/', kind='all', limit=10)
+[ecom-mcp 21:52:06]   -> {}
+[ecom-mcp 21:58:44] Starting: harness=https://api.bitgn.com/vm/vm2-LxefnzkSkgiRyNZMKKKJ9u5c16j
+[ecom-mcp 21:58:45] FastMCP server listening on stdio
+[ecom-mcp 21:59:16] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 21:59:17]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 21:59:17] ecom_find(name='hazet', root='/proc/catalog', kind='files', limit=20)
+[ecom-mcp 21:59:18]   -> {}
+[ecom-mcp 22:00:33] ecom_tree(root='/proc/catalog', level=2)
+[ecom-mcp 22:00:34]   -> catalog
+|-- adhesives_sealants
+|   |-- adhesives_glues
+|   |-- sealants
+|   `-- tapes_foams
+|-- automotive
+|   |-- automotive_cleaners
+|   |-- chargers_bulbs
+|   |-- engine_oil
+|   `-- wiper_blades
+|-
+[ecom-mcp 22:02:04] ecom_search(pattern='hazet', root='/proc/catalog', limit=20)
+[ecom-mcp 22:02:04]   -> (no matches)
+[ecom-mcp 22:02:04] ecom_list(path='/proc/catalog/hand_tools/screwdriver_hex_sets')
+[ecom-mcp 22:02:05]   -> fam_hand_tools_screwdriver_hex_sets_0001_1h5zbsf6/
+fam_hand_tools_screwdriver_hex_sets_0002_3v3nbz3n/
+fam_hand_tools_screwdriver_hex_sets_0003_2ujtsnsv/
+fam_hand_tools_screwdriver_hex_sets_0004_2ik94t
+[ecom-mcp 22:05:44] ecom_exec(path='/bin/sql', args=None, stdin_len=72)
+[ecom-mcp 22:05:45]   -> sku,brand,name
+HND-6RN49T0A,Hazet,Hazet Precision 900 2NG-Q9V Screwdriver and Hex Key Set phillips 12pc soft grip
+HND-O4RVZRL8,Hazet,Hazet Precision 900 2NG-Q9V Screwdriver and Hex Key Set mixed 32pc 
+[ecom-mcp 22:06:54] ecom_exec(path='/bin/sql', args=None, stdin_len=168)
+[ecom-mcp 22:06:55]   -> sku,name
+[ecom-mcp 22:07:48] Starting: harness=https://api.bitgn.com/vm/vm2-LxefnzkSkgiRyNZMKKKJ9u5c16k
+[ecom-mcp 22:07:48] FastMCP server listening on stdio
+[ecom-mcp 22:07:58] ecom_search(pattern='Festool.*Tool Box.*Bag', root='/', limit=20)
+[ecom-mcp 22:07:59]   -> /proc/catalog/STO-12JLHT7D.json:1:{"sku":"STO-12JLHT7D","category_id":"storage","kind_id":"tool_boxes_bags","family_id":"fam_storage_tool_boxes_bags_0001_47ouogcc","brand":"Festool","series":"Stackabl
+[ecom-mcp 22:08:00] ecom_find(name='*festool*', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 22:08:00]   -> {}
+[ecom-mcp 22:10:03] ecom_read(path='/proc/catalog/STO-12JLHT7D.json', start=0, end=0, number=False)
+[ecom-mcp 22:10:04]   -> 432 chars
+[ecom-mcp 22:10:04] ecom_read(path='/proc/catalog/STO-2R84BSHQ.json', start=0, end=0, number=False)
+[ecom-mcp 22:10:04]   -> 432 chars
+[ecom-mcp 22:10:43] Starting: harness=https://api.bitgn.com/vm/vm2-LxefnzkSkgiRyNZMKKKJ9u5c16m
+[ecom-mcp 22:10:44] FastMCP server listening on stdio
+[ecom-mcp 22:10:55] ecom_find(name='Dresselhaus', root='/proc/catalog', kind='dirs', limit=10)
+[ecom-mcp 22:10:56]   -> {
+  "paths": [
+    "/proc/catalog/Dresselhaus"
+  ]
+}
+[ecom-mcp 22:10:56] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:10:56]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 22:11:30] ecom_list(path='/proc/catalog/Dresselhaus')
+[ecom-mcp 22:11:31]   -> FST-2BS86XJD.json
+FST-3UJYMKDT.json
+FST-VBCWS2XQ.json
+FST-Y6DEWP13.json
+[ecom-mcp 22:11:32] ecom_exec(path='/bin/sql', args=None, stdin_len=158)
+[ecom-mcp 22:11:32]   -> sku,name,series,model,kind_id,properties
+FST-3UJYMKDT,Dresselhaus Outdoor Pro 1VG-P5G Wood and Drywall Screw wood screw 5mm 60mm slot 50pc,Outdoor,Pro 1VG-P5G,wood_drywall_screws,"{""diameter_mm"":5,"
+[ecom-mcp 22:12:28] ecom_read(path='/proc/catalog/Dresselhaus/FST-3UJYMKDT.json', start=0, end=0, number=False)
+[ecom-mcp 22:12:28]   -> 468 chars
+[ecom-mcp 22:13:21] ecom_exec(path='/bin/sql', args=None, stdin_len=164)
+[ecom-mcp 22:13:22]   -> sku,name,properties
+FST-3UJYMKDT,Dresselhaus Outdoor Pro 1VG-P5G Wood and Drywall Screw wood screw 5mm 60mm slot 50pc,"{""diameter_mm"":5,""drive_type"":""slot"",""length_mm"":60,""material"":""steel"
+[ecom-mcp 22:15:15] Starting: harness=https://api.bitgn.com/vm/vm2-LxefnzkSkgiRyNZMKKKJ9u5c16n
+[ecom-mcp 22:15:15] FastMCP server listening on stdio
+[ecom-mcp 22:15:42] ecom_find(name='Bahco', root='/proc/catalog', kind='dirs', limit=10)
+[ecom-mcp 22:15:42]   -> {}
+[ecom-mcp 22:15:43] ecom_find(name='ETS-3CM', root='/proc/catalog', kind='files', limit=10)
+[ecom-mcp 22:15:43]   -> {}
+[ecom-mcp 22:16:39] ecom_search(pattern='Bahco', root='/', limit=10)
+[ecom-mcp 22:16:40]   -> /proc/catalog/hand_tools/pliers_wrenches/HND-18W1I2EF.json:1:{"sku":"HND-18W1I2EF","category_id":"hand_tools","kind_id":"pliers_wrenches","family_id":"fam_hand_tools_pliers_wrenches_0001_1yfrfvqm","br
+[ecom-mcp 22:16:40] ecom_exec(path='/bin/sql', args=None, stdin_len=69)
+[ecom-mcp 22:16:40]   -> name,sql
+basket_lines,"CREATE TABLE basket_lines (
+	basket_id TEXT NOT NULL,
+	line_no INTEGER NOT NULL,
+	sku TEXT NOT NULL,
+	quantity INTEGER NOT NULL,
+	PRIMARY KEY (basket_id, line_no),
+	FOREIGN KEY 
