@@ -1,0 +1,53 @@
+[ecom-mcp 23:00:30] Starting: harness=https://api.bitgn.com/vm/vm2-LxerbazpTPnj48kXbVfr5HYQpwa
+[ecom-mcp 23:00:30] FastMCP server listening on stdio
+[ecom-mcp 23:00:52] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 23:00:53]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 23:00:54] ecom_find(name='Heco', root='/proc/catalog', kind='all', limit=20)
+[ecom-mcp 23:00:54]   -> {}
+[ecom-mcp 23:01:02] ecom_exec(path='/bin/sql', args=None, stdin_len=86)
+[ecom-mcp 23:01:02]   -> sku,brand,series,model,name
+FST-23VT61XO,Heco,Zinc Plated,TopFix GTU-YPJ,Heco Zinc Plated TopFix GTU-YPJ Wood and Drywall Screw wood screw 6mm 80mm torx 25pc
+FST-1KPF96UD,Heco,Zinc Plated,TopFix GTU-Y
+[ecom-mcp 23:01:03] ecom_search(pattern='Heco', root='/proc/catalog', limit=20)
+[ecom-mcp 23:01:04]   -> /proc/catalog/FST-1HE3ZSQ6.json:1:{"sku":"FST-1HE3ZSQ6","category_id":"fasteners","kind_id":"wood_drywall_screws","family_id":"fam_fasteners_wood_drywall_screws_0001_tjhwqk77","brand":"Heco","series":
+[ecom-mcp 23:01:13] ecom_read(path='/proc/catalog/FST-1HE3ZSQ6.json', start=0, end=0, number=False)
+[ecom-mcp 23:01:15]   -> 488 chars
+[ecom-mcp 23:03:12] Starting: harness=https://api.bitgn.com/vm/vm2-LxeryeEHgZcekr3qVL7uwSypgCG
+[ecom-mcp 23:03:12] FastMCP server listening on stdio
+[ecom-mcp 23:03:23] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 23:03:23]   -> name,sql
+basket_lines_sku_idx,CREATE INDEX basket_lines_sku_idx ON basket_lines(sku)
+baskets_created_at_idx,CREATE INDEX baskets_created_at_idx ON baskets(created_at)
+baskets_customer_created_at_idx,"
+[ecom-mcp 23:03:24] ecom_find(name='Heco', root='/proc/catalog', kind='all', limit=20)
+[ecom-mcp 23:03:25]   -> {}
+[ecom-mcp 23:03:30] ecom_exec(path='/bin/sql', args=None, stdin_len=111)
+[ecom-mcp 23:03:31]   -> sku,path,brand,series,model,name,kind_id,family_id
+FST-23VT61XO,/proc/catalog/FST-23VT61XO.json,Heco,Zinc Plated,TopFix GTU-YPJ,Heco Zinc Plated TopFix GTU-YPJ Wood and Drywall Screw wood screw 6mm 80
+[ecom-mcp 23:03:32] ecom_list(path='/proc/catalog')
+[ecom-mcp 23:03:32]   -> CLN-GEF2EYP9.json
+CLN-NOLQX7ED.json
+FST-1HE3ZSQ6.json
+FST-1KPF96UD.json
+FST-23VT61XO.json
+FST-2JPIIG2S.json
+FST-3SJKL8BF.json
+FST-APSRIZJW.json
+STO-12JLHT7D.json
+STO-2R84BSHQ.json
+[ecom-mcp 23:03:48] ecom_read(path='/proc/catalog/FST-APSRIZJW.json', start=0, end=0, number=False)
+[ecom-mcp 23:03:49]   -> 435 chars
+[ecom-mcp 23:03:50] ecom_exec(path='/bin/sql', args=None, stdin_len=92)
+[ecom-mcp 23:03:50]   -> sku,key,value_text,value_number
+FST-APSRIZJW,diameter_mm,8,8
+FST-APSRIZJW,fastener_type,bolt,
+FST-APSRIZJW,length_mm,40,40
+FST-APSRIZJW,material,stainless steel,
+FST-APSRIZJW,pack_count,50,50
+[ecom-mcp 23:04:00] ecom_exec(path='/bin/sql', args=None, stdin_len=203)
+[ecom-mcp 23:04:01]   -> store_id,store_name,city,on_hand,available_today,incoming_quantity,next_arrival_in_days
+store_vienna_praterstern,PowerTool Vienna Praterstern,Vienna,8,7,0,
+store_vienna_meidling,PowerTool Vienna Meidl
