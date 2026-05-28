@@ -1,0 +1,18 @@
+[ecom-mcp 18:38:25] Starting: harness=https://api.bitgn.com/vm/vm2-LxhXEHmmriZDFeZ2yLGLvLvRgP9
+[ecom-mcp 18:38:25] FastMCP server listening on stdio
+[ecom-mcp 18:38:44] ecom_read(path='/archive/payment_batch_export_4Eg9W6mzLh.tsv', start=0, end=0, number=False)
+[ecom-mcp 18:38:45]   -> 32254 chars
+[ecom-mcp 18:39:41] ecom_write(path='/tmp/fraud_analysis.py', content_len=6043)
+[ecom-mcp 18:43:34] ecom_exec(path='/bin/python3', args=None, stdin_len=32391)
+[ecom-mcp 18:43:38] ecom_list(path='/bin')
+[ecom-mcp 18:43:38]   -> checkout
+claude
+codex
+date
+discount
+id
+payments
+README.md
+sql
+[ecom-mcp 18:46:54] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 18:46:54]   -> 4867 chars

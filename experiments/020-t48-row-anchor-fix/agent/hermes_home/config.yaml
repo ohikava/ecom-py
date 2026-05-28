@@ -1,0 +1,95 @@
+# Isolated Hermes config for experiment 020-t48-row-anchor-fix.
+#
+# hermes_agent.py points HERMES_HOME at this directory so that hermes -z
+# loads THIS config instead of the user's ~/.hermes/config.yaml.
+#
+# Goal: give the agent ONE channel to the world — the bitgn-ecom MCP server —
+# and nothing else.  All native toolsets (terminal, file, web, browser, code
+# execution, skills, memory, todo, messaging, …) are disabled so the model
+# cannot:
+#   - read or write the host filesystem
+#   - shell out / run code
+#   - browse the web or hit external HTTP endpoints
+#   - call other LLMs via delegation/moa/aux providers
+#   - generate / synthesize media
+
+model:
+  default: deepseek/deepseek-v4-pro
+  provider: openrouter
+
+agent:
+  max_turns: 90
+  # Every built-in toolset that hermes ships with on the cli platform.
+  # Subtracted from the resolved enabled set in tools_config.get_enabled_toolsets.
+  disabled_toolsets:
+    - web
+    - browser
+    - terminal
+    - file
+    - code_execution
+    - vision
+    - video
+    - image_gen
+    - video_gen
+    - x_search
+    - moa
+    - tts
+    # skills RE-ENABLED for 017 prototype — model can call skills_list /
+    # skill_view to load domain-specific guidance on demand. Skills live in
+    # local hermes_home/skills/ — no network, no host FS access beyond that.
+    - todo
+    - memory
+    - session_search
+    - clarify
+    - delegation
+    - cronjob
+    - messaging
+    - homeassistant
+    - spotify
+    - yuanbao
+    - computer_use
+
+# Strip every native toolset off the cli platform — leave only the MCP server.
+# tools_config._get_platform_tools reads this list verbatim; an empty list (or
+# one containing only MCP server names) means "no native tools".
+platform_toolsets:
+  cli:
+    - bitgn-ecom
+    - skills
+
+mcp_servers:
+  bitgn-ecom:
+    enabled: true
+    command: /Users/ivan/Documents/ai/ecom-py/venv/bin/python
+    args:
+      - /Users/ivan/Documents/ai/ecom-py/experiments/020-t48-row-anchor-fix/agent/ecom_mcp_server.py
+    # Hermes spawns MCP stdio servers with a filtered env that drops everything
+    # except baseline safe keys (PATH, HOME, XDG_*).  Per-task variables are
+    # passed explicitly here using ${VAR} interpolation against the hermes
+    # parent process env (which hermes_agent.py controls via subprocess.run).
+    env:
+      VAULT_HARNESS_URL: "${VAULT_HARNESS_URL}"
+      VAULT_MCP_REFS: "${VAULT_MCP_REFS}"
+      VAULT_MCP_LOG: "${VAULT_MCP_LOG}"
+
+# Belt-and-suspenders: turn off auxiliary LLM calls (vision/web_extract/
+# compression/agent_router/etc.) so the agent can't fan out to other models.
+auxiliary:
+  vision:
+    provider: ""
+    model: ""
+  web_extract:
+    provider: ""
+    model: ""
+  compression:
+    provider: ""
+    model: ""
+
+# Quiet the session storage knobs (prevents writes to state.db piling up).
+sessions:
+  auto_prune: true
+  retention_days: 14
+
+# Disable the model-catalog HTTP fetch — no network during runs.
+model_catalog:
+  enabled: false

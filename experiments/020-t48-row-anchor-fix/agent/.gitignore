@@ -1,0 +1,5 @@
+# Runtime / per-run artifacts.  Debug JSONL logs and the MCP log accumulate
+# per smoke / full run; we commit ONE representative smoke.log artifact for
+# the README, the rest is regenerated.
+__pycache__/
+*.pyc
