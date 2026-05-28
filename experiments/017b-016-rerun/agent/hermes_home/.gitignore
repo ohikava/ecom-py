@@ -1,0 +1,5 @@
+# Hermes runtime artifacts — keep only the checked-in config.yaml.
+# Everything else is regenerated on each `hermes -z` invocation.
+*
+!.gitignore
+!config.yaml
