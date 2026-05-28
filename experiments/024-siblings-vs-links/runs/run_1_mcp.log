@@ -1,0 +1,283 @@
+[ecom-mcp 22:15:26] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof68n
+[ecom-mcp 22:15:26] FastMCP server listening on stdio
+[ecom-mcp 22:15:27] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof693
+[ecom-mcp 22:15:27] FastMCP server listening on stdio
+[ecom-mcp 22:15:27] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof697
+[ecom-mcp 22:15:28] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof698
+[ecom-mcp 22:15:28] FastMCP server listening on stdio
+[ecom-mcp 22:15:28] FastMCP server listening on stdio
+[ecom-mcp 22:15:35] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 22:15:36] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:15:36]   -> 3708 chars
+[ecom-mcp 22:15:36]   -> name,sql
+customer_accounts_city_idx,CREATE INDEX customer_accounts_city_idx ON customer_accounts(home_city)
+customer_accounts_email_idx,CREATE INDEX customer_accounts_email_idx ON customer_accounts(cu
+[ecom-mcp 22:15:37] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 22:15:37]   -> 4867 chars
+[ecom-mcp 22:15:38] ecom_list(path='/proc/baskets')
+[ecom-mcp 22:15:39]   -> basket_001.json
+basket_002.json
+basket_003.json
+basket_004.json
+basket_005.json
+basket_006.json
+basket_007.json
+basket_008.json
+basket_009.json
+basket_010.json
+basket_011.json
+basket_012.json
+basket_0
+[ecom-mcp 22:15:40] ecom_read_silent(path='/proc/baskets/basket_234.json', start=0, end=0, number=False)
+[ecom-mcp 22:15:41]   -> 196 chars [not tracked]
+[ecom-mcp 22:15:42] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 22:15:42] ecom_exec(path='/bin/sql', args=None, stdin_len=154)
+[ecom-mcp 22:15:42]   -> 1546 chars
+[ecom-mcp 22:15:43]   -> product_sku,record_path,brand,series,model,product_name,product_kind_id
+GRD-272SFNEL,/proc/catalog/garden_tools/manual_garden_tools/GRD-272SFNEL.json,Stihl,Compact,AK 36I-BR0,Stihl Compact AK 36I-BR0 
+[ecom-mcp 22:15:43] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 22:15:43]   -> 3708 chars
+[ecom-mcp 22:15:44] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:15:44]   -> name,sql
+customer_accounts_city_idx,CREATE INDEX customer_accounts_city_idx ON customer_accounts(home_city)
+customer_accounts_email_idx,CREATE INDEX customer_accounts_email_idx ON customer_accounts(cu
+[ecom-mcp 22:15:47] ecom_exec(path='/bin/discount', args=['--help'], stdin_len=0)
+[ecom-mcp 22:15:48]   -> Usage: discount <basket_id> <percent> <reason_code> <issuer_id>
+Applies the requested basket discount without policy checks. Read /docs/discounts.md before use.
+[ecom-mcp 22:15:49] ecom_search(pattern='hannah.hartmann\\+cust900', root='/proc/customers', limit=10)
+[ecom-mcp 22:15:49]   -> /proc/customers/cust_079.json:1:{"id":"cust_079","display_name":"Hannah Hartmann","email":"hannah.hartmann+cust900@gmail.com","city":"Innsbruck","home_lat":47.199586,"home_lon":11.342744}
+[ecom-mcp 22:15:49] ecom_search(pattern='basket_234', root='/proc/payments', limit=10)
+[ecom-mcp 22:15:50]   -> /proc/payments/pay_034.json:1:{"id":"pay_034","basket_id":"basket_234","basket_archived":false,"customer_id":"cust_090","store_id":"store_salzburg_elisabeth_vorstadt","amount_cents":49200,"currency":"
+[ecom-mcp 22:15:50] ecom_exec(path='/bin/sql', args=None, stdin_len=228)
+[ecom-mcp 22:15:50] ecom_read(path='/docs/discounts.md', start=0, end=0, number=False)
+[ecom-mcp 22:15:50]   -> 5249 chars
+[ecom-mcp 22:15:50]   -> basket_id,basket_status,store_id,basket_created_at,record_path,discount_percent,discount_reason_code,discount_issuer_employee_id
+basket_241,checked_out,store_innsbruck_wilten,2021-08-08T12:53:43Z,/pro
+[ecom-mcp 22:15:51] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 22:15:51]   -> 4867 chars
+[ecom-mcp 22:15:54] ecom_exec(path='/bin/sql', args=None, stdin_len=293)
+[ecom-mcp 22:15:55]   -> product_sku,property_key,property_value_text,property_value_number
+GRD-1A2XEALB,handle_material,wood,
+GRD-1A2XEALB,length_mm,450,450
+GRD-1A2XEALB,power_source,manual,
+GRD-1A2XEALB,tool_type,garden she
+[ecom-mcp 22:15:59] ecom_read(path='/proc/baskets/basket_076.json', start=0, end=0, number=False)
+[ecom-mcp 22:15:59]   -> 186 chars
+[ecom-mcp 22:16:00] ecom_read(path='/proc/baskets/basket_048.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:00]   -> 175 chars
+[ecom-mcp 22:16:07] ecom_exec(path='/bin/payments', args=['recover-3ds', 'pay_034'], stdin_len=0)
+[ecom-mcp 22:16:07]   -> 3ds_recovery_started pay_034
+[ecom-mcp 22:16:08] ecom_read(path='/proc/baskets/basket_234.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:09]   -> 196 chars
+[ecom-mcp 22:16:10] ecom_read(path='/proc/payments/pay_034.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:10]   -> 519 chars
+[ecom-mcp 22:16:11] ecom_read_silent(path='/proc/catalog/garden_tools/manual_garden_tools/GRD-2W0QIG2D.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:12]   -> 423 chars [not tracked]
+[ecom-mcp 22:16:13] ecom_read_silent(path='/proc/catalog/garden_tools/manual_garden_tools/GRD-2RRRXIKH.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:13]   -> 431 chars [not tracked]
+[ecom-mcp 22:16:19] ecom_find(name='GRD-2W0QIG2D', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 22:16:20] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof69D
+[ecom-mcp 22:16:20]   -> {}
+[ecom-mcp 22:16:20] FastMCP server listening on stdio
+[ecom-mcp 22:16:21] ecom_find(name='GRD-2RRRXIKH', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 22:16:21]   -> {}
+[ecom-mcp 22:16:27] ecom_read(path='/proc/catalog/garden_tools/manual_garden_tools/GRD-2W0QIG2D.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:27]   -> 423 chars
+[ecom-mcp 22:16:28] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 22:16:28]   -> 4867 chars
+[ecom-mcp 22:16:28] ecom_read(path='/proc/catalog/garden_tools/manual_garden_tools/GRD-2RRRXIKH.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:29]   -> 431 chars
+[ecom-mcp 22:16:30] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:16:31]   -> name,sql
+customer_accounts_city_idx,CREATE INDEX customer_accounts_city_idx ON customer_accounts(home_city)
+customer_accounts_email_idx,CREATE INDEX customer_accounts_email_idx ON customer_accounts(cu
+[ecom-mcp 22:16:32] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof69N
+[ecom-mcp 22:16:32] FastMCP server listening on stdio
+[ecom-mcp 22:16:38] ecom_exec(path='/bin/sql', args=None, stdin_len=371)
+[ecom-mcp 22:16:39]   -> product_sku,record_path,product_name,brand,series,model,product_kind_name,product_family_id,product_family_name
+SFE-W8V9FBL5,/proc/catalog/safety_gear/work_gloves/fam_safety_gear_work_gloves_0013_s7py
+[ecom-mcp 22:16:43] ecom_read_silent(path='/proc/baskets/basket_252.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:44]   -> 191 chars [not tracked]
+[ecom-mcp 22:16:44] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof69R
+[ecom-mcp 22:16:45] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 22:16:45] FastMCP server listening on stdio
+[ecom-mcp 22:16:45]   -> 3708 chars
+[ecom-mcp 22:16:45] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof69T
+[ecom-mcp 22:16:45] FastMCP server listening on stdio
+[ecom-mcp 22:16:46] ecom_exec(path='/bin/sql', args=None, stdin_len=297)
+[ecom-mcp 22:16:46] ecom_read(path='/docs/payments/3ds.md', start=0, end=0, number=False)
+[ecom-mcp 22:16:46]   -> 1546 chars
+[ecom-mcp 22:16:46]   -> product_sku,property_key,property_value_text,property_value_number
+SFE-11SJC29F,color_family,black,
+SFE-11SJC29F,protection_class,cut-3,
+SFE-11SJC29F,size,M,
+SFE-11SJC29F,standard,EN 388,
+SFE-22XRSZCO
+[ecom-mcp 22:16:47] ecom_read(path='/docs/policy-updates/3ds-retry-lockout-2024-07-17.md', start=0, end=0, number=False)
+[ecom-mcp 22:16:47]   -> 417 chars
+[ecom-mcp 22:16:48] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 22:16:49]   -> 4867 chars
+[ecom-mcp 22:16:55] ecom_read(path='/proc/catalog/safety_gear/work_gloves/fam_safety_gear_work_gloves_0013_s7pyp33k/SFE-W8V9FBL5.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:55] ecom_find(name='basket_252', root='/proc/payments', kind='all', limit=10)
+[ecom-mcp 22:16:56]   -> 387 chars
+[ecom-mcp 22:16:56]   -> {}
+[ecom-mcp 22:16:58] ecom_read(path='/proc/payments/pay_017.json', start=0, end=0, number=False)
+[ecom-mcp 22:16:59]   -> 426 chars
+[ecom-mcp 22:17:00] ecom_read(path='/docs/returns.md', start=0, end=0, number=False)
+[ecom-mcp 22:17:00]   -> 1727 chars
+[ecom-mcp 22:17:00] ecom_search(pattern='basket_252', root='/proc/payments', limit=10)
+[ecom-mcp 22:17:00]   -> /proc/payments/pay_052.json:1:{"id":"pay_052","basket_id":"basket_252","basket_archived":false,"customer_id":"cust_014","store_id":"store_bratislava_stare_mesto","amount_cents":22500,"currency":"EUR",
+[ecom-mcp 22:17:01] ecom_find(name='pay_017', root='/proc/returns', kind='all', limit=10)
+[ecom-mcp 22:17:01]   -> {}
+[ecom-mcp 22:17:01] ecom_list(path='/proc/payments')
+[ecom-mcp 22:17:02]   -> pay_001.json
+pay_002.json
+pay_003.json
+pay_004.json
+pay_005.json
+pay_006.json
+pay_007.json
+pay_008.json
+pay_009.json
+pay_010.json
+pay_011.json
+pay_012.json
+pay_013.json
+pay_014.json
+pay_015.json
+pay_0
+[ecom-mcp 22:17:03] ecom_find(name='SFE-W8V9FBL5', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 22:17:03]   -> {}
+[ecom-mcp 22:17:06] ecom_read(path='/docs/discounts.md', start=0, end=0, number=False)
+[ecom-mcp 22:17:07]   -> 5249 chars
+[ecom-mcp 22:17:08] ecom_search(pattern='lisa.koenig.*cust795', root='/proc/customers', limit=10)
+[ecom-mcp 22:17:08]   -> /proc/customers/cust_041.json:1:{"id":"cust_041","display_name":"Lisa König","email":"lisa.koenig+cust795@fastmail.com","city":"Linz","home_lat":48.288422,"home_lon":14.277035}
+[ecom-mcp 22:17:08] ecom_search(pattern='pay_017', root='/proc/returns', limit=10)
+[ecom-mcp 22:17:09]   -> /proc/returns/ret_009.json:1:{"id":"ret_009","basket_id":"basket_217","customer_id":"cust_039","payment_id":"pay_017","status":"rejected","reason_code":"defective_item","created_at":"2021-08-18T00:13:
+[ecom-mcp 22:17:10] ecom_list(path='/proc/returns')
+[ecom-mcp 22:17:10]   -> README.md
+ret_001.json
+ret_002.json
+ret_003.json
+ret_004.json
+ret_005.json
+ret_006.json
+ret_007.json
+ret_008.json
+ret_009.json
+ret_010.json
+ret_011.json
+ret_012.json
+ret_013.json
+ret_014.json
+ret_015.
+[ecom-mcp 22:17:14] ecom_context()
+[ecom-mcp 22:17:17] ecom_read(path='/proc/returns/ret_009.json', start=0, end=0, number=False)
+[ecom-mcp 22:17:17]   -> 176 chars
+[ecom-mcp 22:17:18] ecom_search(pattern='cust_041', root='/proc/baskets', limit=20)
+[ecom-mcp 22:17:19]   -> /proc/baskets/basket_041.json:1:{"id":"basket_041","customer_id":"cust_041","store_id":"store_graz_jakomini","status":"active","created_at":"2021-07-29T03:59:43Z","lines":[{"sku":"GRD-3BM4V1Y2","quant
+[ecom-mcp 22:17:19] ecom_read(path='/proc/payments/pay_052.json', start=0, end=0, number=False)
+[ecom-mcp 22:17:20] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 22:17:20]   -> 3708 chars
+[ecom-mcp 22:17:20]   -> 550 chars
+[ecom-mcp 22:17:21] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 22:17:21]   -> 4867 chars
+[ecom-mcp 22:17:32] Starting: harness=https://api.bitgn.com/vm/vm2-Lxi1kB9hr17oEvAjmob2Ymof69X
+[ecom-mcp 22:17:32] FastMCP server listening on stdio
+[ecom-mcp 22:17:33] ecom_exec(path='/bin/payments', args=['recover-3ds', 'pay_052'], stdin_len=0)
+[ecom-mcp 22:17:34]   -> 3ds_recovery_started pay_052
+[ecom-mcp 22:17:35] ecom_read(path='/proc/employees/emp_011.json', start=0, end=0, number=False)
+[ecom-mcp 22:17:36]   -> 293 chars
+[ecom-mcp 22:17:37] ecom_exec(path='/bin/discount', args=['--help'], stdin_len=0)
+[ecom-mcp 22:17:37]   -> Usage: discount <basket_id> <percent> <reason_code> <issuer_id>
+Applies the requested basket discount without policy checks. Read /docs/discounts.md before use.
+[ecom-mcp 22:17:38] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:17:38]   -> name,sql
+customer_accounts_city_idx,CREATE INDEX customer_accounts_city_idx ON customer_accounts(home_city)
+customer_accounts_email_idx,CREATE INDEX customer_accounts_email_idx ON customer_accounts(cu
+[ecom-mcp 22:17:40] ecom_list(path='/proc/baskets')
+[ecom-mcp 22:17:40]   -> basket_001.json
+basket_002.json
+basket_003.json
+basket_004.json
+basket_005.json
+basket_006.json
+basket_007.json
+basket_008.json
+basket_009.json
+basket_010.json
+basket_011.json
+basket_012.json
+basket_0
+[ecom-mcp 22:17:42] ecom_read_silent(path='/proc/payments/pay_052.json', start=0, end=0, number=False)
+[ecom-mcp 22:17:43]   -> 513 chars [not tracked]
+[ecom-mcp 22:17:45] ecom_search(pattern='customer_id.*cust_097', root='/proc/baskets', limit=30)
+[ecom-mcp 22:17:45]   -> /proc/baskets/basket_020.json:1:{"id":"basket_020","customer_id":"cust_097","store_id":"store_innsbruck_wilten","status":"active","created_at":"2021-07-12T12:28:43Z","lines":[{"sku":"HND-2IZNTV2D","qu
+[ecom-mcp 22:17:52] ecom_read_silent(path='/proc/baskets/basket_056.json', start=0, end=0, number=False)
+[ecom-mcp 22:17:53]   -> 176 chars [not tracked]
+[ecom-mcp 22:17:54] ecom_read_silent(path='/proc/baskets/basket_020.json', start=0, end=0, number=False)
+[ecom-mcp 22:17:54]   -> 180 chars [not tracked]
+[ecom-mcp 22:17:55] ecom_read(path='/docs/checkout.md', start=0, end=0, number=False)
+[ecom-mcp 22:17:56]   -> 3708 chars
+[ecom-mcp 22:17:57] ecom_exec(path='/bin/sql', args=None, stdin_len=302)
+[ecom-mcp 22:17:58]   -> store_id,product_sku,available_today_quantity,price_cents,product_name
+store_graz_jakomini,GRD-1PH10I1J,7,50200,Einhell Power GE 2WQ-DWM Trimmer and Blower hedge trimmer petrol 24cm
+store_graz_jakomin
+[ecom-mcp 22:17:59] ecom_exec(path='/bin/sql', args=None, stdin_len=236)
+[ecom-mcp 22:17:59] ecom_read(path='/proc/baskets/basket_252.json', start=0, end=0, number=False)
+[ecom-mcp 22:17:59]   -> basket_id,discount_percent,discount_reason_code,discount_issuer_employee_id,basket_status,basket_created_at
+basket_041,,,,active,2021-07-29T03:59:43Z
+basket_113,,,,active,2021-07-22T02:10:43Z
+basket_0
+[ecom-mcp 22:17:59]   -> 191 chars
+[ecom-mcp 22:18:03] ecom_exec(path='/bin/sql', args=None, stdin_len=78)
+[ecom-mcp 22:18:04]   -> name,sql
+customer_accounts_city_idx,CREATE INDEX customer_accounts_city_idx ON customer_accounts(home_city)
+customer_accounts_email_idx,CREATE INDEX customer_accounts_email_idx ON customer_accounts(cu
+[ecom-mcp 22:18:11] ecom_exec(path='/bin/sql', args=None, stdin_len=100)
+[ecom-mcp 22:18:11]   -> store_id,product_sku,on_hand_quantity,reserved_quantity,available_today_quantity,incoming_quantity,next_arrival_in_days
+store_brno_veveri,WRK-20XKGFJY,10,0,10,0,
+[ecom-mcp 22:18:13] ecom_read(path='/proc/baskets/basket_041.json', start=0, end=0, number=False)
+[ecom-mcp 22:18:13]   -> 177 chars
+[ecom-mcp 22:18:14] ecom_read(path='/proc/stores/store_graz_jakomini.json', start=0, end=0, number=False)
+[ecom-mcp 22:18:15]   -> 117 chars
+[ecom-mcp 22:18:16] ecom_exec(path='/bin/discount', args=['basket_041', '5', 'service_recovery', 'emp_011'], stdin_len=0)
+[ecom-mcp 22:18:16]   -> discount_applied basket_041 5 service_recovery emp_011
+[ecom-mcp 22:18:20] ecom_read(path='/proc/baskets/basket_041.json', start=0, end=0, number=False)
+[ecom-mcp 22:18:20]   -> 257 chars
+[ecom-mcp 22:18:23] ecom_read(path='/proc/baskets/basket_056.json', start=0, end=0, number=False)
+[ecom-mcp 22:18:24]   -> 176 chars
+[ecom-mcp 22:18:25] ecom_read(path='/proc/stores/store_brno_veveri.json', start=0, end=0, number=False)
+[ecom-mcp 22:18:25]   -> 113 chars
+[ecom-mcp 22:18:26] ecom_find(name='WRK-20XKGFJY', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 22:18:27]   -> {}
+[ecom-mcp 22:18:32] ecom_search(pattern='WRK-20XKGFJY', root='/proc/catalog', limit=10)
+[ecom-mcp 22:18:33]   -> /proc/catalog/workwear/work_tops/fam_workwear_work_tops_0007_3s8f2f2w/WRK-20XKGFJY.json:1:{"sku":"WRK-20XKGFJY","category_id":"workwear","kind_id":"work_tops","family_id":"fam_workwear_work_tops_0007_
+[ecom-mcp 22:18:40] ecom_find(name='WRK-20XKGFJY', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 22:18:40]   -> {}
+[ecom-mcp 22:18:41] ecom_find(name='GRD-3BM4V1Y2', root='/proc/catalog', kind='all', limit=10)
+[ecom-mcp 22:18:41]   -> {}
+[ecom-mcp 22:18:44] ecom_list(path='/proc/catalog')
+[ecom-mcp 22:18:44]   -> adhesives_sealants/
+automotive/
+cleaning/
+electrical/
+fasteners/
+garden_tools/
+hand_tools/
+paints_finishes/
+plumbing/
+power_tools/
+safety_gear/
+storage/
+workshop_machines/
+workwear/
+[ecom-mcp 22:18:45] ecom_exec(path='/bin/sql', args=None, stdin_len=76)
+[ecom-mcp 22:18:46]   -> record_path
+/proc/catalog/garden_tools/manual_garden_tools/fam_garden_tools_manual_garden_tools_0002_30iv68gt/GRD-3BM4V1Y2.json
+[ecom-mcp 22:18:51] ecom_exec(path='/bin/checkout', args=['--help'], stdin_len=0)
+[ecom-mcp 22:18:52]   -> Usage: checkout <basket_id>
+[ecom-mcp 22:18:55] ecom_exec(path='/bin/checkout', args=['basket_056'], stdin_len=0)
+[ecom-mcp 22:18:55]   -> checked_out basket_056
+[ecom-mcp 22:19:00] ecom_read(path='/proc/baskets/basket_056.json', start=0, end=0, number=False)
+[ecom-mcp 22:19:01]   -> 181 chars
