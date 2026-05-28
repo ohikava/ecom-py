@@ -1,0 +1,147 @@
+[ecom-mcp 17:14:37] ecom_exec(path='/bin/sql', args=None, stdin_len=412)
+[ecom-mcp 17:14:38]   -> device_fingerprint,distinct_custs,n,first_ts,last_ts,span_hours
+[ecom-mcp 17:14:39] ecom_exec(path='/bin/sql', args=None, stdin_len=273)
+[ecom-mcp 17:14:39]   -> payment_method_fingerprint,distinct_custs,n
+[ecom-mcp 17:14:40] ecom_exec(path='/bin/sql', args=None, stdin_len=322)
+[ecom-mcp 17:14:40]   -> payment_method_fingerprint,device_fingerprint,distinct_custs,n
+[ecom-mcp 17:14:41] ecom_exec(path='/bin/sql', args=None, stdin_len=283)
+[ecom-mcp 17:14:42]   -> id,path,customer_id,store_id,amount_cents,created_at,payment_method_fingerprint,device_fingerprint,observed_lat,observed_lon
+pay_20250718T175109Z_VA4vBD88iZ,/proc/payments/pay_20250718T175109Z_VA4vBD8
+[ecom-mcp 17:14:43] ecom_exec(path='/bin/sql', args=None, stdin_len=283)
+[ecom-mcp 17:14:43]   -> id,path,customer_id,store_id,amount_cents,created_at,payment_method_fingerprint,device_fingerprint,observed_lat,observed_lon
+pay_20250718T175045Z_VJuSU7FszJ,/proc/payments/pay_20250718T175045Z_VJuSU7F
+[ecom-mcp 17:14:46] ecom_exec(path='/bin/sql', args=None, stdin_len=246)
+[ecom-mcp 17:14:46]   -> id,customer_id,store_id,amount_cents,created_at,payment_method_fingerprint,device_fingerprint,observed_lat,observed_lon,status
+pay_20240413T160129Z_A8tb4CtG2S,cust_042,store_bratislava_stare_mesto,141
+[ecom-mcp 17:14:47] ecom_exec(path='/bin/sql', args=None, stdin_len=222)
+[ecom-mcp 17:14:48]   -> id,customer_id,store_id,amount_cents,created_at,payment_method_fingerprint,device_fingerprint,observed_lat,observed_lon,status
+pay_20240413T160129Z_A8tb4CtG2S,cust_042,store_bratislava_stare_mesto,141
+[ecom-mcp 17:14:50] ecom_exec(path='/bin/sql', args=None, stdin_len=286)
+[ecom-mcp 17:14:51] Starting: harness=https://api.bitgn.com/vm/vm2-LxhLGM7r2WtZwUeDoHfJ1nUf75f
+[ecom-mcp 17:14:51]   -> id,customer_id,device_fingerprint,payment_method_fingerprint,store_id,amount_cents,created_at,observed_lat,observed_lon
+pay_20210428T143838Z_FJT4ktFYHA,cust_068,dev_5YrjwWXf3msHsi,pm_KTuz8NrFrLC7e8,st
+[ecom-mcp 17:14:52] FastMCP server listening on stdio
+[ecom-mcp 17:15:14] ecom_exec(path='/bin/sql', args=None, stdin_len=349)
+[ecom-mcp 17:15:15]   -> customer_id,n,first,last,span_min,stores
+cust_100,20,2025-07-03T15:08:03Z,2025-09-02T13:53:18Z,87765.24999976158,10
+[ecom-mcp 17:15:27] ecom_exec(path='/bin/sql', args=None, stdin_len=251)
+[ecom-mcp 17:15:27] ecom_exec(path='/bin/sql', args=None, stdin_len=491)
+[ecom-mcp 17:15:27]   -> id,path,store_id,amount_cents,created_at,payment_method_fingerprint,device_fingerprint,observed_lat,observed_lon
+pay_20250703T150803Z_AtvSACuKb5,/proc/payments/pay_20250703T150803Z_AtvSACuKb5.json,sto
+[ecom-mcp 17:15:28]   -> customer_id,n,MIN(created_at),MAX(created_at),span_min,stores,distinct_dev,distinct_pm
+[ecom-mcp 17:15:38] ecom_exec(path='/bin/sql', args=None, stdin_len=212)
+[ecom-mcp 17:15:39]   -> device_fingerprint,distinct_custs,n
+[ecom-mcp 17:15:59] ecom_read(path='/proc/payments/pay_20250718T175045Z_VJuSU7FszJ.json', start=0, end=0, number=False)
+[ecom-mcp 17:15:59] ecom_search(pattern='fraud', root='/proc/payments', limit=20)
+[ecom-mcp 17:15:59]   -> 540 chars
+[ecom-mcp 17:16:00]   -> (no matches)
+[ecom-mcp 17:16:00] ecom_read(path='/proc/payments/pay_20250718T175109Z_VA4vBD88iZ.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:01]   -> 536 chars
+[ecom-mcp 17:16:01] ecom_list(path='/proc/payments')
+[ecom-mcp 17:16:01]   -> pay_001.json
+pay_002.json
+pay_003.json
+pay_004.json
+pay_005.json
+pay_006.json
+pay_007.json
+pay_008.json
+pay_009.json
+pay_010.json
+pay_011.json
+pay_012.json
+pay_013.json
+pay_014.json
+pay_015.json
+pay_0
+[ecom-mcp 17:16:02] ecom_read(path='/proc/payments/pay_20250718T175127Z_63i5yvWddE.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:02]   -> 482 chars
+[ecom-mcp 17:16:03] ecom_read(path='/proc/payments/pay_20250718T175142Z_TK4MsfoJHW.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:04]   -> 494 chars
+[ecom-mcp 17:16:05] ecom_read(path='/proc/payments/pay_20250718T175230Z_34ZDgEK8Ja.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:05]   -> 483 chars
+[ecom-mcp 17:16:06] ecom_read(path='/proc/payments/pay_20250718T175237Z_Q8ZA6782KE.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:06]   -> 482 chars
+[ecom-mcp 17:16:07] ecom_read(path='/proc/payments/pay_20250718T175300Z_AkZsxPbkQE.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:07]   -> 483 chars
+[ecom-mcp 17:16:09] ecom_read(path='/proc/payments/pay_20250718T175305Z_DYY34ETv1f.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:09]   -> 489 chars
+[ecom-mcp 17:16:10] ecom_read(path='/proc/payments/pay_20250718T175321Z_R9FNNZJo6q.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:10]   -> 538 chars
+[ecom-mcp 17:16:11] ecom_read(path='/proc/payments/pay_20250718T175341Z_4d6AbQVsGK.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:11]   -> 484 chars
+[ecom-mcp 17:16:12] ecom_read(path='/proc/payments/pay_20250718T175455Z_S9vY74gVVy.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:13]   -> 480 chars
+[ecom-mcp 17:16:14] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 17:16:14]   -> 4867 chars
+[ecom-mcp 17:16:23] ecom_read(path='/proc/payments/pay_20240413T160129Z_A8tb4CtG2S.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:24]   -> 489 chars
+[ecom-mcp 17:16:25] ecom_read(path='/proc/payments/pay_20240413T160155Z_Q3LvG6g3QR.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:25]   -> 478 chars
+[ecom-mcp 17:16:26] ecom_read(path='/proc/payments/pay_20240413T160223Z_A5UL6SWNSz.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:26]   -> 482 chars
+[ecom-mcp 17:16:27] ecom_read(path='/proc/payments/pay_20240413T160238Z_2XqVbvju1N.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:27]   -> 486 chars
+[ecom-mcp 17:16:28] ecom_read(path='/proc/payments/pay_20240413T160245Z_ToDxYSnQJ1.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:29]   -> 542 chars
+[ecom-mcp 17:16:30] ecom_read(path='/proc/payments/pay_20240413T160328Z_XVMF3TBPxL.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:30]   -> 543 chars
+[ecom-mcp 17:16:30] ecom_read(path='/proc/payments/pay_20210428T143838Z_FJT4ktFYHA.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:31]   -> 553 chars
+[ecom-mcp 17:16:31] ecom_read(path='/proc/payments/pay_20240413T160349Z_5io8DrA2KY.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:31]   -> 541 chars
+[ecom-mcp 17:16:32] ecom_read(path='/proc/payments/pay_20210428T143900Z_15AuaLMi22.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:32]   -> 543 chars
+[ecom-mcp 17:16:32] ecom_read(path='/proc/payments/pay_20240413T160405Z_F7xvevhy2L.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:32] ecom_exec(path='/bin/sql', args=None, stdin_len=470)
+[ecom-mcp 17:16:33]   -> 477 chars
+[ecom-mcp 17:16:33]   -> total_cents,n
+182500,11
+[ecom-mcp 17:16:33] ecom_read(path='/proc/payments/pay_20210428T143926Z_4s3V7sGjCG.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:33]   -> 488 chars
+[ecom-mcp 17:16:34] ecom_read(path='/proc/payments/pay_20240413T160425Z_7L6cWqg9zk.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:34]   -> 557 chars
+[ecom-mcp 17:16:34] ecom_read(path='/proc/payments/pay_20210428T143935Z_gAd7jQvGp2.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:35]   -> 537 chars
+[ecom-mcp 17:16:35] ecom_read(path='/proc/payments/pay_20240413T160429Z_XaWPmP9Vad.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:35]   -> 482 chars
+[ecom-mcp 17:16:36] ecom_read(path='/proc/payments/pay_20210428T143946Z_Guv7jBBZhv.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:36]   -> 484 chars
+[ecom-mcp 17:16:36] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 17:16:36]   -> 4867 chars
+[ecom-mcp 17:16:37] ecom_read(path='/proc/payments/pay_20210428T144028Z_WXecxa2tEU.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:37]   -> 484 chars
+[ecom-mcp 17:16:51] ecom_read(path='/proc/payments/pay_20210428T144044Z_Hr1GP2nrdE.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:52]   -> 479 chars
+[ecom-mcp 17:16:53] ecom_read(path='/proc/payments/pay_20210428T144050Z_AthFLEeAUq.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:53]   -> 482 chars
+[ecom-mcp 17:16:54] ecom_read(path='/proc/payments/pay_20210428T144108Z_EWAMYQdGY1.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:54]   -> 494 chars
+[ecom-mcp 17:16:55] ecom_read(path='/proc/payments/pay_20210428T144120Z_7Dcnqm5WmW.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:55]   -> 482 chars
+[ecom-mcp 17:16:56] ecom_read(path='/proc/payments/pay_20210428T144126Z_DsPqK9r45Y.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:57]   -> 476 chars
+[ecom-mcp 17:16:58] ecom_read(path='/proc/payments/pay_20210428T144134Z_NqWpRFoqYn.json', start=0, end=0, number=False)
+[ecom-mcp 17:16:58]   -> 482 chars
+[ecom-mcp 17:16:59] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 17:16:59]   -> 4867 chars
+[ecom-mcp 17:17:12] ecom_exec(path='/bin/sql', args=None, stdin_len=458)
+[ecom-mcp 17:17:13]   -> total_cents,count
+328300,10
+[ecom-mcp 17:17:18] ecom_exec(path='/bin/sql', args=None, stdin_len=528)
+[ecom-mcp 17:17:18]   -> total_cents,n,stores
+230700,12,10
+[ecom-mcp 17:17:36] ecom_exec(path='/bin/sql', args=None, stdin_len=480)
+[ecom-mcp 17:17:36]   -> store_id
+store_bratislava_stare_mesto
+store_brno_veveri
+store_graz_jakomini
+store_graz_lend
+store_innsbruck_wilten
+store_linz_hauptplatz
+store_ljubljana_center
+store_salzburg_elisabeth_vorstadt
+store_
+[ecom-mcp 17:19:10] ecom_read(path='/docs/security.md', start=0, end=0, number=False)
+[ecom-mcp 17:19:10]   -> 4867 chars
+[ecom-mcp 17:19:38] ecom_exec(path='/bin/python3', args=None, stdin_len=831)

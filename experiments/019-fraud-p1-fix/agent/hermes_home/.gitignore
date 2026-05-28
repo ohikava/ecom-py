@@ -1,0 +1,10 @@
+# Hermes runtime artifacts — keep checked-in config.yaml + skills/ content.
+# Everything else (state.db, sessions/, auth.json, caches) is regenerated.
+*
+!.gitignore
+!config.yaml
+!skills/
+skills/*
+!skills/ecom-fraud-forensic/
+skills/ecom-fraud-forensic/*
+!skills/ecom-fraud-forensic/SKILL.md
